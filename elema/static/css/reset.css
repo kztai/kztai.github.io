@@ -53,6 +53,7 @@ table {
 a {
     color: #7e8c8d;
     text-decoration: none;
+    /*隐藏被旋转的 div 元素的背面：*/
     -webkit-backface-visibility: hidden;
 }
 
@@ -60,11 +61,13 @@ li {
     list-style: none;
 }
 
+/*::-webkit-scrollbar 滚动条整体部分；*/
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
 }
 
+/*::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）*/
 ::-webkit-scrollbar-track-piece {
     background-color: rgba(0, 0, 0, 0.2);
     -webkit-border-radius: 6px;
@@ -76,6 +79,8 @@ li {
     -webkit-border-radius: 6px;
 }
 
+/* ::-webkit-scrollbar-thumb滚动条里面的小方块，能向上向下移动*/
+/* :horizontal：horizontal伪类适用于任何水平方向上的滚动条； :vertical：适用于任何垂直方向的滚动条*/
 ::-webkit-scrollbar-thumb:horizontal {
     width: 5px;
     background-color: rgba(125, 125, 125, 0.7);
@@ -87,6 +92,28 @@ html, body {
 }
 
 body {
+    /*文本大小不会根据设备尺寸进行调整。(另一个值为auto（默认），根据设备尺寸自动调整； 只有iOS Safari支持)*/
     -webkit-text-size-adjust: none;
+    /*默认值：由user agent决定；当用户轻按一个链接或者JavaScript可点击元素时给元素覆盖一个高亮色*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.clearfix:after {
+  clear: both;
 }
