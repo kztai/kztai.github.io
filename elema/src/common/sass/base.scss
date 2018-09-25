@@ -3,3 +3,23 @@ body,html {
 	font-weight: 200;
 	font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
 }
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: " ";
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
