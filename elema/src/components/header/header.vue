@@ -33,35 +33,37 @@
 		<transition name="fade">
 			<!-- 经典的sticky footer 布局 -->
 			<div v-show="detailShow" class="detail">
-			<!-- 这个层的作用是使遮罩能够铺满整个屏幕 -->
-			<div class="detail-wrap clearfix">
-				<div class="detail-main">
-					<h1 class="name">{{seller.name}}</h1>
-					<div class="star-wrap">
-						<star v-bind:size="48" v-bind:score="seller.score"></star>
+				<!-- 这个层的作用是使遮罩能够铺满整个屏幕 -->
+				<div class="detail-wrap clearfix">
+					<div class="detail-main">
+						<h1 class="name">{{seller.name}}</h1>
+						<div class="star-wrap">
+							<star v-bind:size="48" v-bind:score="seller.score"></star>
+						</div>
+						<div class="title">
+							<div class="line"></div>
+							<div class="text">优惠信息</div>
+							<div class="line"></div>
+						</div>
+						<ul class="supports" v-if="seller.supports">
+							<li class="supports-item" v-for="(item,index) in seller.supports" v-bind:key="index">
+								<span class="icon" v-bind:class="classMap[seller.supports[index].type]"></span>
+								<span class="text">{{seller.supports[index].description}}</span>
+							</li>
+						</ul>
+						<div class="title">
+							<div class="line"></div>
+							<div class="text">商家公告</div>
+							<div class="line"></div>
+						</div>
+						<p class="bulletin-text">{{seller.bulletin}}</p>
+						<p class="bulletin-text">{{seller.bulletin}}</p>
+						<p class="bulletin-text">{{seller.bulletin}}</p>
 					</div>
-					<div class="title">
-						<div class="line"></div>
-						<div class="text">优惠信息</div>
-						<div class="line"></div>
-					</div>
-					<ul class="supports" v-if="seller.supports">
-						<li class="supports-item" v-for="(item,index) in seller.supports" v-bind:key="index">
-							<span class="icon" v-bind:class="classMap[seller.supports[index].type]"></span>
-							<span class="text">{{seller.supports[index].description}}</span>
-						</li>
-					</ul>
-					<div class="title">
-						<div class="line"></div>
-						<div class="text">商家公告</div>
-						<div class="line"></div>
-					</div>
-					<p class="bulletin-text">{{seller.bulletin}}</p>
 				</div>
-			</div>
-			<div class="detail-close">
-				<i class="icon-close" v-on:click="closeDetail"></i>
-			</div>
+				<div class="detail-close">
+					<i class="icon-close" v-on:click="closeDetail"></i>
+				</div>
 			</div>
 		</transition>
 	</div>
@@ -222,7 +224,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			z-index: 100;
+			z-index: 1000;
 			/*为了让遮罩层能够滑动*/
 			overflow: auto;
 			backdrop-filter: blur(10px);

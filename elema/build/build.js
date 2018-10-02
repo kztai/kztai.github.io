@@ -3,6 +3,7 @@ require('./check-versions')()
 
 process.env.NODE_ENV = 'production'
 
+// 转圈的效果
 const ora = require('ora')
 const rm = require('rimraf')
 const path = require('path')
@@ -11,11 +12,14 @@ const webpack = require('webpack')
 const config = require('../config')
 const webpackConfig = require('./webpack.prod.conf')
 
+// 打包过程中终端的提示文案
 const spinner = ora('building for production...')
 spinner.start()
 
+// 将根目录下的static文件夹一并压缩到dist的static文件夹中
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
   if (err) throw err
+  // 执行webpack打包
   webpack(webpackConfig, (err, stats) => {
     spinner.stop()
     if (err) throw err
