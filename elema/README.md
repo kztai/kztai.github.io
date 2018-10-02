@@ -1,8 +1,8 @@
-# item
+# 仿饿了么APP
 
-> elema sell app
+> 使用 vue.js + webpack + es6 等技术，采用组件化，模块化的开发方式，实现移动端项目设计。
 
-## Build Setup
+## 所用技术
 
 ``` bash
 
