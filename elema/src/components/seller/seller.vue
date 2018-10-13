@@ -81,7 +81,7 @@
 		},
 		data() {
 			return {
-				// favorite: false
+				// 查看本地是否有缓存
 				favorite: (() => {
 					return loadFromLocal(this.seller.id, 'favorite', false);
 				})()
@@ -98,6 +98,7 @@
 					return;
 				}
 				this.favorite = !this.favorite;
+				// 添加本地缓存
 				saveToLocal(this.seller.id, 'favorite', this.favorite);
 			},
 			_initScroll() {
@@ -114,7 +115,7 @@
 					let picWidth = 120;
 					let margin = 6;
 					let width = (picWidth + margin) * this.seller.pics.length - margin;
-					// 页面中ul宽度不会超过屏幕宽度，所以要重新赋值
+					// ul宽度不会超过屏幕宽度，所以要重新赋值
 					this.$refs.picList.style.width = width + 'px';
 					this.$nextTick(() => {
 						if (!this.picScroll) {
@@ -139,8 +140,7 @@
 				this._initPics();
 			}
 		},
-		// 在DOM渲染完，页面加载之前执行：可以确保better-scroll计算出正确的宽度，高度
-		// seller变化的时间晚于mounted()之后，这时mounted()执行的this._initPics()的pics是空的，所以会报错
+		// 在DOM渲染完，页面加载之前执行
 		mounted() {
 			this.$nextTick(() => {
 				this._initScroll();

@@ -55,6 +55,7 @@
 				if (!event._constructed) {
 					return;
 				}
+				// 通过父级选择评论的内容
 				this.$emit('ratingType', type);
 			},
 			toggleContent(event) {
@@ -65,6 +66,7 @@
 			}
 		},
 		computed: {
+			// 筛选出对应的评论内容
 			positives() {
 				return this.ratings.filter((rating) => {
 					return rating.rateType === POSITIVE;
@@ -90,7 +92,6 @@
 			position: relative;
 			&::before {
 				@include border1px(rgba(7,17,27,0.1),0,0,1,0);
-				/*注意这里设置z-index，否则会报错*/
 				z-index: -1;
 			}
 			.block {

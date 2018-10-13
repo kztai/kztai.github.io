@@ -11,7 +11,6 @@
 		</div>
 		<div class="foods-wrap" ref="foodsWrap">
 				<ul>
-					<!-- food-list-hook：没有实际意义，是用来被js定位到 -->
 					<li class="food-list" ref="foodList" v-for="(item,index) in goods" v-bind:key="index">
 						<h1 class="title">{{item.name}}</h1>
 						<ul>
@@ -31,7 +30,6 @@
 										<del class="oldPrice" v-show="food.oldPrice">￥{{food.oldPrice}}</del>
 									</div>
 									<div class="cartControl-wrap">
-										<!-- 接收子模块传来的值，并将值赋予addFood方法 -->
 										<cartControl :food="food" @add="_drop($event)"></cartControl>
 									</div>
 								</div>
@@ -40,7 +38,6 @@
 					</li>
 				</ul>
 		</div>
-		<!-- ref='shopcart'：用于给这个DOM元素做标记，便于后续提取DOM；我们也可以拿到子模块的所有方法和属性 -->
 		<shopcart ref='shopcart' :select-foods="selectFoods" :delivery-price="seller.deliveryPrice" :min-price="seller.minPrice"></shopcart>
 		<food :food="selectedFood" ref="getFood" @add="_drop($event)"></food>
 	</div>
@@ -68,8 +65,8 @@
 			};
 		},
 		computed: {
+			// 获得当前菜单的索引值
 			currentIndex() {
-				// debugger;
 				for (let i = 0; i < this.listHeight.length; i++) {
 					let height1 = this.listHeight[i];
 					let height2 = this.listHeight[i + 1];
@@ -79,6 +76,7 @@
 				}
 				return 0;
 			},
+			// 将选择的菜添加入foods数组中，便于调用
 			selectFoods() {
 				let foods = [];
 				this.goods.forEach((good) => {
@@ -92,6 +90,7 @@
 			}
 		},
 		methods: {
+			// 点击菜单，跳转到对应的菜单列表
 			selectMenu(index, event) {
 				// 阻止PC端点击执行2次的行为
 				if (!event._constructed) {
@@ -106,12 +105,10 @@
 				}
 				this.selectedFood = food;
 				this.$refs.getFood.show();
-				// console.log(this.$refs.getFood.showFlag);
 			},
 			_initScroll() {
-				// 通过标签中 ref:xxx 标记 dom，然后在组件里通过 this.$refs.xxx 就可以获得这个 dom 对象了
 				this.menuScroll = new BScroll(this.$refs.menuWrap, {
-					// 因为点击时，会默认的阻止点，所以要手动开启
+					// 开启点击事件
 					click: true
 				});
 				this.foodsScroll = new BScroll(this.$refs.foodsWrap, {
@@ -120,10 +117,12 @@
 				});
 				this.foodsScroll.on('scroll', (position) => {
 					if (position.y <= 0) {
+						// 获得滚动的Y值
 						this.scrollY = Math.abs(Math.round(position.y));
 					}
 				});
 			},
+			// 得到每一个菜单列表的高度
 			_calculateHeight() {
 				let foodList = this.$refs.foodList;
 				let height = 0;
@@ -137,7 +136,6 @@
 			_drop(target) {
 				// 体验优化，异步执行下落动画
 				this.$nextTick(() => {
-					// 获得 ref='shopcart'的DOM元素
 					this.$refs.shopcart.drop(target);
 				});
 			}
@@ -149,10 +147,6 @@
 				if (data.body.errno === ERR_OK) {
 					this.goods = data.body.data;
 
-					// 1 $nextTick(() => {}) 与DOM相关操作写在该函数回调中，确保DOM已渲染
-					// 2 在修改数据之后立即使用这个方法，获取更新后的 DOM。
-					// 3 在某个动作有可能改变DOM元素结构的时候，对DOM一系列的js操作都要放进Vue.nextTick()的回调函数中
-					// 4 在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中
 					this.$nextTick(() => {
 						this._initScroll();
 						this._calculateHeight();
@@ -165,23 +159,17 @@
 			cartControl,
 			food
 		}
-		// events: {
-		// 	'add'(target) {
-		// 		this._drop(target);
-		// 	}
-		// }
 	};
 </script>
 <style lang="scss">
 	@import '../../common/sass/mixin.scss';
 	.goods {
 		display: flex;
-		/*需要绝对定位，脱离文档流，这样就能够实现滚动时，头部固定*/
+		/*绝对定位，脱离文档流，实现滚动时头部固定*/
 		position: absolute;
 		top: 177px;
 		bottom: 46px;
 		width: 100%;
-		/*height: 100%;    添加这句后页面可以滚动*/
 		overflow: hidden;
 		.menu-wrap {
 			flex: 0 0 80px;
@@ -193,11 +181,10 @@
 				line-height: 14px;
 				text-align: center;
 				.menu-item {
-					/*可以使不管是1行还是多行的文字垂直居中*/
+					/*使多行文字垂直居中*/
 					display: table;
 					width: 56px;
 					height: 54px;
-					/*padding: 0 12px;*/
 					margin: 0 auto;
 					position: relative;
 					&::before {

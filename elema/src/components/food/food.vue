@@ -85,7 +85,7 @@
 		methods: {
 			show() {
 				this.showFlag = true;
-				// 将这两个变量始终初始化：
+				// 将下面两个变量始终初始化：
 				this.selectType = ALL;
 				this.onlyContent = false;
 				this.$nextTick(() => {
@@ -98,6 +98,7 @@
 					}
 				});
 			},
+			// 点击加入购物车时，添加数量
 			addFirst(event) {
 				if (!event._constructed) {
 					return;
@@ -120,6 +121,7 @@
 					this.scroll.refresh();
 				});
 			},
+			// 选择显示的评论内容，以及是否只显示内容
 			needShow(text, type) {
 				if (this.onlyContent && !text) {
 					return false;
@@ -131,6 +133,7 @@
 				}
 			}
 		},
+		// 得到格式化的时间
 		filters: {
 			getDate(time) {
 				let date = new Date(time);

@@ -21,11 +21,9 @@ const ratings = appData.ratings
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
-    //rules最终得到：[{css:...}, {less:...}, {sass:...}, {stylus:...}, ...]，见utils.js文件
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
   },
   // cheap-module-eval-source-map is faster for development
-  // 开发时便于我们进行源码调试用的：
   devtool: config.dev.devtool,
 
   // these devServer options should be customized in /config/index.js
@@ -65,7 +63,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   },
   plugins: [
     new webpack.DefinePlugin({
-      //将process.env替换成后面那个，用于判断是开发时还是生成时使用
       'process.env': require('../config/dev.env')
     }),
     new webpack.HotModuleReplacementPlugin(),

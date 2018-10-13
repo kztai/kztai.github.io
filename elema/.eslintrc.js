@@ -25,11 +25,10 @@ module.exports = {
     'generator-star-spacing': 'off',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'semi': ['error', 'always'],  //采用分号结尾
-    'no-tabs': 0,  //不允许使用制表符，包括注释中的字符（0表示按照编辑器默认）
-    'indent': 0,    //强制执行一致的缩进方法（0表示编辑器默认的方法）
-    'space-before-function-paren': 0  //在函数括号之前需要或不允许空格
-    // 'no-mixed-spaces-and-tabs': 0  //禁止使用混合空格和制表符进行缩进(默认)
+    'semi': ['error', 'always'],
+    'no-tabs': 0,
+    'indent': 0,
+    'space-before-function-paren': 0
   }
 
 }

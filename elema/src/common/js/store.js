@@ -1,3 +1,6 @@
+/**
+ * 添加缓存
+ */
 export function saveToLocal(id, key, value) {
 	let seller = localStorage.__seller__;
 	if (!seller) {
@@ -13,6 +16,9 @@ export function saveToLocal(id, key, value) {
 	localStorage.__seller__ = JSON.stringify(seller);
 };
 
+/**
+ * 读取缓存
+ */
 export function loadFromLocal(id, key, def) {
 	let seller = localStorage.__seller__;
 	if (!seller) {

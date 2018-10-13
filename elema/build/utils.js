@@ -32,7 +32,6 @@ exports.cssLoaders = function (options) {
   }
 
   // generate loader string to be used with extract text plugin
-  //生成各种css预处理器loader
   function generateLoaders (loader, loaderOptions) {
     const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
 
@@ -70,7 +69,6 @@ exports.cssLoaders = function (options) {
 }
 
 // Generate loaders for standalone style files (outside of .vue)
-// 对上面拿到的css进行遍历：
 exports.styleLoaders = function (options) {
   const output = []
   const loaders = exports.cssLoaders(options)

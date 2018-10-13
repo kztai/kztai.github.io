@@ -78,7 +78,6 @@
 					return [];
 				}
 			},
-			// 真正传进来的是引号内的字符，接收时要写引号内的字符
 			minPrice: {
 				type: Number,
 				default: 0
@@ -89,6 +88,7 @@
 			}
 		},
 		methods: {
+			// 定义小球下落动画
 			drop(el) {
 				for (let i = 0; i < this.balls.length; i++) {
 					let ball = this.balls[i];
@@ -100,6 +100,7 @@
 					}
 				}
 			},
+			// 小球下落前
 			beforeDrop(el) {
 				let count = this.balls.length;
 				while (count--) {
@@ -118,7 +119,7 @@
 					}
 				}
 			},
-			dropping(el) {
+			dropping(el, done) {
 				// 手动触发浏览器重绘
 				/* eslint-disable no-unused-vars */
 				let rf = el.offsetHeight;
@@ -128,8 +129,10 @@
 					let inner = el.getElementsByClassName('inner-hook')[0];
 					inner.style.webkitTransform = `translate3d(0,0,0)`;
 					inner.style.transform = `translate3d(0,0,0)`;
+					el.addEventListener('transitionend', done);
 				});
 			},
+			// 小球下落后
 			afterDrop(el) {
 				let ball = this.dropBalls.shift();
 				if (ball) {
@@ -164,7 +167,6 @@
 		computed: {
 			totalPrice() {
 				let total = 0;
-				// [].forEach((item, index) => {})
 				this.selectFoods.forEach((food) => {
 					total += food.price * food.count;
 				});
@@ -187,27 +189,6 @@
 					return '去结算';
 				}
 			}
-			// 这个方法能正常运行，但是系统会报错，因为计算属性是只读的，不允许手动修改变量；用watch属性就不会
-			// listShow() {
-			// 	if (!this.totalCount) {
-			// 		this.showList = false;
-			// 		return false;
-			// 	}
-			// 	let show = this.showList;
-			// 	if (show) {
-			// 		this.$nextTick(() => {
-			// 			// 判断this.scroll是否存在，存在的话就调用refresh方法·
-			// 			if (!this.scroll) {
-			// 				this.scroll = new BScroll(this.$refs.listContent, {
-			// 					click: true
-			// 				});
-			// 			} else {
-			// 				this.scroll.refresh();
-			// 			}
-			// 		});
-			// 	}
-			// 	return show;
-			// }
 		},
 		watch: {
 			totalCount() {

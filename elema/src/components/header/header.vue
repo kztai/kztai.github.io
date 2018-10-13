@@ -10,10 +10,9 @@
 					<span class="name">{{seller.name}}</span>
 				</div>
 				<div class="description">{{seller.description}}/{{seller.deliveryTime}}分钟送达</div>
-				<!-- 加v-if的原因：获取seller数据是异步的，也就是说刚从父模块拿到的seller是空对象 -->
+				<!-- 获取seller数据是异步的 -->
 				<div class="support" v-if="seller.supports">
 					<span class="icon" v-bind:class="classMap[seller.supports[0].type]"></span>
-					<!-- 不加v-if时，对seller.supports取0会报错 -->
 					<span class="txt">{{seller.supports[0].description}}</span>
 				</div>
 			</div>
@@ -31,9 +30,9 @@
 			<img :src="seller.avatar" width="100%" height="100%">
 		</div>
 		<transition name="fade">
-			<!-- 经典的sticky footer 布局 -->
+			<!-- sticky footer 布局 -->
 			<div v-show="detailShow" class="detail">
-				<!-- 这个层的作用是使遮罩能够铺满整个屏幕 -->
+				<!-- 使遮罩能够铺满整个屏幕 -->
 				<div class="detail-wrap clearfix">
 					<div class="detail-main">
 						<h1 class="name">{{seller.name}}</h1>
@@ -73,7 +72,6 @@
 	import star from '../star/star.vue';
 
 	export default {
-		// 接收父级传来的参数
 		props: {
 			seller: {
 				type: Object

@@ -1,3 +1,6 @@
+/**
+ * 一像素边款
+ */
 @mixin border1px($border-color: #ddd, $top: 0, $right: 0, $bottom: 1, $left: 0) {
 	content: "";
 	width: 200%;
@@ -7,14 +10,14 @@
 	left: 0;
 	top: 0;
 	z-index: -1;
+	transform-origin: left top;
+	box-sizing: border-box;
 	@media (-webkit-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5) {
 		transform: scale(0.7, 0.7);
 	}	
 	@media (-webkit-min-device-pixel-ratio: 2.0),(min-device-pixel-ratio: 2.0) {
 		transform: scale(0.5, 0.5);
 	}
-	transform-origin: left top;
-	box-sizing: border-box;
 	@if $top != 1 {
 		border-top: none;
 	}	

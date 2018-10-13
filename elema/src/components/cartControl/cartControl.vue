@@ -25,18 +25,15 @@
 					return;
 				}
 				if (!this.food.count) {
-					// 这种直接赋值的方法，Vue检测不到
-					// this.food.count = 1;
-
-					// 需要这样来添加this.food中不存在的属性
+					// 添加count属性
 					Vue.set(this.food, 'count', 1);
 				} else {
 					this.food.count++;
 				}
-				// 这个方法用于子向父传值
+				
 				this.$emit('add', event.target);
 			},
-			decreaseCart() {
+			decreaseCart(event) {
 				if (!event._constructed) {
 					return;
 				}

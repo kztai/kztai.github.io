@@ -110,7 +110,6 @@
 		created() {
 			this.$http.get('api/ratings').then((data) => {
 				if (data.body.errno === ERR_OK) {
-					// console.log(data.body);
 					this.ratings = data.body.data;
 					this.$nextTick(() => {
 						this._initScroll();

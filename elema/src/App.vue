@@ -1,7 +1,6 @@
 <template>
 	<div id="app">
-		<!-- 向header子模块传参数 -->
-		<!-- 真正传出去的是引号内的字符，接收时要写引号内的字符；等号左边的参数要与引号内的一致，横线改驼峰 -->
+		<!-- 向子模块传参数 -->
 		<v-header v-bind:seller="seller"></v-header>
 		<div class="tab">
 			<router-link class="tab-item" to="/goods">商品</router-link>
@@ -10,7 +9,6 @@
 		</div>
 		<!-- 保持数据缓存，页面切换时不会再重复请求 -->
 		<keep-alive>
-			<!-- 真正传出去的是引号内的字符，接收时要写引号内的字符；等号左边的参数要与引号内的一致，横线改驼峰 -->
 			<router-view :seller="seller"></router-view>
 		</keep-alive>
 	</div>
@@ -20,7 +18,7 @@
 	import {urlParse} from 'common/js/util.js';
 	import header from 'components/header/header.vue';
 
-	// 状态码：当我们实际应用中，会出现很多种情况，0表示成功
+	// 定义状态码
 	const ERR_OK = 0;
 
 	export default {
@@ -28,8 +26,8 @@
 			return {
 				seller: {
 					id: (() => {
+						// 获得URL值
 						let queryParam = urlParse();
-						// console.log(queryParam);
 						return queryParam.id;
 					})()
 				}
@@ -39,12 +37,10 @@
 			'v-header': header
 		},
 		created() {
-			// 通过api/seller可以拿到data.json中的seller数据
-			this.$http.get('api/seller?id=' + this.seller.id).then((data) => {
-				// console.log(data);
+			// 拿到data.json中的seller数据
+			this.$http.get('api/seller?=' + this.seller.id).then((data) => {
 				if (ERR_OK === data.body.errno) {
 					this.seller = Object.assign({}, this.seller, data.body.data);
-					// console.log(this.seller.id);
 				}
 			});
 		}

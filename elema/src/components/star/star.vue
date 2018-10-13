@@ -46,7 +46,6 @@
 	@import '../../common/sass/mixin.scss';
 
 	.star {
-		/*font-size: 0;*/
 		.star-item {
 			display: inline-block;
 			background-repeat: no-repeat;

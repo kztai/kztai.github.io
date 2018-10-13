@@ -1,6 +1,4 @@
 
-//webpack基础配置：
-
 'use strict'
 const path = require('path')
 const utils = require('./utils')
@@ -17,7 +15,6 @@ const createLintingRule = () => ({
   enforce: 'pre',
   include: [resolve('src'), resolve('test')],
   options: {
-    //友好错误信息：表示当解析过程遇到错误，不会停止，而是跳过继续解析
     formatter: require('eslint-friendly-formatter'),
     emitWarning: !config.dev.showEslintErrorsInOverlay
   }
@@ -36,20 +33,16 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
 
-  // ES6，require引入的文件的相关配置：
   resolve: {
-    extensions: ['.js', '.vue', '.json'],   // const config = require('../config')类似这样的可以不写后缀
-    //设置别名：缩短路径长度
+    extensions: ['.js', '.vue', '.json'], 
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      // '@': resolve('src'),
       'src': path.resolve(__dirname, '../src'),
       'common': path.resolve(__dirname, '../src/common'),
       'components': path.resolve(__dirname, '../src/components')
     }
   },
   module: {
-    //对特定的文件进行处理：
     rules: [
       ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
@@ -60,14 +53,12 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        //表示这个目录下的js文件：
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          //当图片大小超过10kb的话，就生产一个文件，文件名为：static/img/[name].[hash:7].[ext]
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
