@@ -1,6 +1,6 @@
 #game {
 	position: absolute;
-	top: 10px;
+	top: 100px;
 	left: 10px;
 	width: 200px;
 	height: 400px;
@@ -10,7 +10,7 @@
 }
 #next {
 	position: absolute;
-	top: 10px;
+	top: 100px;
 	left: 250px;
 	width: 80px;
 	height: 80px;
@@ -19,7 +19,7 @@
 }
 .info {
 	position: absolute;
-	top: 100px;
+	top: 190px;
 	left: 250px;
 }
 .info #gameover {
