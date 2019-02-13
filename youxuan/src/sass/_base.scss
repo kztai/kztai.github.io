@@ -1,0 +1,27 @@
+$border-color: #eee;
+
+//一像素边框
+@mixin border1px($border-color: #ccc, $top: 1, $right: 0, $bottom: 1, $left: 0) {
+	content: "";
+	width: 200%;
+	height: 200%;
+	border: 1px solid $border-color;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: scale(.5, .5);
+	transform-origin: left top;
+	box-sizing: border-box;
+	@if $top != 1 {
+		border-top: none;
+	}	
+	@if $right != 1 {
+		border-right: none;
+	}	
+	@if $bottom != 1 {
+		border-bottom: none;
+	}	
+	@if $left != 1 {
+		border-left: none;
+	}
+}

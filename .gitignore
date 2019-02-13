@@ -1,3 +1,26 @@
 resource/
 elema1/
 elema(学习版)/
+Tetris/
+elema/node_modules/
+elema/resource/
+elema/笔记.md
+elema/dist/
+FlappyBird/node_modules/
+nowcoder/node_modules/
+nowcoder/dist/
+youxuan/node_modules/
+youxuan/dist/
+
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

@@ -1,0 +1,37 @@
+{
+	"images": [
+		{"name": "bg_day", "url": "imgs/bg_day.png"},
+		{"name": "bg_night", "url": "imgs/bg_night.png"},
+		{"name": "bird0_0", "url": "imgs/bird0_0.png"},
+		{"name": "bird0_1", "url": "imgs/bird0_1.png"},
+		{"name": "bird0_2", "url": "imgs/bird0_2.png"},
+		{"name": "bird1_0", "url": "imgs/bird1_0.png"},
+		{"name": "bird1_1", "url": "imgs/bird1_1.png"},
+		{"name": "bird1_2", "url": "imgs/bird1_2.png"},
+		{"name": "bird2_0", "url": "imgs/bird2_0.png"},
+		{"name": "bird2_1", "url": "imgs/bird2_1.png"},
+		{"name": "bird2_2", "url": "imgs/bird2_2.png"},
+		{"name": "land", "url": "imgs/land.png"},
+		{"name": "pipe_up", "url": "imgs/pipe_up.png"},
+		{"name": "pipe_down", "url": "imgs/pipe_down.png"},
+		{"name": "num0", "url": "imgs/font_048.png"},
+		{"name": "num1", "url": "imgs/font_049.png"},
+		{"name": "num2", "url": "imgs/font_050.png"},
+		{"name": "num3", "url": "imgs/font_051.png"},
+		{"name": "num4", "url": "imgs/font_052.png"},
+		{"name": "num5", "url": "imgs/font_053.png"},
+		{"name": "num6", "url": "imgs/font_054.png"},
+		{"name": "num7", "url": "imgs/font_055.png"},
+		{"name": "num8", "url": "imgs/font_056.png"},
+		{"name": "num9", "url": "imgs/font_057.png"},
+		{"name": "title", "url": "imgs/title.png"},
+		{"name": "btn_play", "url": "imgs/button_play.png"},
+		{"name": "tutorial", "url": "imgs/tutorial.png"},
+		{"name": "boom0", "url": "imgs/boom0.png"},
+		{"name": "boom1", "url": "imgs/boom1.png"},
+		{"name": "boom2", "url": "imgs/boom2.png"},
+		{"name": "gameOver", "url": "imgs/text_game_over.png"}
+
+
+	]
+}

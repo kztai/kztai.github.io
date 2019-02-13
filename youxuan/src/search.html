@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/common.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<p>搜索页面：<span id='txt'></span></p>
+
+	<script>
+		window.onload = function() {
+			var val = getUrl("search");
+			document.getElementById('txt').innerHTML = decodeURI(val);  //将乱码的字符转译成字符
+		};
+	</script>
+</body>
+</html>

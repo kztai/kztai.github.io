@@ -1,10 +1,5 @@
 ;(function ($, undefined) {
     $.fn.slide = function(options) {
-		//检测用户传进来的参数是否合法
-		if (!isValid(options)) {
-			return this;
-		}
-
 		//默认参数
 		var defaluts = {
 			// 左右滑动
@@ -30,6 +25,11 @@
 		var slideWidth = '';
 		var move = false;
 		var timer;
+
+		//检测用户传进来的参数是否合法
+		if (!isValid(options)) {
+			return this;
+		}
 
 		return this.each(function () {
 			var $this = $(this);

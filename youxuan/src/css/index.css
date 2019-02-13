@@ -1,0 +1,358 @@
+.top-hd {
+  display: flex;
+  padding: 0 11px;
+  background: linear-gradient(to right, #900757, #f81c5b);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 38px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.top-hd .logo {
+  width: 34px;
+  height: 32px;
+  background: url(../images/logo_03.png) no-repeat;
+  background-size: contain;
+  margin-top: 5px;
+}
+
+.top-hd .search {
+  flex: 1;
+  text-align: center;
+  line-height: 38px;
+  position: relative;
+}
+
+.top-hd .search input {
+  width: 90%;
+  height: 26px;
+  border-radius: 13px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding-left: 12px;
+}
+
+.top-hd .search input:-ms-input-placeholder {
+  color: #b28494;
+}
+
+.top-hd .search input::-webkit-input-placeholder {
+  color: #b28494;
+}
+
+.top-hd .search i {
+  position: absolute;
+  right: 8%;
+  top: 0;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 10;
+}
+
+.top-hd .mes {
+  flex: 0 0 auto;
+  width: 24px;
+  color: #fff;
+  position: relative;
+}
+
+.top-hd .mes i {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.top-hd .mes span {
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: -4px;
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+
+.scroll {
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.swiper-container {
+  position: relative;
+}
+
+.swiper-container::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: 1px solid #eee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(0.5, 0.5);
+  transform-origin: left top;
+  box-sizing: border-box;
+  border-right: none;
+  border-left: none;
+  z-index: 100;
+}
+
+.swiper-container .swiper-slide img {
+  width: 6.4rem;
+  height: 2.4rem;
+  vertical-align: middle;
+}
+
+.swiper-container .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-container .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav .nav-item {
+  flex: 0 0 36px;
+  height: 58px;
+}
+
+.nav .nav-item a {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.nav .nav-item a i {
+  display: block;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.nav .nav-item a .icon-muying {
+  transform: rotate(-45deg);
+  background-color: #7f47dd;
+}
+
+.nav .nav-item a .icon-fuwuchaoshi {
+  background-color: #f32363;
+}
+
+.nav .nav-item a .icon-miaosha {
+  background-color: #d6d623;
+}
+
+.nav .nav-item a .icon-chongzhi {
+  background-color: #ff8a2f;
+}
+
+.nav .nav-item a span {
+  color: #666;
+  font-size: 12px;
+}
+
+.layer .layer-hd {
+  height: 0.56rem;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  padding: 0 0.22rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #faaf0d;
+}
+
+.layer .layer-hd::before {
+  position: absolute;
+  left: 0.22rem;
+  top: 0;
+  content: "";
+  width: 0.14rem;
+  height: 100%;
+  background-color: #faaf0d;
+}
+
+.layer .layer-hd::after {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: 1px solid #eee;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(0.5, 0.5);
+  transform-origin: left top;
+  box-sizing: border-box;
+  border-right: none;
+  border-left: none;
+}
+
+.layer .layer-hd .hd-left {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.3rem;
+}
+
+.layer .layer-hd .hd-left i {
+  padding-left: 0.26rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+}
+
+.layer .layer-hd .hd-left .miaosha {
+  padding: 0 0.1rem;
+}
+
+.layer .layer-hd .hd-left .timer {
+  font-size: 0.24rem;
+}
+
+.layer .layer-hd .hd-left span {
+  float: left;
+  margin-left: 0.05rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+
+.layer .layer-hd .hd-left .timer-num {
+  display: inline-block;
+  width: 0.22rem;
+  background-color: #121212;
+  text-align: center;
+  color: #fff;
+}
+
+.layer .layer-hd .hd-left .timer-sep {
+  color: #121212;
+}
+
+.layer .layer-hd .hd-right span {
+  display: inline-block;
+  font-size: 0.24rem;
+}
+
+.layer .layer-hd .hd-right i {
+  display: inline-block;
+  width: 0.24rem;
+  height: 0.24rem;
+  background-color: #faaf0d;
+  color: #fff;
+  line-height: 0.24rem;
+  border-radius: 4px;
+}
+
+.layer .layer-hd .hd-right i::before {
+  font-size: 0.24rem;
+  margin-left: -0.04rem;
+}
+
+.layer .layer-bd {
+  height: 2.4rem;
+}
+
+.layer .layer-bd .miaosha-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.15rem 0.2rem 0 0.2rem;
+}
+
+.layer .layer-bd .miaosha-list .foods {
+  flex: 0 0 1.9rem;
+}
+
+.layer .layer-bd .miaosha-list .foods img {
+  width: 1.9rem;
+  height: 1.78rem;
+  position: relative;
+}
+
+.layer .layer-bd .miaosha-list .foods img::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: 1px solid #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(0.5, 0.5);
+  transform-origin: left top;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.layer .layer-bd .miaosha-list .foods span {
+  font-size: 0.08rem;
+  color: #e34e90;
+  float: left;
+}
+
+.layer .layer-bd .miaosha-list .foods a {
+  float: right;
+  display: inline-block;
+  background-color: #00aaff;
+  color: #fff;
+}
+
+.layer .layer-bd .miaosha-list .foods a i {
+  float: right;
+}
+
+.layer .layer-bd .miaosha-list .foods a span {
+  float: right;
+  color: #fff;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 42px;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #171717;
+  color: #9b9b9b;
+}
+
+.footer .footer-list {
+  height: 42px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .footer-list .list-item {
+  flex: 0 0 50px;
+  text-align: center;
+}
+
+.footer .footer-list .list-item a i {
+  display: block;
+  position: relative;
+  top: 3px;
+}
+
+.footer .footer-list .list-item a span {
+  font-size: 12px;
+}
+
+.footer .footer-list .current {
+  color: #da2c61;
+}

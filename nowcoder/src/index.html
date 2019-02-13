@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>nowcoder</title>
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<!-- 头部左侧导航栏设计： -->
+		<div class="header-l fl">
+			<span class="logo">
+				<img src="./imgs/logo-v3.png" width="155" height="45">
+			</span>
+			<ul class="nav-list">
+				<li class="nav-item fl"><a href="#">首页</a></li>
+				<li class="nav-item fl problems">
+					<a href="#">题库</a>
+					<ul class="dropdown-list">
+						<li class="dropdown-item"><a href="#">公司真题</a></li>
+						<li class="dropdown-item"><a href="#">专项练习</a></li>
+						<li class="dropdown-item"><a href="#">在线编程</a></li>
+						<li class="dropdown-item"><a href="#">模拟笔试</a></li>
+						<li class="dropdown-item"><a href="#">教材全解</a></li>
+						<li class="dropdown-item"><a href="#">考研真题</a></li>
+						<li class="dropdown-item"><a href="#">期末考试</a></li>
+						<li class="dropdown-item"><a href="#">精华专题</a></li>
+						<li class="dropdown-item"><a href="#">试题广场</a></li>
+					</ul>
+				</li>
+				<li class="nav-item fl interview">
+					<a href="#">面试</a>
+					<span class="icon-new">
+						<img src="imgs/ico-new.png" alt="">
+					</span>
+				</li>
+				<li class="nav-item fl style">
+					<a href="#">学习</a>
+					<ul class="dropdown-list">
+						<li class="dropdown-item"><a href="#">课程</a></li>
+						<li class="dropdown-item"><a href="#">项目实战</a></li>
+						<li class="dropdown-item"><a href="#">图书馆</a></li>
+						<li class="dropdown-item"><a href="#">技术栈</a></li>
+					</ul>
+				</li>
+				<li class="nav-item fl"><a href="#">求职</a></li>
+				<li class="nav-item fl"><a href="#">讨论区</a></li>
+				<li class="nav-item fl discover">
+					<a href="#">发现</a>
+					<ul class="dropdown-list">
+						<li class="dropdown-item"><a href="#">竞赛</a></li>
+						<li class="dropdown-item"><a href="#">offer神器</a></li>
+						<li class="dropdown-item"><a href="#">职业技术认证</a></li>
+						<li class="dropdown-item"><a href="#">排行榜</a></li>
+						<li class="dropdown-item"><a href="#">牛币兑换中心</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 头部右侧导航栏与登录设计： -->
+		<div class="header-r fr">
+			<ul class="search-list">
+				<li class="search-item fl"><a href="#"><i class="icon-search"></i>搜索<span>|</span></a></li>
+				<li class="search-item fl"><a href="#"><i class="icon-mobile"></i>APP <span>|</span></a></li>
+				<li class="search-item fl"><a href="#"><i class="icon-briefcase"></i>企业版<span>|</span></a></li>
+			</ul>
+			<div class="login"><a href="#">登录/注册</a></div>
+		</div>
+	</header>
+	<!-- 主体内容设计： -->
+	<div class="container">
+		<!-- 轮播图： -->
+		<div class="slide">
+			<ul class="img-list">
+				<li class="img-item fl"><a href="#"><img src="imgs/slide1.jpg"></a></li>
+				<li class="img-item fl"><a href="#"><img src="imgs/slide2.jpg"></a></li>
+				<li class="img-item fl"><a href="#"><img src="imgs/slide5.png"></a></li>
+				<li class="img-item fl"><a href="#"><img src="imgs/slide3.jpg"></a></li>
+				<li class="img-item fl"><a href="#"><img src="imgs/slide4.jpg"></a></li>
+			</ul>
+			左右控制器：
+			<div class="l-ctrl"><i class="icon-arrow_left"></i></div>
+			<div class="r-ctrl"><i class="icon-arrow_right"></i></div>
+			小圆点控制器：
+			<ul class="bottom-ctrl">
+				<li index="0" class="circle-item fl current"></li>
+				<li index="1" class="circle-item fl"></li>
+				<li index="2" class="circle-item fl"></li>
+				<li index="3" class="circle-item fl"></li>
+				<li index="4" class="circle-item fl"></li>
+			</ul>
+		</div>
+		<!-- 主题栏： -->
+		<div class="home-theme-wrap">
+			<ul class="home-theme-list">
+				<li class="home-theme-item fl">
+					<a href="#" class="tab1">
+						<i class="typeTab"></i>
+						<p class="mainText">精准能力评估+针对性专项练习</p>
+						<p class="desc">要练,就要练最有用的！</p>
+					</a>
+				</li>
+				<li class="home-theme-item fl">
+					<a href="#" class="tab2">
+						<i class="typeTab "></i>
+						<p class="mainText">互联网公司真题+模考+面经</p>
+						<p class="desc">公司考什么？怎么考？一刷便知！</p>
+					</a>
+				</li>
+				<li class="home-theme-item fl">
+					<a href="#" class="tab3">
+						<i class="typeTab"></i>
+						<p class="mainText">精华专题练习</p>
+						<p class="desc">面试经典题在线练，还能赢内推</p>
+					</a>
+				</li>
+				<li class="home-theme-item fl">
+					<a href="#" class="tab4">
+						<i class="typeTab"></i>
+						<p class="mainText">以题会友，涨姿势交朋友</p>
+						<p class="desc">你不会的，这里都能找到答案！</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 分类栏： -->
+		<div class="home-sort-wrap">
+			<div class="home-title">
+				<h3 class="home-text"><span></span>精准能力评估+智能专项练习</h3>
+				<p class="home-desc">选择目标职位，测评技能现状，为你定制薄弱知识点专项练习</p>
+			</div>
+			<ul class="home-sort-list">
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">Java工程师能力评估</p>
+						<img src="imgs/52.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">21136</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">C/C++工程师能力评估</p>
+						<img src="imgs/49.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">85362</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">Android工程师能力评估</p>
+						<img src="imgs/48.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">64524</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">iOS工程师能力评估</p>
+						<img src="imgs/51.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">35678</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">前端工程师能力评估</p>
+						<img src="imgs/50.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">46813</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">算法工程师能力评估</p>
+						<img src="imgs/55.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">64829</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">PHP工程师能力评估</p>
+						<img src="imgs/57.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">98393</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+				<li class="home-sort-item">
+					<a href="#">
+						<p class="item-title">运维工程师能力评估</p>
+						<img src="imgs/53.png" alt="">
+						<div class="item-estimate">
+							<p class="estimate-text">已有<span class="estimate-num">63582</span>人评估</p>
+							<button class="estimate-btn">马上评估</button>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 面试题栏： -->
+		<div class="home-interview-wrap">
+			<div class="home-title">
+				<h3 class="home-text"><span></span>名企研发类职位历年真题+模考+面经</h3>
+				<p class="home-desc">熟悉心仪公司考察题型+流程，了解自己实战水平</p>
+			</div>
+			<div class="home-interview-box home-slide-box">				
+				<div class="home-interview home-slide">			
+					<ul class="home-interview-list interview-list1 home-slide-list">
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">阿里巴巴面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">1716</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">腾讯笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">7365</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">百度笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">8721</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">Google笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">8365</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">小米笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">6783</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">微软笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">8921</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">人人网笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">256</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">迅雷笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">8644</span>道题</p>
+							</a>
+						</li>
+					</ul>
+					<ul class="home-interview-list interview-list2 home-slide-list">
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">美团笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">3498</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">网易笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">469</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">360集团笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">1247</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">京东笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">3468</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">携程笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">990</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">搜狐笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">457</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">去哪儿笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">247</span>道题</p>
+							</a>
+						</li>
+						<li class="home-interview-item">
+							<a href="#">
+								<span class="interview-logo"></span>
+								<p class="interview-title">完美世界笔试面试题</p>
+								<p class="interview-desc">共有<span class="interview-num">2344</span>道题</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="interview-btn icon-keyboard_arrow_left"></div>
+				<div class="interview-btn icon-keyboard_arrow_right"></div>
+			</div>
+		</div>
+		<!-- 在线练习栏： -->
+		<div class="home-online-wrap">
+			<div class="home-title">
+				<h3 class="home-text"><span></span>精选优质内容在线练习，通关有机会得名企机会。</h3>
+				<p class="home-desc">整理经典书籍、精华题目合集在线练习，刷题冠军周周送福利</p>
+			</div>
+			<div class="home-slide-box home-online-box">				
+				<div class="home-slide home-online">			
+					<ul class="home-slide-list home-online-list">
+						<li class="home-online-item">
+							<img src="imgs/recommand-jingdian.png" alt="">
+							<div class="change-wrap">
+								<p class="change-title">程序员面试金典</p>
+								<button class="change-btn">去挑战</button>
+								<p class="change-desc">已有<span class="change-num">7371</span>人参加</p>
+							</div>
+						</li>
+						<li class="home-online-item">
+							<img src="imgs/recommand-js.png" alt="">
+							<div class="change-wrap">
+								<p class="change-title">JS能力测评</p>
+								<button class="change-btn">去挑战</button>
+								<p class="change-desc">已有<span class="change-num">6987</span>人参加</p>
+							</div>
+						</li>
+						<li class="home-online-item">
+							<img src="imgs/recommand-offer.png" alt="">
+							<div class="change-wrap">
+								<p class="change-title">剑指Offer</p>
+								<button class="change-btn">去挑战</button>
+								<p class="change-desc">已有<span class="change-num">3556</span>人参加</p>
+							</div>
+						</li>
+						<li class="home-online-item">
+							<img src="imgs/recommand-pat.png" alt="">
+							<div class="change-wrap">
+								<p class="change-title">PAT真题在线练习</p>
+								<button class="change-btn">去挑战</button>
+								<p class="change-desc">已有<span class="change-num">2487</span>人参加</p>
+							</div>
+						</li>
+						<li class="home-online-item">
+							<img src="imgs/recommand-review.png" alt="">
+							<div class="change-wrap">
+								<p class="change-title">计算机期末备考练习</p>
+								<button class="change-btn">去挑战</button>
+								<p class="change-desc">已有<span class="change-num">6690</span>人参加</p>
+							</div>
+						</li>
+						<li class="home-online-item">
+							<img src="imgs/recommand-fed.png" alt="">
+							<div class="change-wrap">
+								<p class="change-title">前端大挑战</p>
+								<button class="change-btn">去挑战</button>
+								<p class="change-desc">已有<span class="change-num">4582</span>人参加</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="online-btn icon-keyboard_arrow_left"></div>
+				<div class="online-btn icon-keyboard_arrow_right"></div>
+			</div>
+			<div class="inner-users clearfix">
+				<p class="users-title">部分内推客户</p>
+				<ul class="users-list clearfix">
+				</ul>
+			</div>
+		</div>
+		<!-- 用户答题栏： -->
+		<div class="home-answerQuestion-wrap">
+			<div class="home-title">
+				<h3 class="home-text"><span></span>参与试题热议，讨论碰撞火花。</h3>
+				<p class="home-desc">你不会的，这里都能找到答案</p>
+			</div>
+			<ul class="question-list">
+			</ul>
+			<button class="question-more-btn">更多经典试题</button>
+		</div>
+	</div>
+	<!-- 尾部： -->
+	<footer class="clearfix">
+		<div class="footer-l fl">			
+			<div class="code">
+				<div class="code-img"><img src="imgs/app_download.png"></div>
+				<div class="code-desc">扫一扫，把题目装进口袋</div>
+			</div>
+			<div class="nowcoder-link">
+				<div class="link-title">牛客网，程序员必备求职神器</div>
+				<div class="link-icon-wrap">
+					<a href="#" class="link-icon"></a>
+					<a href="#" class="link-icon"></a>
+					<a href="#" class="link-icon"></a>
+					<a href="#" class="link-icon"></a>
+					<a href="#" class="link-icon"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-r fl">
+			<ul class="about-list">
+				<li class="about-item"><a href="#">关于我们</a></li>
+				<li class="about-item"><a href="#">加入我们</a></li>
+				<li class="about-item"><a href="#">意见反馈</a></li>
+				<li class="about-item"><a href="#">企业服务</a></li>
+				<li class="about-item"><a href="#">联系我们</a></li>
+				<li class="about-item"><a href="#">免责声明</a></li>
+				<li class="about-item"><a href="#">友情链接</a></li>
+			</ul>
+			<div class="address">
+				<p>公司地址：北京市朝阳区大屯路东金泉时代3-2708北京牛客科技有限公司</p>
+				<p>联系方式：010-60728802(电话) admin@nowcoder.com</p>
+				<p>牛客科技©2018 All rights reserved</p>
+				<p>京ICP备14055008号-4</p>
+				<a href="#" class="record">京公网安备 11010502036488号</a>
+			</div>
+		</div>
+	</footer>
+	<!-- 右侧定位模块： -->
+	<div class="position">
+		<ul class="position-list">
+			<li class="position-item"><span class="item-icon"></span>专项练习</li>
+			<li class="position-item"><span class="item-icon"></span>公司真题</li>
+			<li class="position-item"><span class="item-icon"></span>精华专题</li>
+			<li class="position-item"><span class="item-icon"></span>试题讨论</li>
+		</ul>
+	</div>
+
+	<script src="js/index.js"></script>
+</body>
+</html>

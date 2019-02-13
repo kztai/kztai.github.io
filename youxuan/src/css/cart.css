@@ -1,0 +1,261 @@
+header {
+  color: #fff;
+  background: linear-gradient(to right, #900657, #f81c5a);
+  height: 1.85rem;
+  line-height: 1.85rem;
+  position: relative;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 0.725rem;
+}
+
+header a {
+  position: absolute;
+  right: 0.55rem;
+  top: 0;
+  font-size: 0.725rem;
+}
+
+main .goods-wrap {
+  margin-bottom: 4rem;
+}
+
+main .goods-wrap .goods-item {
+  background-color: #fff;
+}
+
+main .goods-wrap .goods-item .item-hd {
+  height: 1.5rem;
+  line-height: 1.5rem;
+  position: relative;
+  padding-left: 0.55rem;
+}
+
+main .goods-wrap .goods-item .item-hd::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(0.5, 0.5);
+  transform-origin: left top;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+main .goods-wrap .goods-item .item-hd i {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-radius: 50%;
+  background-color: #ec1a5a;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+main .goods-wrap .goods-item .item-hd p {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding-left: 15px;
+}
+
+main .goods-wrap .goods-item .item-bd {
+  height: 4.6rem;
+  padding-left: 1.75rem;
+  padding-right: 0.55rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-l img {
+  width: 3.9rem;
+  height: 3.9rem;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-l i {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-radius: 50%;
+  background-color: #ec1a5a;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+  position: absolute;
+  left: 0.55rem;
+  top: 50%;
+  margin-top: -0.9rem;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r {
+  padding-left: 0.375rem;
+  height: 3.9rem;
+  line-height: 0.6rem;
+  font-size: 0.475rem;
+  letter-spacing: 3px;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-sku .sku-name {
+  color: #666;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-sku .sku-value {
+  color: #ec1a5a;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .phone-icon {
+  font-size: 0.25rem;
+  letter-spacing: 0;
+  background-color: #00aaff;
+  color: #fff;
+  padding: 4px;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-price {
+  color: #ec1a5a;
+  font-weight: 700;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-edit .goods-num button {
+  text-align: center;
+  width: 0.825rem;
+  height: 0.825rem;
+  line-height: 0.825rem;
+  font-size: 0.825rem;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  float: left;
+  z-index: 100;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-edit .goods-num .reduce {
+  font-weight: 700;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-edit .goods-num input {
+  width: 1.25rem;
+  height: 0.825rem;
+  float: left;
+  border: 1px solid #bbb;
+  border-right: none;
+  border-left: none;
+  font-size: 0.475rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+main .goods-wrap .goods-item .item-bd .item-bd-r .goods-edit .edit-btn {
+  font-size: 0.875rem;
+}
+
+main .goods-total {
+  position: fixed;
+  bottom: 2.1rem;
+  left: 0;
+  width: 100%;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  background-color: #fff;
+  color: #666;
+}
+
+main .goods-total .select {
+  float: left;
+  padding-left: 0.55rem;
+}
+
+main .goods-total .select i {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  border-radius: 50%;
+  background-color: #ec1a5a;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+main .goods-total .select span {
+  font-size: 0.625rem;
+  padding-left: 0.375rem;
+}
+
+main .goods-total .account {
+  float: right;
+  width: 4.75rem;
+  background: linear-gradient(to right, #900657, #f81c5a);
+  text-align: center;
+  font-size: 0.625rem;
+  color: #fff;
+}
+
+main .goods-total .total-money {
+  float: right;
+  font-size: 0.625rem;
+  padding-right: 0.75rem;
+}
+
+main .goods-total .total-money span {
+  color: #ec1a5a;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 2.1rem;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #171717;
+  color: #9b9b9b;
+}
+
+footer .footer-list {
+  height: 2.1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-list .list-item {
+  line-height: 1.05rem;
+  text-align: center;
+}
+
+footer .footer-list .list-item a {
+  position: relative;
+  top: 0.25rem;
+}
+
+footer .footer-list .list-item a i {
+  display: block;
+  font-size: 1.05rem;
+}
+
+footer .footer-list .list-item a span {
+  font-size: 0.475rem;
+}
+
+footer .footer-list .current {
+  color: #da2c61;
+}

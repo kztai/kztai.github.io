@@ -1,0 +1,226 @@
+@charset 'UTF-8';
+
+// 引入hotcss的函数
+@import '../lib/hotcss-master/src/px2rem.scss';
+
+@import '_base.scss';
+
+// 根据美工给的设计图，设定宽度
+$designWidth: 640;
+
+$content-padding: px2rem(22);
+header {
+	color: #fff;
+	background: linear-gradient(to right, #900657, #f81c5a);
+	height: px2rem(74);
+	line-height: px2rem(74);
+	position: relative;
+	h3 {
+		text-align: center;
+		font-size: px2rem(29);		
+	}
+	a {
+		position: absolute;
+		right: $content-padding;
+		top: 0;
+		font-size: px2rem(29);
+	}
+}
+
+$pink-color: #ec1a5a;
+main {
+	@mixin duihaoIcon() {
+		display: inline-block;
+		width: px2rem(36);
+		height: px2rem(36);
+		line-height: px2rem(36);
+		border-radius: 50%;
+		background-color: $pink-color;
+		text-align: center;
+		font-size: px2rem(30);
+		color: #fff;
+	}
+	.goods-wrap {
+		margin-bottom: px2rem(160);
+		.goods-item {
+			background-color: #fff;
+			.item-hd {
+				height: px2rem(60);
+				line-height: px2rem(60);
+				position: relative;
+				padding-left: $content-padding;
+				&::before {
+					@include border1px(#ddd,0,0,1,0);
+				}
+				i {
+					@include duihaoIcon();
+				}
+				p {
+					display: inline-block;
+					font-size: px2rem(24);
+					font-weight: 700;
+					letter-spacing: 5px;
+					padding-left: 15px;
+				}
+			}
+			.item-bd {
+				height: px2rem(184);
+				padding-left: px2rem(70);
+				padding-right: $content-padding;
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.item-bd-l {
+					img {
+						width: px2rem(156);
+						height: px2rem(156);
+					}
+					i {
+						@include duihaoIcon();
+						position: absolute;
+						left: $content-padding;
+						top: 50%;
+						margin-top: -(px2rem(36));
+					}
+				}
+				.item-bd-r {
+					padding-left: px2rem(15);
+					height: px2rem(156);
+					line-height: px2rem(24);
+					font-size: px2rem(19);
+					letter-spacing: 3px;
+					.goods-sku {
+						.sku-name {
+							color: #666;
+						}
+						.sku-value {
+							color: $pink-color;
+						}
+					}
+					.phone-icon {
+						font-size: px2rem(10);
+						letter-spacing: 0;
+						background-color: #00aaff;
+						color: #fff;
+						padding: 4px;
+					}
+					.goods-price {
+						color: $pink-color;
+						font-weight: 700;
+					}
+					.goods-edit {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						.goods-num {						
+							button {							
+								text-align: center;
+								width: px2rem(33);
+								height: px2rem(33);
+								line-height: px2rem(33);
+								font-size: px2rem(33);
+								background-color: #fff;
+								border: 1px solid #bbb;
+								float: left;
+								z-index: 100;
+							}
+							.reduce {
+								font-weight: 700;
+							}
+							input {
+								width: px2rem(50);
+								height: px2rem(33);
+								float: left;
+								border: 1px solid #bbb;
+								border-right: none;
+								border-left: none;
+								font-size: px2rem(19);	
+								text-align: center;							
+								box-sizing: border-box;
+							}
+						}
+						.edit-btn {
+							font-size: px2rem(35);
+						}
+					}
+				}
+			}
+		}
+	}
+	.goods-total {
+		position: fixed;
+		bottom: px2rem(84);
+		left: 0;
+		width: 100%;
+		height: px2rem(76);
+		line-height: px2rem(76);
+		background-color: #fff;
+		color: #666;
+		.select {
+			float: left;
+			padding-left: $content-padding;
+			i {
+				@include duihaoIcon();
+			}
+			span {
+				font-size: px2rem(25);
+				
+				padding-left: px2rem(15);
+			}
+		}
+		.account {
+			float: right;
+			width: px2rem(190);
+			background: linear-gradient(to right, #900657, #f81c5a);
+			text-align: center;
+			font-size: px2rem(25);
+			color: #fff;
+		}
+		.total-money {
+			float: right;
+			font-size: px2rem(25);
+			padding-right: px2rem(30);
+			span {
+				color: $pink-color;
+			}
+		}
+	}
+}
+
+// 底部区域
+footer {
+	position: fixed;
+	width: 100%;
+	height: px2rem(84);
+	left: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: #171717;
+	color: #9b9b9b;
+	.footer-list {
+		height: px2rem(84);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.list-item {
+			line-height: px2rem(42);
+			text-align: center;
+			a {		
+				position: relative;
+				top: px2rem(10);		
+				i {
+					display: block;
+					font-size: px2rem(42);
+				}
+				span {
+					font-size: px2rem(19);
+				}
+			}
+		}
+		.current {
+			color: #da2c61;
+		}
+	}
+}
+

@@ -1,0 +1,19 @@
+{
+	"innerPeople": [
+		{"name": "是与非", "picture": "touxiang.png", "sex": 1, "city": "未填写所在城市", "job": "蘑菇街应用软件开发", "university": "未填写所属大学", "badge": {"gold": 7, "skyblue": 2, "blue": 3, "green": 0, "pink": 5}, "accepted": 34, "praise": 12, "correct": 443, "pass": 21},
+		{"name": "kzt1", "picture": "touxiang1.png", "sex": 1, "city": "南平", "job": "阿里巴巴C++研发工程师", "university": "厦门大学", "badge": {"gold": 17, "skyblue": 22, "blue": 30, "green": 10, "pink": 15}, "accepted": 4, "praise": 32, "correct": 43, "pass": 2000},
+		{"name": "jfkjbijbi", "picture": "touxiang2.png", "sex": 0, "city": "未填写所在城市", "job": "奇虎360数据挖掘工程师", "university": "未填写所属大学", "badge": {"gold": 0, "skyblue": 0, "blue": 13, "green": 6, "pink": 9}, "accepted": 2, "praise": 112, "correct": 4, "pass": 78}
+	],
+	"outsidePeople": [
+		{"name": "67986533", "picture": "touxiang3.jpg", "sex": 1, "city": "厦门", "job": "未填写所处职位", "university": "西安科技大学", "badge": {"gold": 17, "skyblue": 222, "blue": 36, "green": 0, "pink": 15}, "accepted": 364, "praise": 0, "correct": 3, "pass": 2, "answer": "1:不支持事务、不具备AICD特性(原子性、一致性、分离性、永久性);2:表级别锁定形式(更新数据时锁定整个表、这样虽然可以让锁定的实现成本很小但是同时大大降低了其并发的性能)；", "time": "2018-08-13 22:23:00"},
+		{"name": "荷包蛋手表", "picture": "touxiang4.jpg", "sex": 0, "city": "南平", "job": "Java", "university": "福建农林大学", "badge": {"gold": 0, "skyblue": 292, "blue": 3, "green": 0, "pink": 65}, "accepted": 87, "praise": 0, "correct": 3, "pass": 3000, "answer": "首先题中是左连接的语法： SELECT column_name(s) FROM table_name1 LEFT JOIN table_name2 ON table_name", "time": "2019-01-13 02:33:50"},
+		{"name": "jfkjbijbi", "picture": "touxiang5.jpg", "sex": 0, "city": "北京", "job": "Python", "university": "未填写所属大学", "badge": {"gold": 10, "skyblue": 0, "blue": 53, "green": 634, "pink": 900}, "accepted": 9, "praise": 992, "correct": 467, "pass": 7, "answer": "scanf('%d',&a[i]); a[i]=0,n--;", "time": "2018-08-21 12:31:21"},
+		{"name": "jfkjbijbi", "picture": "touxiang6.jpg", "sex": 1, "city": "未填写所在城市", "job": "js", "university": "未填写所属大学", "badge": {"gold": 0, "skyblue": 1000, "blue": 1233, "green": 6, "pink": 97}, "accepted": 42, "praise": 12, "correct": 488, "pass": 98, "answer": "这个题应该选65吧", "time": "2018-01-01 16:35:54"}
+	],
+	"questions": [
+		{"title": "以下关于Mysql数据库引擎ＭyISAM的描述错误的是？", "style": ["java工程师", "京东"]},
+		{"title": "设fp为文件型指针变量，ch为字符变量，以下程序段从键盘输入字符", "style": ["C/C++"]},
+		{"title": "以下哪条SQL语句可以返回table1中的全部的key：", "style": ["基础", "网络架构", "算法"]},
+		{"title": "以下程序从键盘输入20个整数存入数组，统计输入非负数的个数，并计算输入的非负整数之和。请填空完成。", "style": ["C/C++"]}
+	]
+}

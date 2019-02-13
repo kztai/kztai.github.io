@@ -1,0 +1,305 @@
+
+@charset "UTF-8";
+
+@import '_base.scss';
+
+.top-hd {
+	display: flex;
+	padding: 0 11px;
+	background: linear-gradient(to right, #900757, #f81c5b);
+	// 定义固定定位时，都要写 width:100%，left,right,z-index
+	position: fixed;  
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 38px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	.logo {
+		width: 34px;
+		height: 32px;
+		background: url(../images/logo_03.png) no-repeat;
+		background-size: contain;
+		margin-top: 5px;
+	}
+	.search {
+		flex: 1;
+		text-align: center;
+		line-height: 38px;
+		position: relative;
+		input {
+			width: 90%;
+			height: 26px;
+			border-radius: 13px;
+			border: none;
+			background-color: rgba(0,0,0,0.2);
+			color: #fff;
+			padding-left: 12px;
+		}
+		input:-ms-input-placeholder {
+			color: #b28494;
+		}		
+		input::-webkit-input-placeholder {
+			color: #b28494;
+		}
+		i {
+			position: absolute;
+			right: 8%;
+			top: 0;
+			color: rgba(255,255,255, 0.5);
+			z-index: 10;
+		}
+	}
+	.mes {
+		flex:0 0 auto;
+		width: 24px;
+		color: #fff;
+		position: relative;
+		i {
+			font-size: 24px;
+			line-height: 24px;
+		}
+		span {
+			font-size: 12px;
+			line-height: 12px;
+			margin-top: -4px;
+			position: absolute;
+			top: 28px;
+			left: 0;
+		}
+	}
+}
+
+.scroll {
+	min-width: 320px;
+	max-width: 640px;
+	margin: 0 auto;
+	margin-top: 38px;
+	margin-bottom: 42px;
+}
+// 轮播图
+.swiper-container {
+	position: relative;	
+	// border: 5px solid #000;
+	// 解决1像素边框问题
+	&::before {
+		@include border1px($border-color);
+		z-index: 100;
+	}
+	.swiper-slide {
+		img {
+			width: 6.4rem;
+			height: 2.4rem;
+			vertical-align: middle;
+		}
+	}
+	.swiper-pagination-bullet {
+		background-color: rgba(0,0,0,0.8);
+	}
+	.swiper-pagination-bullet-active {
+		background-color: #fff;
+	}
+}
+// 导航区域
+.nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	.nav-item {
+		flex: 0 0 36px;
+		height: 58px;		
+		a {
+			display: block;
+			margin-top: 5px;
+			text-align: center;
+			i {
+				display: block;
+				width: 31px;
+				height: 31px;
+				line-height: 31px;
+				border-radius: 50%;
+				margin: 0 auto;
+				color: #fff;
+				font-size: 20px;				
+				box-sizing: border-box;
+			}
+			.icon-muying {
+				transform: rotate(-45deg);
+				background-color: #7f47dd;
+			}
+			.icon-fuwuchaoshi {
+				background-color: #f32363;
+			}
+			.icon-miaosha {
+				background-color: #d6d623;
+			}
+			.icon-chongzhi {
+				background-color: #ff8a2f;
+			}
+			span {
+				color: #666;
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+$layer-padding: 0.22rem;
+$layer-main-color: #faaf0d;
+$pink-color: #e34e90;
+// 秒杀区域
+.layer {
+	.layer-hd {
+		height: 0.56rem;
+		border-bottom: 1px solid #ddd;
+		position: relative;
+		padding: 0 $layer-padding;
+		&::before {
+			position: absolute;
+			left: $layer-padding;
+			top: 0;
+			content: "";
+			width: 0.14rem;
+			height: 100%;
+			background-color: $layer-main-color;
+		}
+		&::after {
+			@include border1px($border-color);
+		}
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $layer-main-color;
+		.hd-left {
+			display: flex;
+			justify-content: flex-start;
+			font-size: 0.3rem;
+			i {
+				padding-left: 0.26rem;
+				font-size: 0.3rem;
+				line-height: 0.3rem;
+			}
+			.miaosha {
+				padding: 0 0.1rem;
+			}
+			.timer {
+				
+				font-size: 0.24rem;
+			}
+			span {
+				float: left;
+				margin-left: 0.05rem;
+				height: 0.3rem;
+				line-height: 0.3rem;
+			}
+			.timer-num {
+				display: inline-block;				
+				width: 0.22rem;				
+				background-color: #121212;
+				text-align: center;
+				color: #fff;
+			}
+			.timer-sep {
+				color: #121212;
+			}
+		}
+		.hd-right {			
+			span {
+				display: inline-block;
+				font-size: 0.24rem;
+			}
+			i {
+				display: inline-block;
+				width: 0.24rem;
+				height: 0.24rem;
+				background-color: $layer-main-color;
+				color: #fff;			
+				line-height: 0.24rem;
+				border-radius: 4px;
+				&::before {
+					font-size: 0.24rem;
+					margin-left: -0.04rem;
+				}
+			}
+		}
+	}	
+	.layer-bd {
+		height: 2.4rem;
+		.miaosha-list {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			padding: 0.15rem 0.2rem 0 0.2rem;
+			.foods {
+				flex: 0 0 1.9rem;
+				img {
+					width: 1.9rem;
+					height: 1.78rem;
+					position: relative;
+					&::before {
+						@include border1px(#000,1,1,1,1);
+						z-index: 1000;
+					}
+				}
+				span {
+					font-size: 0.08rem;
+					color: $pink-color;
+					float: left;
+				}
+				a {
+					float: right;
+					display: inline-block;
+					background-color: #00aaff;
+					color: #fff;
+					i {
+						float: right;
+					}
+					span {
+						float: right;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// 底部区域
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 42px;
+	left: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: #171717;
+	color: #9b9b9b;
+	.footer-list {
+		height: 42px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.list-item {
+			flex: 0 0 50px;
+			text-align: center;
+			a {
+				i {
+					display: block;
+					position: relative;
+					top: 3px;
+				}
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+		.current {
+			color: #da2c61;
+		}
+	}
+}
+
+

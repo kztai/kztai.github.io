@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
+  <link rel="bookmark" href="/favicon.ico" type="image/x-icon"/>
+  
+  <!-- 设置缓存 -->
+  <!-- 设定网页的到期时间  -->
+  <meta http-equiv="Expires" content="-1">
+  <!-- 清除缓存（再访问这个网站要重新下载！） -->
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <!-- 禁止浏览器从本地机的缓存中调阅页面内容，访问者将无法脱机浏览 -->
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <!-- author用于定义网页作者 -->
+  <meta name="author" content="aicoder.com">
+  <!-- 就是当点击网页添加至主屏幕功能时，会在主屏幕上生成一个图标。点击该图标会进入webapp功能。就是模拟本地应用的模式来浏览web页面。 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 当启动webapp功能时，显示手机信号、时间、电池的顶部导航栏的颜色。默认值为default（白色），可以定为black（黑色）和<black-tr></black-tr>anslucent（灰色半透明）。这个主要是根据实际的页面设计的主体色为搭配来进行设置。 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- 添加到主屏幕后，app全屏显示 -->
+  <meta content="yes" name="apple-touch-fullscreen" />
+
+  <!-- 默认设备会自动识别任何可能是电话和邮箱的字符串。设置telephone=no可以禁用这项功能。 -->
+  <meta content="telephone=no,email=no" name="format-detection" />
+
+  <!-- UC浏览器私有 -->
+  <!-- 全屏模式 -->
+  <meta name="full-screen" content="yes">
+  <!-- 应用模式 -->
+  <meta name="browsermode" content="application">
+
+  <!-- QQ浏览器私有 -->
+  <!-- 全屏模式 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- 应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+
+  <link rel="stylesheet" href="font/font-shop/iconfont.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <script src="lib/hotcss-master/src/hotcss.js"></script>
+  <title>优选网-购物车</title>
+</head>
+<body>
+	<header>
+		<h3>购物车</h3>
+		<a href="#" class="btn-link cart-edit">编辑</a>
+	</header>
+	<main>
+		<div class="goods-wrap">
+			<ul class="goods-list">
+				<li class="goods-item">
+					<div class="item-hd"><i class="icon iconfont icon-duihao"></i><p>kzt旗舰店</p></div>
+					<div class="item-bd">
+						<div class="item-bd-l">
+							<i class="icon iconfont icon-duihao"></i>
+							<a href="#"><img src="images/food1.jpg" alt=""></a>
+						</div>
+						<div class="item-bd-r">
+							<p class="goods-title">歌莉娅女装 2016冬装新款  连衣帽针织衫显瘦身 15DJ8C040</p>
+							<div class="goods-sku">
+								<span class="sku-name">颜色:</span>
+								<span class="sku-value">JK898 红蓝</span>
+								<span class="sku-name">尺码:</span>
+								<span class="sku-value">165/s</span>
+							</div>
+							<span class="phone-icon">
+								<i class="icon iconfont icon-shouji"></i>
+								<span>手机专享</span>
+							</span>
+							<div class="goods-price">￥2999</div>
+							<div class="goods-edit">
+								<div class="goods-num">
+									<button class="reduce">-</button>
+									<input type="text" class="select-num" value="1">
+									<button class="add">p</button>
+								</div>
+								<a href="#" class="edit-btn icon iconfont icon-bianji"></a>
+							</div>
+						</div>
+					</div>
+					<div class="layer-sep"></div>
+				</li>
+				<li class="goods-item">
+					<div class="item-hd"><i class="icon iconfont icon-duihao"></i><p>kzt旗舰店</p></div>
+					<div class="item-bd">
+						<div class="item-bd-l">
+							<i class="icon iconfont icon-duihao"></i>
+							<a href="#"><img src="images/food1.jpg" alt=""></a>
+						</div>
+						<div class="item-bd-r">
+							<p class="goods-title">歌莉娅女装 2016冬装新款  连衣帽针织衫显瘦身 15DJ8C040</p>
+							<div class="goods-sku">
+								<span class="sku-name">颜色:</span>
+								<span class="sku-value">JK898 红蓝</span>
+								<span class="sku-name">尺码:</span>
+								<span class="sku-value">165/s</span>
+							</div>
+							<span class="phone-icon">
+								<i class="icon iconfont icon-shouji"></i>
+								<span>手机专享</span>
+							</span>
+							<div class="goods-price">￥2999</div>
+							<div class="goods-edit">
+								<div class="goods-num">
+									<button class="reduce">-</button>
+									<input type="text" class="select-num" value="1">
+									<button class="add">+</button>
+								</div>
+								<a href="#" class="edit-btn icon iconfont icon-bianji"></a>
+							</div>
+						</div>
+					</div>
+					<div class="layer-sep"></div>
+				</li>
+				<li class="goods-item">
+					<div class="item-hd"><i class="icon iconfont icon-duihao"></i><p>kzt旗舰店</p></div>
+					<div class="item-bd">
+						<div class="item-bd-l">
+							<i class="icon iconfont icon-duihao"></i>
+							<a href="#"><img src="images/food1.jpg" alt=""></a>
+						</div>
+						<div class="item-bd-r">
+							<p class="goods-title">歌莉娅女装 2016冬装新款  连衣帽针织衫显瘦身 15DJ8C040</p>
+							<div class="goods-sku">
+								<span class="sku-name">颜色:</span>
+								<span class="sku-value">JK898 红蓝</span>
+								<span class="sku-name">尺码:</span>
+								<span class="sku-value">165/s</span>
+							</div>
+							<span class="phone-icon">
+								<i class="icon iconfont icon-shouji"></i>
+								<span>手机专享</span>
+							</span>
+							<div class="goods-price">￥2999</div>
+							<div class="goods-edit">
+								<div class="goods-num">
+									<button class="reduce">-</button>
+									<input type="text" class="select-num" value="1">
+									<button class="add">+</button>
+								</div>
+								<a href="#" class="edit-btn icon iconfont icon-bianji"></a>
+							</div>
+						</div>
+					</div>
+					<div class="layer-sep"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="goods-total">
+			<div class="select">
+				<i class="icon iconfont icon-duihao"></i>
+				<span>全选</span>
+			</div>
+			<a href="#" class="account">结算(<span>3</span>)</a>
+			<div class="total-money">合计：<span>6799.00</span></div>
+		</div>
+	</main>
+
+    <!-- 底部区域 -->
+    <footer>
+      <ul class="footer-list">
+        <li class="list-item current"><a href="#"><i class="icon iconfont icon-shouye"></i><span>首页</span></a></li>
+        <li class="list-item"><a href="#"><i class="icon iconfont icon-shouye"></i><span>搜索</span></a></li>
+        <li class="list-item"><a href="#"><i class="icon iconfont icon-shouye"></i><span>分类</span></a></li>
+        <li class="list-item"><a href="#"><i class="icon iconfont icon-shouye"></i><span>购物车</span></a></li>
+        <li class="list-item"><a href="#"><i class="icon iconfont icon-shouye"></i><span>我的</span></a></li>
+      </ul>
+    </footer>
+</body>
+</html>

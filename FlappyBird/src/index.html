@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		canvas {
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas"></canvas>
+
+	<script src="../jsmin/main-dc82bde143.js"></script>
+	<script>
+		// 游戏采用中介者模式，game类统领全局，负责读取资源，设置定时器，维护各种演员的实例。也就是所有演员都是game类new出来的
+		var game = new Game({
+			'id': 'myCanvas',
+			'Rjsonurl': '../R.json'
+		});
+		
+	</script>
+</body>
+</html>
+
