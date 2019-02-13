@@ -107,3 +107,5 @@
 5. 实现倒计时特效；
 6. 使用自动化打包工具gulp进行编译打包。
 ```
+
+具体项目源码，请访问[我的github](https://github.com/kztai/kztai.github.io)。
