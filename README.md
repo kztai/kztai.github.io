@@ -1,11 +1,11 @@
-# 项目目录
+# 项目介绍
 
-> elema：仿饿了么手机APP，进行移动端项目设计。
-> FlappyBird：一款名为Flappy Bird（扑扇的小鸟）的手机游戏，曾短时间内占领了全球各大App Store免费排行榜首位。
-> jqueryPlugin：自定义jQuery插件，包含：轮播图、当前时间，倒计时等功能。
-> myUtil：封装一些常用的组件，包含：获取元素、domready、动画封装、事件处理、模态对话框等组件。
-> nowcoder：仿PC端牛客网首页设计。
-> youxuan：仿手机端优选APP，进行移动端设计。
+> elema：仿饿了么手机APP，进行移动端项目设计。<br/>
+> FlappyBird：一款名为Flappy Bird（扑扇的小鸟）的游戏项目设计。<br/>
+> jqueryPlugin：自定义jQuery插件，包含：轮播图、当前时间，倒计时等功能。<br/>
+> myUtil：封装一些常用的组件，包含：获取元素、domready、动画封装、事件处理、模态对话框等组件。<br/>
+> nowcoder：仿PC端牛客网首页设计。<br/>
+> youxuan：仿手机端优选APP，进行移动端设计。<br/>
 
 ## elema
 
