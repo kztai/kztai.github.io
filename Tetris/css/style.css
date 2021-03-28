@@ -1,0 +1,47 @@
+#game {
+	position: absolute;
+	top: 100px;
+	left: 10px;
+	width: 200px;
+	height: 400px;
+	background-color: #f2faff;
+	border: 1px solid blue;
+	border-top: none;
+}
+#next {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	width: 80px;
+	height: 80px;
+	background-color: #f2faff;
+	border: 1px solid blue;
+}
+.info {
+	position: absolute;
+	top: 190px;
+	left: 250px;
+}
+.info #gameover {
+	font-size: 30px;
+	margin-top: 10px;
+	color: red;
+	font-weight: 700;
+}
+.none, .current, .done {
+	position: absolute;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+}
+.none {
+	background-color: #f2faff;
+}
+.current {
+	background-color: pink;
+	border: 1px solid red;
+}
+.done {
+	background-color: gray;
+	border: 1px solid black;
+}
