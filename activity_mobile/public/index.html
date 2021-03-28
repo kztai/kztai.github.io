@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=7">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--<link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script src="cloudTool/testMac.js"></script>
+    <script src="cloudTool/cloudToolMac.js"></script>
+
+    <script>
+        // var cnt=0;
+        // var startTime=new Date().getTime();
+        var developFlag = true; //如为true,可以查看隐藏字段
+        var $cloudCtrl = null;
+        var mac = new CCloudToolMac();
+        var testMac = new CTestMac();
+        for (var key in testMac.mac) {
+            mac[key] = testMac.mac[key];
+        }
+        var $objVersionTerminal = mac.objVersionTerminal;
+        var $mysqlServerIP = mac.serverIP;
+        var arrJSFile = [];
+        arrJSFile.push("http://117.gts.com:8063/APPplatform/branches/PaaS/terminal_" + $objVersionTerminal.gene + "/public/jquery.js");
+        <!--底层数据库JS、粒子数据库JS、元件数据库JS、 引入-->
+        arrJSFile.push("http://117.gts.com:8063/APPplatform/branches/PaaS/terminal_" + $objVersionTerminal.gene + "/public/load.js.file.js");
+        <!--本页面的云系统库-->
+        // arrJSFile.push("./cloudTool/jsFileDatabase7_57152.js");
+        arrJSFile.push(mac.curTerminalInfo.jsDB);
+        for (var i = 0; i < arrJSFile.length; i++) {
+            document.write('<script src=' + arrJSFile[i] + '><\/script>')
+        }
+    </script>
+
+
+    <!--<script src="jquery-3.3.1.min.js"></script>-->
+    <!--<script src="jquery-ui.min.js"></script>-->
+    <script src="jsplumb.js"></script>
+    <title>apptool</title>
+</head>
+<body>
+<script>
+
+</script>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fc7f4070ea70a8ad9a490ecb8e682c6b"></script>
+</body>
+
+
+</html>

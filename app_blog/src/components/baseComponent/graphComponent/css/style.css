@@ -1,0 +1,533 @@
+
+.canvasWrap {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    overflow: auto;
+}
+
+.canvasWrap:focus {
+    outline: none;
+}
+
+.canvasWrap div:focus {
+    outline: none
+}
+
+.canvasWrap::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+.canvasWrap::-webkit-scrollbar-track {
+    background: rgba(236, 251, 255, 0.4);
+    box-shadow: -5px 2px 15px rgba(255, 255, 255, 1) inset;
+    border: 1px solid #b7e1ff;
+}
+
+.canvasWrap::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: -5px 2px 15px rgba(255, 255, 255, 1) inset;
+    border: 1px solid #b7e1ff;
+}
+
+.rootCanvas {
+    position: absolute;
+
+}
+
+.subCanvas, .group, .element {
+    position: absolute;
+    z-index: 1;
+}
+
+.canvas {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+.canvasTitle {
+    /*max-width: 100%;*/
+    position: absolute;
+    /*top: -10px;*/
+    /*left: 16px;*/
+    /*margin: 0 16px;*/
+    padding-left: 5px;
+    max-width: calc(100% - 32px);
+    max-width: -webkit-calc(100% - 32px);
+    min-width: 50px;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*cursor: -webkit-grab;*/
+    cursor: default;
+    background: white;
+    color: #666;
+    border-radius: 2px;
+}
+
+.titleInput {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*border: 1px solid #e5e5e5;*/
+
+    width: 180px;
+    height: 22px;
+    /*border: 1px solid #e5e5e5;*/
+    border: 1px solid #999;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    /*transform: translate(-50%,-50%);*/
+    /*-webkit-transform: translate(-50%,-50%);*/
+    color: #474747;
+    -webkit-box-shadow: 0 0 20px #666;
+    -moz-box-shadow: 0 0 20px #666;
+    box-shadow: 0 0 20px #666;
+    z-index: 100;
+}
+
+/*.canvasWrap .canvas:before {*/
+/*!*这个伪元素是为了让点击的范围宽一点*!*/
+/*content: '';*/
+/*width: calc(100% + 10px);*/
+/*height: calc(100% + 10px);*/
+/*position: absolute;*/
+/*left: -5px;*/
+/*top: -5px;*/
+/*}*/
+
+.element {
+    position: absolute;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.group {
+    position: absolute;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.elementName, .groupName {
+    position: absolute;
+    /*left: 12px;*/
+    /*top: -8px;*/
+    width: calc(100% - 20px);
+    width: -webkit-calc(100% - 20px);
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.elementContent {
+    margin-top: 20px;
+    height: calc(100% - 20px);
+    padding: 2px;
+    overflow: hidden;
+    font-size: 12px
+}
+
+.elementNameInput {
+    width: 180px;
+    height: 22px;
+    /*border: 1px solid #e5e5e5;*/
+    border: 1px solid #999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    color: #474747;
+    -webkit-box-shadow: 0 0 20px #666;
+    -moz-box-shadow: 0 0 20px #666;
+    box-shadow: 0 0 20px #666;
+}
+
+.elementTextArea {
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -75px;
+    color: #474747;
+    /*transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);*/
+}
+
+.joint {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.grab {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+
+}
+
+.grabbing {
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: grabbing;
+}
+
+.selectedBorder {
+    border-color: #4b9612 !important;
+    border-style: solid !important;
+    box-shadow: 0 0 8px #4b9612;
+}
+
+.highlightBorder {
+    border-color: #ffb523 !important;
+    border-style: solid !important;
+    box-shadow: 0 0 8px #ffb523;
+}
+
+.lineMode {
+    cursor: url(../img/buxian.png), auto !important;
+}
+
+.plusIcon {
+    cursor: url(../img/plusIcon.png), auto !important;
+}
+
+.blueDot {
+    outline: 1px solid green;
+    border-radius: 50%;
+}
+
+.errorDot-2:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/line2.png) 0 0 no-repeat;
+}
+
+.errorDot-3:before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/line2.png) 0 0 no-repeat;
+}
+
+.errorDot-0:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/line2.png) 0 0 no-repeat;
+}
+
+.errorDot-1:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+    background: url(../img/line2.png) 0 0 no-repeat;
+}
+
+svg.circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%;
+    border: 2px solid #ff4200;
+    background-color: transparent; */
+    /*pointer-events: auto;*/
+}
+
+svg.l-circle {
+    margin-top: -11px;
+    margin-left: -5px;
+}
+
+svg.r-circle {
+    margin-top: -11px;
+    margin-left: 5px;
+}
+
+svg.t-circle {
+    margin-left: -11px;
+    margin-top: -5px;
+}
+
+svg.b-circle {
+    margin-left: -11px;
+    margin-top: 5px;
+}
+
+.circleSon {
+    pointer-events: auto;
+}
+
+.circle.on .circleSon {
+    /*stroke: #ff4200;*/
+    stroke: #008000;
+    stroke-width: 3;
+}
+
+.jtk-endpoint {
+    z-index: 100;
+}
+
+.jtk-connector {
+    z-index: 101;
+}
+
+.jtk-overlay {
+    z-index: 102;
+}
+
+.dot {
+    /*display: none;*/
+}
+
+.drag.editing {
+    /*z-index: 10;*/
+}
+
+.drag.corner {
+    border-radius: 15px;
+}
+
+.drag.circleDrag { /*圆形元件*/
+    border-radius: 50%;
+}
+
+.drag.juxingDrag { /*矩形元件*/
+
+}
+
+.drag.lineDrag { /*线形元件*/
+
+}
+
+.drag.sanjiaoDrag { /*三角元件*/
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.drag.sanjiaoDrag .sanjiao {
+    width: 100%;
+    height: 100%;
+}
+
+.drag.sanjiaoDrag .rhombus {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.drag.sanjiaoDrag .r0 {
+    left: 0;
+    top: -7.2170%;
+    top: -7.4170%;
+    transform: matrix(0.25, -0.433, 0.25, 0.433, 0, 0);
+    -webkit-transform: matrix(0.25, -0.433, 0.25, 0.433, 0, 0);
+}
+
+.drag.sanjiaoDrag .r120 {
+    left: 12.5%;
+    top: 14.234%;
+    transform: matrix(-0.5, 0, 0.25, 0.433, 0, 0);
+    -webkit-transform: matrix(-0.5, 0, 0.25, 0.433, 0, 0);
+}
+
+.drag.sanjiaoDrag .r240 {
+    left: -12.5%;
+    top: 14.234%;
+    transform: matrix(-0.5, 0, -0.25, 0.433, 0, 0);
+    -webkit-transform: matrix(-0.5, 0, -0.25, 0.433, 0, 0);
+}
+
+.drag.sanjiaoDrag.cCorner .r0 {
+    border-top-right-radius: 15px;
+}
+
+.drag.sanjiaoDrag.cCorner .r120 {
+    border-bottom-left-radius: 15px;
+}
+
+.drag.sanjiaoDrag.cCorner .r240 {
+    border-bottom-right-radius: 15px;
+}
+
+.dropHoverPoint {
+    /*background-color:#7AB02C;*/
+    background-color: #ff8337;
+    border-radius: 50%;
+}
+
+.transparentLayer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    background-color: transparent;
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: grab;
+}
+
+/*.draggingIndex{*/
+.topIndex {
+    z-index: 9000;
+}
+
+.onInputShowIndex {
+    z-index: auto;
+}
+
+/*.highlightBorder.topIndex {*/
+/*z-index: 90;*/
+/*}*/
+
+/*.subCanvas.topIndex {*/
+/*z-index: 9000;*/
+/*}*/
+
+/*.group.topIndex {*/
+/*z-index: 9000;*/
+/*}*/
+
+/*.element.topIndex {*/
+/*z-index: 9000;*/
+/*}*/
+
+/*.draggingDotIndex{*/
+.jtk-endpoint.topIndex {
+    z-index: 9001;
+}
+
+/*.draggingLineIndex{*/
+.jtk-connector.topIndex {
+    z-index: 9002;
+}
+
+.jtk-overlay.topIndex {
+    z-index: 9003;
+}
+
+.lineNameInput.topIndex {
+    z-index: 9004;
+}
+
+.highlightIndex {
+    z-index: 99;
+}
+
+.graphShow {
+    display: block !important;
+}
+
+.canvasWrap .lineNameInput {
+    width: 120px;
+    height: 22px;
+    /*border: 1px solid #e5e5e5;*/
+    border: 1px solid #999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    color: #474747;
+    -webkit-box-shadow: 0 0 20px #666;
+    -moz-box-shadow: 0 0 20px #666;
+    box-shadow: 0 0 20px #666;
+}
+
+.canvasWrap .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    cursor: not-allowed;
+}
+
+.canvasWrap .loading .gif {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -15px;
+    margin-left: -15px;
+    background: url("../img/loading.gif") center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

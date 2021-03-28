@@ -1,0 +1,1459 @@
+//殷云涛
+//活动详情模块
+@xqActivity-xqActivityWindow-medium-width:100%;
+@xqActivity-xqActivityWindow-medium-height:null;
+@xqActivity-xqActivityWindow-background-color:#f0f2f5;
+@xqActivity-xqActivityWindow-background-color-opacity:100;
+@xqActivity-xqActivityWindow-medium-padding:46px 0 49px 0;
+@xqActivity-xa1-medium-width:100%;
+@xqActivity-xa2-medium-width:100%;
+@xqActivity-detailAddressMap-medium-width:100%;
+@xqActivity-xa3-medium-width:100%;
+@xqActivity-xa4-medium-width:100%;
+@xqActivity-xa5-medium-width:100%;
+@xqActivity-xa6-medium-width:100%;
+@xqActivity-xa7-medium-width:100%;
+@xqActivity-registration-medium-width:100%;
+@xqActivity-askDialog-medium-width:100px;
+@xqActivity-askDialog-medium-height:100px;
+@xqActivity-menuDialog-medium-width:100%;
+@xqActivity-menuDialog-medium-height:100px;
+@xqActivity-x8-medium-width:36px;
+@xqActivity-x8-medium-height:36px;
+@xqActivity-x8-hover-border-color-opacity:0;
+@xqActivity-x8-border-radius:100%;
+
+
+
+// 活动标题
+@xqTitleBar-xqTitleBarWindow-medium-width:100%;
+@xqTitleBar-xqTitleBarWindow-medium-height:null;
+@xqTitleBar-xqTitleBarWindow-background-color:#ffffff;
+@xqTitleBar-xqTitleBarWindow-background-color-opacity:100;
+@xqTitleBar-t1-medium-width:20%;
+@xqTitleBar-t1-medium-padding:0 0 0 10px;
+@xqTitleBar-t2-medium-width:60%;
+@xqTitleBar-t3-medium-width:20%;
+@xqTitleBar-t3-medium-horizontal-position:flex-end;
+@xqTitleBar-t3-large-horizontal-position:flex-end;
+@xqTitleBar-t3-small-horizontal-position:flex-end;
+@xqTitleBar-t3-mini-horizontal-position:flex-end;
+@xqTitleBar-t3-medium-padding:0 10px 0 0;
+//菜单栏对话框
+@xqMenu-xqMenuWindow-medium-width:100%;
+@xqMenu-xm-medium-width:100%;
+
+//活动详情标题模块
+@xqActivityTitle-xqActivityTitleWindow-medium-width:100%;
+@xqActivityTitle-xqActivityTitleWindow-background-color:#ffffff;
+@xqActivityTitle-xqActivityTitleWindow-background-color-opacity:100;
+@xqActivityTitle-at-medium-width:100%;
+@xqActivityTitle-at-medium-height:190px;
+@xqActivityTitle-at2-medium-width:100%;
+@xqActivityTitle-at2-medium-padding:10px 15px;
+@xqActivityTitle-at3-medium-width:100%;
+@xqActivityTitle-at3-medium-height:null;
+@xqActivityTitle-at4-medium-width:10%;
+@xqActivityTitle-at5-medium-width:10%;
+@xqActivityTitle-at6-medium-width:10%;
+@xqActivityTitle-at7-medium-width:10%;
+@xqActivityTitle-at8-medium-width:10%;
+@xqActivityTitle-at9-medium-width:10%;
+@xqActivityTitle-at10-medium-width:100%;
+@xqActivityTitle-at11-medium-width:7%;
+@xqActivityTitle-at12-medium-width:93%;
+@xqActivityTitle-at13-medium-width:7%;
+@xqActivityTitle-at14-medium-width:86%;
+@xqActivityTitle-at15-medium-width:7%;
+@xqActivityTitle-at15-medium-horizontal-position:flex-end;
+@xqActivityTitle-at15-large-horizontal-position:flex-end;
+@xqActivityTitle-at15-small-horizontal-position:flex-end;
+@xqActivityTitle-at15-mini-horizontal-position:flex-end;
+
+
+//详情活动标题地址地图模块
+@xqMap-xqMapWindow-medium-width:100%;
+@xqMap-m1-medium-width:40px;
+@xqMap-m1-background-color-opacity:0;
+@xqMap-m1-medium-height:40px;
+@xqMap-m1-border-radius:4px;
+@xqMap-m2-medium-width:100%;
+
+//主办方
+@xqOrganizers-xqOrganizersWindow-medium-width:100%;
+@xqOrganizers-xqOrganizersWindow-medium-padding:14px 14px;
+@xqOrganizers-xo1-medium-width:100%;
+@xqOrganizers-xo1-medium-padding:20px 16px;
+@xqOrganizers-xo1-background-color:#ffffff;
+@xqOrganizers-xo1-background-color-opacity:100;
+@xqOrganizers-xo1-border-radius:5px;
+@xqOrganizers-xo2-medium-width:100%;
+@xqOrganizers-xo3-medium-width:20%;
+@xqOrganizers-xo4-medium-width:80%;
+@xqOrganizers-xo5-medium-width:44px;
+@xqOrganizers-xo5-medium-height:44px;
+@xqOrganizers-xo5-border-radius:5px;
+@xqOrganizers-xo6-medium-width:20%;
+@xqOrganizers-xo7-medium-width:100%;
+@xqOrganizers-xo13-medium-width:100%;
+@xqOrganizers-xo13-medium-padding:0 0 10px 0;
+@xqOrganizers-xo14-medium-width:50%;
+@xqOrganizers-xo14-medium-horizontal-position:center;
+@xqOrganizers-xo14-large-horizontal-position:center;
+@xqOrganizers-xo14-small-horizontal-position:center;
+@xqOrganizers-xo14-mini-horizontal-position:center;
+@xqOrganizers-xo15-medium-width:50%;
+@xqOrganizers-xo15-medium-horizontal-position:center;
+@xqOrganizers-xo15-large-horizontal-position:center;
+@xqOrganizers-xo15-small-horizontal-position:center;
+@xqOrganizers-xo15-mini-horizontal-position:center;
+@xqOrganizers-xo8-medium-width:100%;
+@xqOrganizers-xo8-medium-vertical-position:center;
+@xqOrganizers-xo8-medium-padding:10px 0;
+@xqOrganizers-xo9-medium-width:36px;
+@xqOrganizers-xo10-medium-width:10%;
+@xqOrganizers-xo10-border-width:0 1px 0 0;
+@xqOrganizers-xo10-border-style:solid;
+@xqOrganizers-xo10-border-color:#999;
+@xqOrganizers-xo10-hover-border-color-opacity:100;
+@xqOrganizers-xo10-medium-height:12px;
+@xqOrganizers-xo10-medium-horizontal-position:flex-start;
+@xqOrganizers-xo10-large-horizontal-position:flex-start;
+@xqOrganizers-xo10-small-horizontal-position:flex-start;
+@xqOrganizers-xo10-mini-horizontal-position:flex-start;
+@xqOrganizers-xo10-medium-padding:0 5px;
+@xqOrganizers-xo11-background-color-opacity:0;
+@xqOrganizers-xo11-medium-height:null;
+@xqOrganizers-xo12-medium-width:36px;
+@xqOrganizers-xo12-medium-padding:0 0 0 5px;
+@xqOrganizers-xo17-medium-width:10%;
+@xqOrganizers-xo17-medium-horizontal-position:flex-start;
+@xqOrganizers-xo17-large-horizontal-position:flex-start;
+@xqOrganizers-xo17-small-horizontal-position:flex-start;
+@xqOrganizers-xo17-mini-horizontal-position:flex-start;
+@xqOrganizers-xo17-medium-padding:0 0 0 5px;
+//活动详情描述的模块
+// ----------------------------------------------------
+// 下面的风格变量，请复制到正确位置后删除！
+@xqActivityDetail-xqActivityDetailWindow-medium-width:100%;
+@xqActivityDetail-xqActivityDetailWindow-medium-padding:5px 0 10px 0;
+@xqActivityDetail-xqActivityDetailWindow-background-color:#fff;
+@xqActivityDetail-xqActivityDetailWindow-background-color-opacity:100;
+@xqActivityDetail-ad3-medium-width:100%;
+@xqActivityDetail-ad3-medium-padding:10px 16px;
+@xqActivityDetail-ad4-medium-width:100%;
+@xqActivityDetail-ad4-medium-padding:0 16px;
+@xqActivityDetail-ad5-medium-width:100%;
+@xqActivityDetail-ad6-medium-width:100%;
+@xqActivityDetail-ad6-medium-padding:10px 16px;
+@xqActivityDetail-ad6-border-style:solid;
+@xqActivityDetail-ad6-border-width:0 0 1px 0;
+@xqActivityDetail-ad6-border-color:#EEEEEE;
+@xqActivityDetail-ad6-hover-border-color-opacity:100;
+@xqActivityDetail-ad7-medium-width:4px;
+@xqActivityDetail-ad7-medium-padding:0 5px 0 0;
+@xqActivityDetail-ad7-medium-vertical-position:center;
+@xqActivityDetail-ad7-large-vertical-position:center;
+@xqActivityDetail-ad7-small-vertical-position:center;
+@xqActivityDetail-ad7-mini-vertical-position:center;
+@xqActivityDetail-ad8-medium-width:90%;
+
+//报名模块
+@xqSignUp-xqSignUpWindow-medium-width:100%;
+@xqSignUp-xqSignUpWindow-background-color:#fff;
+@xqSignUp-xqSignUpWindow-background-color-opacity:100;
+@xqSignUp-xqSignUpWindow-medium-margin:10px 0 0 0;
+@xqSignUp-xs3-medium-width:100%;
+@xqSignUp-x8-medium-width:100%;
+@xqSignUp-xs1-medium-width:100%;
+@xqSignUp-xs1-medium-padding:10px 16px;
+@xqSignUp-xs1-border-style:solid;
+@xqSignUp-xs1-border-width:0 0 1px 0;
+@xqSignUp-xs1-border-color:#EEEEEE;
+@xqSignUp-xs1-hover-border-color-opacity:100;
+@xqSignUp-xs2-medium-width:4px;
+@xqSignUp-xs2-medium-padding:0 5px 0 0;
+@xqSignUp-xs2-medium-vertical-position:center;
+@xqSignUp-xs2-large-vertical-position:center;
+@xqSignUp-xs2-small-vertical-position:center;
+@xqSignUp-xs2-mini-vertical-position:center;
+@xqSignUp-xs4-medium-width:90%;
+//报名循环模块
+@xqSignUpInfo-xqSignUpInfoWindow-medium-width:100%;
+@xqSignUpInfo-xqSignUpInfoWindow-medium-padding:0 0 10px 0;
+@xqSignUpInfo-xu1-medium-width:100%;
+@xqSignUpInfo-xu1-medium-margin:null;
+@xqSignUpInfo-xu1-medium-padding:10px;
+@xqSignUpInfo-xu1-medium-horizontal-position:center;
+@xqSignUpInfo-xu1-large-horizontal-position:center;
+@xqSignUpInfo-xu1-small-horizontal-position:center;
+@xqSignUpInfo-xu1-mini-horizontal-position:center;
+@xqSignUpInfo-xu2-medium-width:40px;
+@xqSignUpInfo-xu2-medium-height:40px;
+@xqSignUpInfo-xu2-border-style:null;
+@xqSignUpInfo-xu2-border-radius:100%;
+@xqSignUpInfo-xu2-medium-horizontal-position:center;
+@xqSignUpInfo-xu2-large-horizontal-position:center;
+@xqSignUpInfo-xu2-small-horizontal-position:center;
+@xqSignUpInfo-xu2-mini-horizontal-position:center;
+@xqSignUpInfo-xu3-medium-width:100%;
+@xqSignUpInfo-xu4-medium-width:30px;
+@xqSignUpInfo-xu4-medium-height:14px;
+@xqSignUpInfo-xu4-border-width:1px;
+@xqSignUpInfo-xu4-border-style:solid;
+@xqSignUpInfo-xu4-border-radius:14px;
+@xqSignUpInfo-xu4-border-color:#12B0FF;
+@xqSignUpInfo-xu4-hover-border-color-opacity:100;
+@xqSignUpInfo-xu4-background-color:#fff;
+@xqSignUpInfo-xu4-background-color-opacity:100;
+@xqSignUpInfo-xu5-medium-width:100%;
+
+
+//讨论模块
+
+@xqDiscuss-xqDiscussWindow-medium-width:100%;
+@xqDiscuss-xqDiscussWindow-medium-margin:10px 0 0 0;
+@xqDiscuss-xqDiscussWindow-background-color:#fff;
+@xqDiscuss-xqDiscussWindow-background-color-opacity:100;
+@xqDiscuss-xd4-medium-width:100%;
+@xqDiscuss-xd5-medium-width:100%;
+@xqDiscuss-askDialog-medium-width:100px;
+@xqDiscuss-askDialog-medium-height:100px;
+@xqDiscuss-xd1-medium-width:100%;
+@xqDiscuss-xd1-medium-padding:10px 16px;
+@xqDiscuss-xd2-medium-width:60%;
+@xqDiscuss-xd3-medium-width:40%;
+@xqDiscuss-xd3-medium-horizontal-position:flex-end;
+@xqDiscuss-xd3-large-horizontal-position:flex-end;
+@xqDiscuss-xd3-small-horizontal-position:flex-end;
+@xqDiscuss-xd3-mini-horizontal-position:flex-end;
+@xqDiscuss-xd6-medium-width:4px;
+@xqDiscuss-xd6-medium-vertical-position:center;
+@xqDiscuss-xd6-large-vertical-position:center;
+@xqDiscuss-xd6-small-vertical-position:center;
+@xqDiscuss-xd6-mini-vertical-position:center;
+@xqDiscuss-xd6-medium-padding:0 5px 0 0;
+@xqDiscuss-xd7-medium-width:90%;
+
+//讨论循环模块
+
+@xqDiscussContent-xqDiscussContentWindow-medium-width:100%;
+@xqDiscussContent-xqDiscussContentWindow-medium-margin:0 16px;
+@xqDiscussContent-xqDiscussContentWindow-medium-padding:10px 0;
+@xqDiscussContent-xqDiscussContentWindow-border-style:solid;
+@xqDiscussContent-xqDiscussContentWindow-border-width:0 0 1px 0;
+@xqDiscussContent-xqDiscussContentWindow-border-radius:null;
+@xqDiscussContent-xqDiscussContentWindow-border-color:#EEE;
+@xqDiscussContent-xqDiscussContentWindow-hover-border-color-opacity:100;
+@xqDiscussContent-xdc1-medium-width:36px;
+@xqDiscussContent-xdc1-medium-height:36px;
+@xqDiscussContent-xdc1-border-radius:100%;
+@xqDiscussContent-xdc2-medium-width:80%;
+@xqDiscussContent-xdc2-medium-padding:0 0 0 10px;
+@xqDiscussContent-xdc3-medium-width:100%;
+@xqDiscussContent-askTime-medium-width:100%;
+@xqDiscussContent-xdc4-medium-width:100%;
+@xqDiscussContent-xdc4-medium-padding:10px 0;
+@xqDiscussContent-xdc5-medium-width:100%;
+@xqDiscussContent-xdc5-medium-padding:10px;
+@xqDiscussContent-xdc5-background-color:#F4F4F4;
+@xqDiscussContent-xdc5-background-color-opacity:100;
+@xqDiscussContent-xdc6-medium-width:100%;
+@xqDiscussContent-xdc7-medium-width:100%;
+@xqDiscussContent-xdc8-medium-width:100%;
+
+
+//提问对话框
+@xqAskDialog-xqAskDialogWindow-medium-width:100%;
+@xqAskDialog-xqAskDialogWindow-background-color:#fff;
+@xqAskDialog-xqAskDialogWindow-background-color-opacity:100;
+@xqAskDialog-xqAskDialogWindow-border-radius:2px;
+@xqAskDialog-xad4-medium-width:100%;
+@xqAskDialog-xad4-medium-height:null;
+@xqAskDialog-xad4-medium-margin:10px 19px;
+@xqAskDialog-xad4-border-style:solid;
+@xqAskDialog-xad4-border-width:1px;
+@xqAskDialog-xad4-border-radius:2px;
+@xqAskDialog-xad4-border-color:#dddddd;
+@xqAskDialog-xad4-hover-border-color-opacity:100;
+@xqAskDialog-xad5-medium-width:100%;
+@xqAskDialog-xad5-medium-margin:10px 19px;
+@xqAskDialog-xad5-medium-height:48px;
+@xqAskDialog-xad1-medium-width:100%;
+@xqAskDialog-xad1-border-style:solid;
+@xqAskDialog-xad1-border-width:0 0 1px 0;
+@xqAskDialog-xad1-border-color:#EEEEEE;
+@xqAskDialog-xad1-hover-border-color-opacity:100;
+@xqAskDialog-xad1-medium-height:46px;
+@xqAskDialog-xad1-medium-padding:0 19px;
+@xqAskDialog-xad2-medium-width:20%;
+@xqAskDialog-xad3-medium-width:60%;
+@xqAskDialog-xad6-medium-width:20%;
+
+
+//底部模块
+@xqActivityFooter-xqActivityFooterWindow-medium-width:100%;
+@xqActivityFooter-xqActivityFooterWindow-medium-height:49px;
+@xqActivityFooter-xqActivityFooterWindow-background-color:#fff;
+@xqActivityFooter-xqActivityFooterWindow-background-color-opacity:100;
+@xqActivityFooter-xf1-medium-width:50%;
+@xqActivityFooter-xf1-medium-height:null;
+@xqActivityFooter-xf1-background-color:#fff;
+@xqActivityFooter-xf1-background-color-opacity:100;
+@xqActivityFooter-xf1-medium-margin:null;
+@xqActivityFooter-xf1-medium-padding:5px 0 0 0;
+@xqActivityFooter-xf2-medium-width:50%;
+@xqActivityFooter-xf3-medium-width:33%;
+@xqActivityFooter-xf4-medium-width:34%;
+@xqActivityFooter-xf5-medium-width:33%;
+@xqActivityFooter-xf6-medium-width:100%;
+@xqActivityFooter-xf7-medium-width:100%;
+@xqActivityFooter-xf8-medium-width:100%;
+@xqActivityFooter-xf9-medium-width:100%;
+@xqActivityFooter-xf10-medium-width:100%;
+@xqActivityFooter-xf11-medium-width:100%;
+
+//我要报名对话框
+@xqMyRegistration-xqMyRegistrationWindow-medium-width:100%;
+@xqMyRegistration-xqMyRegistrationWindow-background-color:#fff;
+@xqMyRegistration-xqMyRegistrationWindow-background-color-opacity:100;
+@xqMyRegistration-xm1-medium-width:100%;
+@xqMyRegistration-xm1-medium-padding:16px;
+@xqMyRegistration-xm2-medium-width:100%;
+@xqMyRegistration-xm2-medium-height:null;
+@xqMyRegistration-xm2-medium-padding:5px 0;
+@xqMyRegistration-xm3-medium-width:70%;
+@xqMyRegistration-xm4-medium-width:30%;
+@xqMyRegistration-xm5-medium-width:100%;
+@xqMyRegistration-xm6-medium-width:100%;
+@xqMyRegistration-number-medium-width:100%;
+@xqMyRegistration-xm7-medium-width:100%;
+@xqMyRegistration-xm7-medium-height:49px;
+@xqMyRegistration-xm8-medium-width:50%;
+@xqMyRegistration-xm8-medium-padding:0 0 0 16px;
+@xqMyRegistration-xm9-medium-width:50%;
+@xqMyRegistration-xm11-medium-width:20%;
+@xqMyRegistration-xm12-medium-width:80%;
+
+//我要报名对话框 循环模块
+@xqActivityPrice-xqActivityPriceWindow-medium-width:100%;
+@xqActivityPrice-xqActivityPriceWindow-medium-height:48px;
+@xqActivityPrice-xqActivityPriceWindow-border-style:solid;
+@xqActivityPrice-xqActivityPriceWindow-border-width:1px;
+@xqActivityPrice-xqActivityPriceWindow-border-color:#DDDDDD;
+@xqActivityPrice-xqActivityPriceWindow-hover-border-color-opacity:100;
+@xqActivityPrice-xqActivityPriceWindow-border-radius:2px;
+@xqActivityPrice-xqActivityPriceWindow-medium-padding:0 10px;
+@xqActivityPrice-xqActivityPriceWindow-medium-margin:5px 0;
+@xqActivityPrice-xqActivityPriceWindow-checked-border-color:#12B0FF;
+@xqActivityPrice-xqActivityPriceWindow-checked-border-color-opacity:100;
+@xqActivityPrice-xqActivityPriceWindow-checked-border-style:solid;
+@xqActivityPrice-xqActivityPriceWindow-checked-border-width:1px;
+@xqActivityPrice-xap1-medium-width:70%;
+@xqActivityPrice-xap1-medium-vertical-position:center;
+@xqActivityPrice-xap1-large-vertical-position:center;
+@xqActivityPrice-xap1-small-vertical-position:center;
+@xqActivityPrice-xap1-mini-vertical-position:center;
+@xqActivityPrice-xap2-medium-width:30%;
+@xqActivityPrice-xap2-medium-vertical-position:center;
+@xqActivityPrice-xap2-large-vertical-position:center;
+@xqActivityPrice-xap2-small-vertical-position:center;
+@xqActivityPrice-xap2-mini-vertical-position:center;
+
+//图片相册对话框
+@xqPhoto-xqPhotoWindow-medium-width:100%;
+@xqPhoto-xqPhotoWindow-medium-padding:20px 0 0 0;
+@xqPhoto-xqPhotoWindow-background-color:#fff;
+@xqPhoto-xqPhotoWindow-background-color-opacity:100;
+@xqPhoto-xqp-medium-width:70%;
+@xqPhoto-xqp-medium-padding:0 0 0 15px;
+@xqPhoto-xqp2-medium-width:30%;
+@xqPhoto-xqp2-medium-padding:0 15px 0 0;
+@xqPhoto-content-medium-width:100%;
+@xqPhoto-content-medium-margin:10px 0;
+@xqPhoto-content-medium-padding:0 15px;
+@xqPhoto-xqp3-medium-width:50%;
+@xqPhoto-xqp4-medium-width:50%;
+//图片相册对话框循环模块
+@xqPhotoInfo-xqActivityPriceWindow-medium-width:100%;
+@xqPhotoInfo-xqActivityPriceWindow-border-style:solid;
+@xqPhotoInfo-xqActivityPriceWindow-border-width:1px;
+@xqPhotoInfo-xqActivityPriceWindow-border-color:#DDDDDD;
+@xqPhotoInfo-xqActivityPriceWindow-hover-border-color-opacity:100;
+@xqPhotoInfo-xqActivityPriceWindow-border-radius:2px;
+@xqPhotoInfo-xqActivityPriceWindow-medium-margin:5px 0;
+@xqPhotoInfo-xqActivityPriceWindow-checked-border-color:#12B0FF;
+@xqPhotoInfo-xqActivityPriceWindow-checked-border-color-opacity:100;
+@xqPhotoInfo-xqActivityPriceWindow-checked-border-style:solid;
+@xqPhotoInfo-xqActivityPriceWindow-checked-border-width:1px;
+@xqPhotoInfo-xqActivityPriceWindow-medium-padding:0 10px;
+@xqPhotoInfo-xqp-medium-width:100%;
+
+
+//报名支付---  报名表单
+@rfRegistrationForm-rfRegistrationFormWindow-medium-width:100%;
+@rfRegistrationForm-rfRegistrationFormWindow-medium-padding:46px 0 49px 0;
+@rfRegistrationForm-rfRegistrationFormWindow-background-color:#fff;
+@rfRegistrationForm-rfRegistrationFormWindow-background-color-opacity:100;
+@rfRegistrationForm-rf-medium-width:100%;
+@rfRegistrationForm-rf2-medium-width:100%;
+@rfRegistrationForm-rf2-medium-padding:0 15px;
+@rfRegistrationForm-rf3-medium-width:100%;
+@rfRegistrationForm-rf4-medium-width:100px;
+@rfRegistrationForm-rf4-medium-height:100px;
+
+//报名表单标题模块
+@rfTitleBar-rfTitleBarWindow-medium-width:100%;
+@rfTitleBar-rfTitleBarWindow-medium-height:46px;
+@rfTitleBar-tb1-medium-width:20%;
+@rfTitleBar-tb1-medium-padding:0 0 0 15px;
+@rfTitleBar-tb2-medium-width:60%;
+@rfTitleBar-tb3-medium-width:20%;
+@rfTitleBar-tb3-medium-padding:0 15px 0 0;
+//报名表单内容循环模块 allForm
+@rfAllFrom-rfAllFromWindow-medium-width:100%;
+@rfAllFrom-rf3-medium-width:100%;
+@rfAllFrom-rf1-medium-width:100%;
+@rfAllFrom-rf2-medium-width:4px;
+@rfAllFrom-rf2-medium-vertical-position:center;
+@rfAllFrom-rf2-large-vertical-position:center;
+@rfAllFrom-rf2-small-vertical-position:center;
+@rfAllFrom-rf2-mini-vertical-position:center;
+@rfAllFrom-rf2-medium-padding:0 5px 0 0;
+@rfAllFrom-rf4-medium-width:90%;
+//报名表单单个循环模块
+@rfSingleFrom-rfSingleFromWindow-medium-width:100%;
+@rfSingleFrom-rf1-medium-width:100%;
+@rfSingleFrom-rf2-medium-width:100%;
+@rfSingleFrom-rf3-medium-width:100%;
+@rfSingleFrom-rf4-medium-width:100%;
+@rfSingleFrom-rf5-medium-width:100%;
+@rfSingleFrom-rf6-medium-width:100%;
+@rfSingleFrom-rf7-medium-width:100%;
+@rfSingleFrom-rf8-medium-width:100%;
+@rfSingleFrom-rf9-medium-width:100%;
+@rfSingleFrom-rf10-medium-width:100%;
+//报名表单页脚
+@rfFromFooter-rfFromFooterWindow-medium-width:100%;
+@rfFromFooter-rfFromFooterWindow-medium-height:49px;
+@rfFromFooter-rf1-medium-width:50%;
+@rfFromFooter-rf1-medium-padding:0 0 0 15px;
+@rfFromFooter-rf2-medium-width:50%;
+
+
+//报名表单菜单栏
+@rfMenu-rfMenuWindow-medium-width:100%;
+@rfMenu-rf1-medium-width:100%;
+
+
+
+//待付款的活动详情
+@pyPayment-pyPaymentWindow-medium-width:100%;
+@pyPayment-pyPaymentWindow-background-color:#f4f4f4;
+@pyPayment-pyPaymentWindow-background-color-opacity:100;
+@pyPayment-pyPaymentWindow-medium-height:null;
+@pyPayment-pyPaymentWindow-medium-padding:46px 0 49px 0;
+@pyPayment-pm1-medium-width:100%;
+@pyPayment-pm1-hover-border-color-opacity:0;
+@pyPayment-pm2-medium-width:100%;
+@pyPayment-pm2-medium-height:null;
+@pyPayment-pm2-background-color-opacity:0;
+@pyPayment-pm3-medium-width:100%;
+@pyPayment-pmMenu-medium-width:100px;
+@pyPayment-pmMenu-medium-height:100px;
+
+
+//待付款的活动详情标题
+@pyTitleBar-pyTitleBarWindow-medium-width:100%;
+@pyTitleBar-pyTitleBarWindow-medium-height:46px;
+@pyTitleBar-pyTitleBarWindow-background-color:#fff;
+@pyTitleBar-pyTitleBarWindow-background-color-opacity:100;
+@pyTitleBar-pyTitleBarWindow-border-style:solid;
+@pyTitleBar-pyTitleBarWindow-border-width:0 0 1px 0;
+@pyTitleBar-pyTitleBarWindow-border-radius:null;
+@pyTitleBar-pyTitleBarWindow-border-color:#f4f4f4;
+@pyTitleBar-pyTitleBarWindow-hover-border-color-opacity:100;
+@pyTitleBar-py1-medium-width:20%;
+@pyTitleBar-py1-medium-padding:0 0 0 15px;
+@pyTitleBar-py2-medium-width:60%;
+@pyTitleBar-py3-medium-width:20%;
+@pyTitleBar-py3-medium-padding:0 15px 0 0;
+
+//待付款的活动详情内容
+@pyPayDetail-pyPayDetailWindow-medium-width:100%;
+@pyPayDetail-pyd1-medium-width:100%;
+@pyPayDetail-pyd1-medium-margin:0 0 10px 0;
+@pyPayDetail-pyd1-background-color:#fff;
+@pyPayDetail-pyd1-background-color-opacity:100;
+@pyPayDetail-pyd1-medium-padding:0 15px;
+@pyPayDetail-pyd1-hover-border-color-opacity:0;
+@pyPayDetail-pyd2-medium-width:30%;
+@pyPayDetail-pyd2-medium-height:48px;
+@pyPayDetail-pyd3-medium-width:70%;
+@pyPayDetail-pyd4-medium-width:100%;
+@pyPayDetail-pyd5-medium-width:100%;
+@pyPayDetail-pyd5-medium-height:48px;
+@pyPayDetail-pyd5-background-color:#fff;
+@pyPayDetail-pyd5-background-color-opacity:100;
+@pyPayDetail-pyd5-medium-padding:0 15px;
+@pyPayDetail-pyd6-medium-width:10%;
+@pyPayDetail-pyd6-medium-vertical-position:center;
+@pyPayDetail-pyd6-large-vertical-position:center;
+@pyPayDetail-pyd6-small-vertical-position:center;
+@pyPayDetail-pyd6-mini-vertical-position:center;
+@pyPayDetail-pyd7-medium-width:90%;
+@pyPayDetail-pyd8-medium-width:100%;
+@pyPayDetail-pyd8-medium-padding:15px 15px;
+@pyPayDetail-pyd9-medium-width:35%;
+@pyPayDetail-pyd10-medium-width:65%;
+@pyPayDetail-pyd11-medium-width:90%;
+@pyPayDetail-pyd11-medium-height:64px;
+@pyPayDetail-pyd12-medium-width:100%;
+@pyPayDetail-pyd13-medium-width:100%;
+@pyPayDetail-pyd13-medium-vertical-position:flex-end;
+@pyPayDetail-pyd13-large-vertical-position:flex-end;
+@pyPayDetail-pyd13-small-vertical-position:flex-end;
+@pyPayDetail-pyd13-mini-vertical-position:flex-end;
+@pyPayDetail-pyd19-medium-width:100%;
+@pyPayDetail-pyd19-medium-padding:0 15px;
+@pyPayDetail-pyd19-background-color:#fff;
+@pyPayDetail-pyd19-background-color-opacity:100;
+@pyPayDetail-pyd20-medium-width:70%;
+@pyPayDetail-pyd20-medium-height:48px;
+@pyPayDetail-pyd20-medium-vertical-position:center;
+@pyPayDetail-pyd20-large-vertical-position:center;
+@pyPayDetail-pyd20-small-vertical-position:center;
+@pyPayDetail-pyd20-mini-vertical-position:center;
+@pyPayDetail-pyd21-medium-width:15%;
+@pyPayDetail-pyd21-medium-height:48px;
+@pyPayDetail-pyd22-medium-width:15%;
+@pyPayDetail-pyd22-medium-height:48px;
+@pyPayDetail-pyd23-medium-width:100%;
+@pyPayDetail-pyd23-background-color:#fff;
+@pyPayDetail-pyd23-background-color-opacity:100;
+@pyPayDetail-pyd23-medium-padding:10px 15px;
+@pyPayDetail-pyd23-medium-margin:10px 0 0 0;
+@pyPayDetail-pyd24-medium-width:100%;
+@pyPayDetail-pyd24-medium-padding:10px 15px;
+@pyPayDetail-pyd24-background-color:#fff;
+@pyPayDetail-pyd24-background-color-opacity:100;
+@pyPayDetail-pyd24-medium-margin:10px 0 0 0;
+@pyPayDetail-pyd25-medium-width:100%;
+@pyPayDetail-pyd26-medium-width:100%;
+@pyPayDetail-pyd27-medium-width:100%;
+@pyPayDetail-pyd28-medium-width:20px;
+@pyPayDetail-pyd28-medium-height:20px;
+@pyPayDetail-pyd28-medium-vertical-position:center;
+@pyPayDetail-pyd28-large-vertical-position:center;
+@pyPayDetail-pyd28-small-vertical-position:center;
+@pyPayDetail-pyd28-mini-vertical-position:center;
+@pyPayDetail-pyd28-border-radius:100%;
+@pyPayDetail-pyd14-medium-width:100%;
+@pyPayDetail-pyd15-medium-width:17px;
+@pyPayDetail-pyd16-medium-width:90%;
+@pyPayDetail-pyd17-medium-width:100%;
+@pyPayDetail-pyd18-medium-width:17px;
+@pyPayDetail-pyd29-medium-width:90%;
+
+
+
+//待付款底部模块
+@pyPayFooter-pyPayFooterWindow-medium-width:100%;
+@pyPayFooter-pyPayFooterWindow-medium-height:49px;
+@pyPayFooter-pyPayFooterWindow-background-color:#fff;
+@pyPayFooter-pyPayFooterWindow-background-color-opacity:100;
+@pyPayFooter-pyf1-medium-width:50%;
+@pyPayFooter-pyf1-medium-padding:0 0 0 15px;
+@pyPayFooter-pyf2-medium-width:50%;
+
+//待付款的标题菜单栏
+@pyMenu-pyMenuWindow-medium-width:100%;
+@pyMenu-pm-medium-width:100%;
+
+
+//报名成功模块
+@scSuccess-scSuccessWindow-medium-width:100%;
+@scSuccess-scSuccessWindow-background-color:#fff;
+@scSuccess-scSuccessWindow-background-color-opacity:100;
+@scSuccess-scSuccessWindow-medium-padding:46px 0 0 0;
+@scSuccess-ss1-medium-width:100%;
+@scSuccess-ss2-medium-width:100%;
+@scSuccess-menuDialog-medium-width:100px;
+@scSuccess-menuDialog-medium-height:100px;
+
+//报名成功模块标题
+@scSuccessTitle-scSuccessTitleWindow-medium-width:100%;
+@scSuccessTitle-scSuccessTitleWindow-medium-height:46px;
+@scSuccessTitle-scSuccessTitleWindow-border-style:solid;
+@scSuccessTitle-scSuccessTitleWindow-border-width:0 0 1px 0;
+@scSuccessTitle-scSuccessTitleWindow-border-color:#f4f4f4;
+@scSuccessTitle-scSuccessTitleWindow-hover-border-color-opacity:100;
+@scSuccessTitle-st1-medium-width:20%;
+@scSuccessTitle-st1-medium-padding:0 0 0 15px;
+@scSuccessTitle-st2-medium-width:60%;
+@scSuccessTitle-st3-medium-width:20%;
+@scSuccessTitle-st3-medium-padding:0 15px 0 0;
+//报名模块内容
+@scSuccessContent-scSuccessContentWindow-medium-width:100%;
+@scSuccessContent-ss1-medium-width:100%;
+@scSuccessContent-ss1-medium-padding:0 40px 20px 40px;
+@scSuccessContent-ss1-hover-border-color-opacity:0;
+@scSuccessContent-ss2-medium-width:100%;
+@scSuccessContent-ss3-medium-width:100%;
+@scSuccessContent-ss3-medium-height:44px;
+@scSuccessContent-ss3-border-style:solid;
+@scSuccessContent-ss3-border-width:1px;
+@scSuccessContent-ss3-border-radius:2px;
+@scSuccessContent-ss3-border-color:#12B0FF;
+@scSuccessContent-ss3-hover-border-color-opacity:100;
+@scSuccessContent-ss4-medium-width:100%;
+@scSuccessContent-ss4-medium-height:15px;
+@scSuccessContent-ss4-background-color:#f4f4f4;
+@scSuccessContent-ss4-background-color-opacity:100;
+@scSuccessContent-ss5-medium-width:100%;
+@scSuccessContent-ss5-medium-padding:null;
+@scSuccessContent-ss5-medium-margin:20px 0 0 0;
+@scSuccessContent-ss6-medium-width:100%;
+//第三方循环模块
+@scThirdParty-scThirdPartyWindow-medium-width:100%;
+@scThirdParty-st1-medium-width:100%;
+@scThirdParty-st1-medium-margin:15px 0;
+@scThirdParty-st2-medium-width:100%;
+@scThirdParty-st2-border-style:null;
+@scThirdParty-st3-medium-width:100%;
+
+//菜单栏
+@scMenu-scMenuWindow-medium-width:100%;
+@scMenu-menu-medium-width:100%;
+
+
+
+//预览  详情模块
+@appActivity-appActivityWindow-medium-width:100%;
+@appActivity-appActivityWindow-background-color:#f0f2f5;
+@appActivity-appActivityWindow-background-color-opacity:100;
+@appActivity-appActivityWindow-medium-padding:46px 0 49px 0;
+@appActivity-ay1-medium-width:100%;
+@appActivity-ay2-medium-width:100%;
+@appActivity-ay3-medium-width:100%;
+@appActivity-ay4-medium-width:100%;
+@appActivity-ay5-medium-width:100%;
+@appActivity-ay6-medium-width:100%;
+@appActivity-ay7-medium-width:100%;
+@appActivity-ay8-medium-width:100%;
+@appActivity-ay8-medium-height:100%;
+@appActivity-ay9-medium-width:100%;
+@appActivity-ay9-medium-height:100%;
+
+//预览详情模块的标题模块
+@appTitleBar-xqTitleBarWindow-medium-width:100%;
+@appTitleBar-xqTitleBarWindow-medium-height:null;
+@appTitleBar-xqTitleBarWindow-background-color:#ffffff;
+@appTitleBar-xqTitleBarWindow-background-color-opacity:100;
+@appTitleBar-t1-medium-width:20%;
+@appTitleBar-t1-medium-padding:0 0 0 10px;
+@appTitleBar-t2-medium-width:60%;
+@appTitleBar-t3-medium-width:20%;
+@appTitleBar-t3-medium-horizontal-position:flex-end;
+@appTitleBar-t3-large-horizontal-position:flex-end;
+@appTitleBar-t3-small-horizontal-position:flex-end;
+@appTitleBar-t3-mini-horizontal-position:flex-end;
+@appTitleBar-t3-medium-padding:0 10px 0 0;
+
+//活动标题详情
+@appActivityTitle-xqActivityTitleWindow-medium-width:100%;
+@appActivityTitle-xqActivityTitleWindow-background-color:#ffffff;
+@appActivityTitle-xqActivityTitleWindow-background-color-opacity:100;
+@appActivityTitle-at-medium-width:100%;
+@appActivityTitle-at-medium-height:190px;
+@appActivityTitle-at2-medium-width:100%;
+@appActivityTitle-at2-medium-padding:10px 15px;
+@appActivityTitle-at3-medium-width:100%;
+@appActivityTitle-at3-medium-height:null;
+@appActivityTitle-at4-medium-width:10%;
+@appActivityTitle-at5-medium-width:10%;
+@appActivityTitle-at6-medium-width:10%;
+@appActivityTitle-at7-medium-width:10%;
+@appActivityTitle-at8-medium-width:10%;
+@appActivityTitle-at9-medium-width:10%;
+@appActivityTitle-at10-medium-width:100%;
+@appActivityTitle-at11-medium-width:7%;
+@appActivityTitle-at12-medium-width:93%;
+@appActivityTitle-at13-medium-width:7%;
+@appActivityTitle-at14-medium-width:86%;
+@appActivityTitle-at15-medium-width:7%;
+@appActivityTitle-at15-medium-horizontal-position:flex-end;
+@appActivityTitle-at15-large-horizontal-position:flex-end;
+@appActivityTitle-at15-small-horizontal-position:flex-end;
+@appActivityTitle-at15-mini-horizontal-position:flex-end;
+
+//主办方
+@appOrganizers-xqOrganizersWindow-medium-width:100%;
+@appOrganizers-xqOrganizersWindow-medium-padding:14px 14px;
+@appOrganizers-xo1-medium-width:100%;
+@appOrganizers-xo1-medium-padding:20px 16px;
+@appOrganizers-xo1-background-color:#ffffff;
+@appOrganizers-xo1-background-color-opacity:100;
+@appOrganizers-xo1-border-radius:5px;
+@appOrganizers-xo2-medium-width:100%;
+@appOrganizers-xo3-medium-width:20%;
+@appOrganizers-xo4-medium-width:80%;
+@appOrganizers-xo5-medium-width:44px;
+@appOrganizers-xo5-medium-height:44px;
+@appOrganizers-xo5-border-radius:5px;
+@appOrganizers-xo6-medium-width:20%;
+@appOrganizers-xo7-medium-width:100%;
+@appOrganizers-xo13-medium-width:100%;
+@appOrganizers-xo13-medium-padding:0 0 10px 0;
+@appOrganizers-xo14-medium-width:50%;
+@appOrganizers-xo14-medium-horizontal-position:center;
+@appOrganizers-xo14-large-horizontal-position:center;
+@appOrganizers-xo14-small-horizontal-position:center;
+@appOrganizers-xo14-mini-horizontal-position:center;
+@appOrganizers-xo15-medium-width:50%;
+@appOrganizers-xo15-medium-horizontal-position:center;
+@appOrganizers-xo15-large-horizontal-position:center;
+@appOrganizers-xo15-small-horizontal-position:center;
+@appOrganizers-xo15-mini-horizontal-position:center;
+@appOrganizers-xo8-medium-width:100%;
+@appOrganizers-xo8-medium-vertical-position:center;
+@appOrganizers-xo8-medium-padding:10px 0;
+@appOrganizers-xo9-medium-width:36px;
+@appOrganizers-xo10-medium-width:10%;
+@appOrganizers-xo10-border-width:0 1px 0 0;
+@appOrganizers-xo10-border-style:solid;
+@appOrganizers-xo10-border-color:#999;
+@appOrganizers-xo10-hover-border-color-opacity:100;
+@appOrganizers-xo10-medium-height:12px;
+@appOrganizers-xo10-medium-horizontal-position:flex-start;
+@appOrganizers-xo10-large-horizontal-position:flex-start;
+@appOrganizers-xo10-small-horizontal-position:flex-start;
+@appOrganizers-xo10-mini-horizontal-position:flex-start;
+@appOrganizers-xo10-medium-padding:0 5px;
+@appOrganizers-xo11-background-color-opacity:0;
+@appOrganizers-xo11-medium-height:null;
+@appOrganizers-xo12-medium-width:36px;
+@appOrganizers-xo12-medium-padding:0 0 0 5px;
+@appOrganizers-xo17-medium-width:10%;
+@appOrganizers-xo17-medium-horizontal-position:flex-start;
+@appOrganizers-xo17-large-horizontal-position:flex-start;
+@appOrganizers-xo17-small-horizontal-position:flex-start;
+@appOrganizers-xo17-mini-horizontal-position:flex-start;
+@appOrganizers-xo17-medium-padding:0 0 0 5px;
+//预览 活动详情
+@appActivityDetail-xqActivityDetailWindow-medium-width:100%;
+@appActivityDetail-xqActivityDetailWindow-medium-padding:5px 0 10px 0;
+@appActivityDetail-xqActivityDetailWindow-background-color:#fff;
+@appActivityDetail-xqActivityDetailWindow-background-color-opacity:100;
+@appActivityDetail-ad3-medium-width:100%;
+@appActivityDetail-ad3-medium-padding:10px 16px;
+@appActivityDetail-ad4-medium-width:100%;
+@appActivityDetail-ad4-medium-padding:0 16px;
+@appActivityDetail-ad5-medium-width:100%;
+@appActivityDetail-ad6-medium-width:100%;
+@appActivityDetail-ad6-medium-padding:10px 16px;
+@appActivityDetail-ad6-border-style:solid;
+@appActivityDetail-ad6-border-width:0 0 1px 0;
+@appActivityDetail-ad6-border-color:#EEEEEE;
+@appActivityDetail-ad6-hover-border-color-opacity:100;
+@appActivityDetail-ad7-medium-width:4px;
+@appActivityDetail-ad7-medium-padding:0 5px 0 0;
+@appActivityDetail-ad7-medium-vertical-position:center;
+@appActivityDetail-ad7-large-vertical-position:center;
+@appActivityDetail-ad7-small-vertical-position:center;
+@appActivityDetail-ad7-mini-vertical-position:center;
+@appActivityDetail-ad8-medium-width:90%;
+
+//预览 我要报名模块
+@appSignUp-xqSignUpWindow-medium-width:100%;
+@appSignUp-xqSignUpWindow-background-color:#fff;
+@appSignUp-xqSignUpWindow-background-color-opacity:100;
+@appSignUp-xqSignUpWindow-medium-margin:10px 0 0 0;
+@appSignUp-xs3-medium-width:100%;
+@appSignUp-x8-medium-width:100%;
+@appSignUp-xs1-medium-width:100%;
+@appSignUp-xs1-medium-padding:10px 16px;
+@appSignUp-xs1-border-style:solid;
+@appSignUp-xs1-border-width:0 0 1px 0;
+@appSignUp-xs1-border-color:#EEEEEE;
+@appSignUp-xs1-hover-border-color-opacity:100;
+@appSignUp-xs2-medium-width:4px;
+@appSignUp-xs2-medium-padding:0 5px 0 0;
+@appSignUp-xs2-medium-vertical-position:center;
+@appSignUp-xs2-large-vertical-position:center;
+@appSignUp-xs2-small-vertical-position:center;
+@appSignUp-xs2-mini-vertical-position:center;
+@appSignUp-xs4-medium-width:90%;
+
+// 预览 我要报名模块中子模块
+@appSignUpInfo-xqSignUpInfoWindow-medium-width:100%;
+@appSignUpInfo-xqSignUpInfoWindow-medium-padding:20px 0;
+@appSignUpInfo-xu1-medium-width:100%;
+@appSignUpInfo-xu1-medium-margin:null;
+@appSignUpInfo-xu1-medium-padding:10px;
+@appSignUpInfo-xu1-medium-horizontal-position:center;
+@appSignUpInfo-xu1-large-horizontal-position:center;
+@appSignUpInfo-xu1-small-horizontal-position:center;
+@appSignUpInfo-xu1-mini-horizontal-position:center;
+@appSignUpInfo-xu2-medium-width:40px;
+@appSignUpInfo-xu2-medium-height:40px;
+@appSignUpInfo-xu2-border-style:null;
+@appSignUpInfo-xu2-border-radius:100%;
+@appSignUpInfo-xu2-medium-horizontal-position:center;
+@appSignUpInfo-xu2-large-horizontal-position:center;
+@appSignUpInfo-xu2-small-horizontal-position:center;
+@appSignUpInfo-xu2-mini-horizontal-position:center;
+@appSignUpInfo-xu3-medium-width:100%;
+@appSignUpInfo-xu4-medium-width:30px;
+@appSignUpInfo-xu4-medium-height:14px;
+@appSignUpInfo-xu4-border-width:1px;
+@appSignUpInfo-xu4-border-style:solid;
+@appSignUpInfo-xu4-border-color:#12B0FF;
+@appSignUpInfo-xu4-hover-border-color-opacity:100;
+@appSignUpInfo-xu4-background-color:#fff;
+@appSignUpInfo-xu4-background-color-opacity:100;
+@appSignUpInfo-xu4-border-radius:14px;
+@appSignUpInfo-xu5-medium-width:100%;
+
+//讨论模块
+@appDiscuss-xqDiscussWindow-medium-width:100%;
+@appDiscuss-xqDiscussWindow-medium-margin:10px 0 0 0;
+@appDiscuss-xqDiscussWindow-background-color:#fff;
+@appDiscuss-xqDiscussWindow-background-color-opacity:100;
+@appDiscuss-xd4-medium-width:100%;
+@appDiscuss-xd4-medium-padding:0 16px;
+@appDiscuss-xd5-medium-width:100%;
+@appDiscuss-xd1-medium-width:100%;
+@appDiscuss-xd1-medium-padding:10px 16px;
+@appDiscuss-xd2-medium-width:60%;
+@appDiscuss-xd3-medium-width:40%;
+@appDiscuss-xd3-medium-horizontal-position:flex-end;
+@appDiscuss-xd3-large-horizontal-position:flex-end;
+@appDiscuss-xd3-small-horizontal-position:flex-end;
+@appDiscuss-xd3-mini-horizontal-position:flex-end;
+@appDiscuss-xd6-medium-width:4px;
+@appDiscuss-xd6-medium-vertical-position:center;
+@appDiscuss-xd6-large-vertical-position:center;
+@appDiscuss-xd6-small-vertical-position:center;
+@appDiscuss-xd6-mini-vertical-position:center;
+@appDiscuss-xd6-medium-padding:0 5px 0 0;
+@appDiscuss-xd7-medium-width:90%;
+
+
+
+
+//讨论子模块
+@appDiscussContent-xqDiscussContentWindow-medium-width:100%;
+@appDiscussContent-xqDiscussContentWindow-medium-padding:10px 0;
+@appDiscussContent-xqDiscussContentWindow-border-style:solid;
+@appDiscussContent-xqDiscussContentWindow-border-width:0 0 1px 0;
+@appDiscussContent-xqDiscussContentWindow-border-radius:null;
+@appDiscussContent-xqDiscussContentWindow-border-color:#EEE;
+@appDiscussContent-xqDiscussContentWindow-hover-border-color-opacity:100;
+@appDiscussContent-xdc1-medium-width:36px;
+@appDiscussContent-xdc1-medium-height:36px;
+@appDiscussContent-xdc1-border-radius:100%;
+@appDiscussContent-xdc2-medium-width:80%;
+@appDiscussContent-xdc2-medium-padding:0 0 0 10px;
+@appDiscussContent-xdc3-medium-width:100%;
+@appDiscussContent-askTime-medium-width:100%;
+@appDiscussContent-xdc4-medium-width:100%;
+@appDiscussContent-xdc4-medium-padding:10px 0;
+@appDiscussContent-xdc5-medium-width:100%;
+@appDiscussContent-xdc5-medium-padding:10px;
+@appDiscussContent-xdc5-background-color:#F4F4F4;
+@appDiscussContent-xdc5-background-color-opacity:100;
+@appDiscussContent-xdc6-medium-width:100%;
+@appDiscussContent-xdc7-medium-width:100%;
+@appDiscussContent-xdc8-medium-width:100%;
+
+//预览  页脚
+@appActivityFooter-xqActivityFooterWindow-medium-width:100%;
+@appActivityFooter-xqActivityFooterWindow-medium-height:49px;
+@appActivityFooter-xqActivityFooterWindow-background-color:#fff;
+@appActivityFooter-xqActivityFooterWindow-background-color-opacity:100;
+@appActivityFooter-xf1-medium-width:50%;
+@appActivityFooter-xf1-medium-height:null;
+@appActivityFooter-xf1-background-color:#fff;
+@appActivityFooter-xf1-background-color-opacity:100;
+@appActivityFooter-xf1-medium-margin:null;
+@appActivityFooter-xf1-medium-padding:5px 0 0 0;
+@appActivityFooter-xf2-medium-width:50%;
+@appActivityFooter-xf3-medium-width:33%;
+@appActivityFooter-xf4-medium-width:34%;
+@appActivityFooter-xf5-medium-width:33%;
+@appActivityFooter-xf6-medium-width:100%;
+@appActivityFooter-xf7-medium-width:100%;
+@appActivityFooter-xf8-medium-width:100%;
+@appActivityFooter-xf9-medium-width:100%;
+@appActivityFooter-xf10-medium-width:100%;
+@appActivityFooter-xf11-medium-width:100%;
+
+//预览  地图组件
+@appMap-xqMapWindow-medium-width:100%;
+@appMap-m1-medium-width:40px;
+@appMap-m1-background-color-opacity:0;
+@appMap-m1-medium-height:40px;
+@appMap-m1-border-radius:4px;
+@appMap-m2-medium-width:100%;
+
+//我要报名对话框
+@appMyRegistration-xqMyRegistrationWindow-medium-width:100%;
+@appMyRegistration-xqMyRegistrationWindow-background-color:#fff;
+@appMyRegistration-xqMyRegistrationWindow-background-color-opacity:100;
+@appMyRegistration-xm1-medium-width:100%;
+@appMyRegistration-xm1-medium-padding:16px;
+@appMyRegistration-xm2-medium-width:100%;
+@appMyRegistration-xm2-medium-height:null;
+@appMyRegistration-xm2-medium-padding:5px 0;
+@appMyRegistration-xm3-medium-width:70%;
+@appMyRegistration-xm4-medium-width:30%;
+@appMyRegistration-xm5-medium-width:100%;
+@appMyRegistration-xm6-medium-width:100%;
+@appMyRegistration-number-medium-width:100%;
+@appMyRegistration-xm7-medium-width:100%;
+@appMyRegistration-xm7-medium-height:49px;
+@appMyRegistration-xm8-medium-width:50%;
+@appMyRegistration-xm8-medium-padding:0 0 0 16px;
+@appMyRegistration-xm9-medium-width:50%;
+@appMyRegistration-xm11-medium-width:20%;
+@appMyRegistration-xm12-medium-width:80%;
+//活动价格
+@appActivityPrice-xqActivityPriceWindow-medium-width:auto;
+@appActivityPrice-xqActivityPriceWindow-medium-height:48px;
+@appActivityPrice-xqActivityPriceWindow-border-style:solid;
+@appActivityPrice-xqActivityPriceWindow-border-width:1px;
+@appActivityPrice-xqActivityPriceWindow-border-color:#DDDDDD;
+@appActivityPrice-xqActivityPriceWindow-hover-border-color-opacity:100;
+@appActivityPrice-xqActivityPriceWindow-border-radius:2px;
+@appActivityPrice-xqActivityPriceWindow-medium-padding:0 10px;
+@appActivityPrice-xqActivityPriceWindow-medium-margin:5px 0;
+@appActivityPrice-xqActivityPriceWindow-checked-border-color:#12B0FF;
+@appActivityPrice-xqActivityPriceWindow-checked-border-color-opacity:100;
+@appActivityPrice-xqActivityPriceWindow-checked-border-style:solid;
+@appActivityPrice-xqActivityPriceWindow-checked-border-width:1px;
+@appActivityPrice-xap1-medium-width:70%;
+@appActivityPrice-xap1-medium-vertical-position:center;
+@appActivityPrice-xap1-large-vertical-position:center;
+@appActivityPrice-xap1-small-vertical-position:center;
+@appActivityPrice-xap1-mini-vertical-position:center;
+@appActivityPrice-xap2-medium-width:30%;
+@appActivityPrice-xap2-medium-vertical-position:center;
+@appActivityPrice-xap2-large-vertical-position:center;
+@appActivityPrice-xap2-small-vertical-position:center;
+@appActivityPrice-xap2-mini-vertical-position:center;
+
+
+//编辑活动 回复详情模块
+@replayActivity-replayActivityWindow-medium-width:100%;
+@replayActivity-replayActivityWindow-medium-margin:null;
+@replayActivity-replayActivityWindow-medium-padding:46px 0 0 0;
+@replayActivity-replayActivityWindow-background-color:#f4f4f4;
+@replayActivity-replayActivityWindow-background-color-opacity:100;
+@replayActivity-ra1-medium-width:100%;
+@replayActivity-ra2-medium-width:100%;
+@replayActivity-ra3-medium-width:100%;
+@replayActivity-ra4-medium-width:100%;
+@replayActivity-ra5-medium-width:100%;
+@replayActivity-ra6-medium-width:100%;
+@replayActivity-share-medium-width:100px;
+//@replayActivity-share-medium-height:100px;
+@replayActivity-map-medium-width:100px;
+@replayActivity-map-medium-height:100px;
+@replayActivity-replay-medium-width:100px;
+@replayActivity-replay-medium-height:100px;
+
+//回复详情模块标题
+@replayTitleBar-xqTitleBarWindow-medium-width:100%;
+@replayTitleBar-xqTitleBarWindow-medium-height:null;
+@replayTitleBar-xqTitleBarWindow-background-color:#ffffff;
+@replayTitleBar-xqTitleBarWindow-background-color-opacity:100;
+@replayTitleBar-t1-medium-width:20%;
+@replayTitleBar-t1-medium-padding:0 0 0 10px;
+@replayTitleBar-t2-medium-width:60%;
+@replayTitleBar-t3-medium-width:20%;
+@replayTitleBar-t3-medium-horizontal-position:flex-end;
+@replayTitleBar-t3-large-horizontal-position:flex-end;
+@replayTitleBar-t3-small-horizontal-position:flex-end;
+@replayTitleBar-t3-mini-horizontal-position:flex-end;
+@replayTitleBar-t3-medium-padding:0 10px 0 0;
+//回复  活动详情的标题
+@replayActivityTitle-xqActivityTitleWindow-medium-width:100%;
+@replayActivityTitle-xqActivityTitleWindow-background-color:#ffffff;
+@replayActivityTitle-xqActivityTitleWindow-background-color-opacity:100;
+@replayActivityTitle-at-medium-width:100%;
+@replayActivityTitle-at-medium-height:190px;
+@replayActivityTitle-at2-medium-width:100%;
+@replayActivityTitle-at2-medium-padding:10px 15px;
+@replayActivityTitle-at3-medium-width:100%;
+@replayActivityTitle-at3-medium-height:null;
+@replayActivityTitle-at4-medium-width:10%;
+@replayActivityTitle-at5-medium-width:10%;
+@replayActivityTitle-at6-medium-width:10%;
+@replayActivityTitle-at7-medium-width:10%;
+@replayActivityTitle-at8-medium-width:10%;
+@replayActivityTitle-at9-medium-width:10%;
+@replayActivityTitle-at10-medium-width:100%;
+@replayActivityTitle-at11-medium-width:7%;
+@replayActivityTitle-at12-medium-width:93%;
+@replayActivityTitle-at13-medium-width:7%;
+@replayActivityTitle-at14-medium-width:86%;
+@replayActivityTitle-at15-medium-width:7%;
+@replayActivityTitle-at15-medium-horizontal-position:flex-end;
+@replayActivityTitle-at15-large-horizontal-position:flex-end;
+@replayActivityTitle-at15-small-horizontal-position:flex-end;
+@replayActivityTitle-at15-mini-horizontal-position:flex-end;
+
+
+//回复  活动详情报名
+
+@replaySignUp-xqSignUpWindow-medium-width:100%;
+@replaySignUp-xqSignUpWindow-background-color:#fff;
+@replaySignUp-xqSignUpWindow-background-color-opacity:100;
+@replaySignUp-xqSignUpWindow-medium-margin:10px 0 0 0;
+@replaySignUp-xs3-medium-width:100%;
+@replaySignUp-x8-medium-width:100%;
+@replaySignUp-xs1-medium-width:100%;
+@replaySignUp-xs1-medium-padding:10px 16px;
+@replaySignUp-xs1-border-style:solid;
+@replaySignUp-xs1-border-width:0 0 1px 0;
+@replaySignUp-xs1-border-color:#EEEEEE;
+@replaySignUp-xs1-hover-border-color-opacity:100;
+@replaySignUp-xs2-medium-width:4px;
+@replaySignUp-xs2-medium-padding:0 5px 0 0;
+@replaySignUp-xs2-medium-vertical-position:center;
+@replaySignUp-xs2-large-vertical-position:center;
+@replaySignUp-xs2-small-vertical-position:center;
+@replaySignUp-xs2-mini-vertical-position:center;
+@replaySignUp-xs4-medium-width:90%;
+
+//回复 活动详情报名子模块
+@replaySignUpInfo-xqSignUpInfoWindow-medium-width:100%;
+@replaySignUpInfo-xqSignUpInfoWindow-medium-padding:20px 0;
+@replaySignUpInfo-xu1-medium-width:100%;
+@replaySignUpInfo-xu1-medium-margin:null;
+@replaySignUpInfo-xu1-medium-padding:10px;
+@replaySignUpInfo-xu1-medium-horizontal-position:center;
+@replaySignUpInfo-xu1-large-horizontal-position:center;
+@replaySignUpInfo-xu1-small-horizontal-position:center;
+@replaySignUpInfo-xu1-mini-horizontal-position:center;
+@replaySignUpInfo-xu2-medium-width:40px;
+@replaySignUpInfo-xu2-medium-height:40px;
+@replaySignUpInfo-xu2-border-style:null;
+@replaySignUpInfo-xu2-border-radius:100%;
+@replaySignUpInfo-xu2-medium-horizontal-position:center;
+@replaySignUpInfo-xu2-large-horizontal-position:center;
+@replaySignUpInfo-xu2-small-horizontal-position:center;
+@replaySignUpInfo-xu2-mini-horizontal-position:center;
+@replaySignUpInfo-xu3-medium-width:100%;
+@replaySignUpInfo-xu4-medium-width:30px;
+@replaySignUpInfo-xu4-medium-height:14px;
+@replaySignUpInfo-xu4-border-width:1px;
+@replaySignUpInfo-xu4-border-style:solid;
+@replaySignUpInfo-xu4-border-color:#12B0FF;
+@replaySignUpInfo-xu4-hover-border-color-opacity:100;
+@replaySignUpInfo-xu4-background-color:#fff;
+@replaySignUpInfo-xu4-background-color-opacity:100;
+@replaySignUpInfo-xu4-border-radius:14px;
+@replaySignUpInfo-xu5-medium-width:100%;
+
+//活动 详情标题你
+@replayActivityDetail-xqActivityDetailWindow-medium-width:100%;
+@replayActivityDetail-xqActivityDetailWindow-medium-padding:5px 0 10px 0;
+@replayActivityDetail-xqActivityDetailWindow-background-color:#fff;
+@replayActivityDetail-xqActivityDetailWindow-background-color-opacity:100;
+@replayActivityDetail-ad3-medium-width:100%;
+@replayActivityDetail-ad3-medium-padding:10px 16px;
+@replayActivityDetail-ad4-medium-width:100%;
+@replayActivityDetail-ad4-medium-padding:0 16px;
+@replayActivityDetail-ad5-medium-width:100%;
+@replayActivityDetail-ad6-medium-width:100%;
+@replayActivityDetail-ad6-medium-padding:10px 16px;
+@replayActivityDetail-ad6-border-style:solid;
+@replayActivityDetail-ad6-border-width:0 0 1px 0;
+@replayActivityDetail-ad6-border-color:#EEEEEE;
+@replayActivityDetail-ad6-hover-border-color-opacity:100;
+@replayActivityDetail-ad7-medium-width:4px;
+@replayActivityDetail-ad7-medium-padding:0 5px 0 0;
+@replayActivityDetail-ad7-medium-vertical-position:center;
+@replayActivityDetail-ad7-large-vertical-position:center;
+@replayActivityDetail-ad7-small-vertical-position:center;
+@replayActivityDetail-ad7-mini-vertical-position:center;
+@replayActivityDetail-ad8-medium-width:90%;
+
+//回复 主办方
+@replayOrganizers-xqOrganizersWindow-medium-width:100%;
+@replayOrganizers-xqOrganizersWindow-medium-padding:14px 14px;
+@replayOrganizers-xo1-medium-width:100%;
+@replayOrganizers-xo1-medium-padding:20px 16px;
+@replayOrganizers-xo1-background-color:#ffffff;
+@replayOrganizers-xo1-background-color-opacity:100;
+@replayOrganizers-xo1-border-radius:5px;
+@replayOrganizers-xo2-medium-width:100%;
+@replayOrganizers-xo3-medium-width:20%;
+@replayOrganizers-xo4-medium-width:80%;
+@replayOrganizers-xo5-medium-width:44px;
+@replayOrganizers-xo5-medium-height:44px;
+@replayOrganizers-xo5-border-radius:5px;
+@replayOrganizers-xo6-medium-width:20%;
+@replayOrganizers-xo7-medium-width:100%;
+@replayOrganizers-xo13-medium-width:100%;
+@replayOrganizers-xo13-medium-padding:0 0 10px 0;
+@replayOrganizers-xo8-medium-width:100%;
+@replayOrganizers-xo8-medium-vertical-position:center;
+@replayOrganizers-xo8-medium-padding:10px 0;
+@replayOrganizers-xo9-medium-width:36px;
+@replayOrganizers-xo10-medium-width:10%;
+@replayOrganizers-xo10-border-width:0 1px 0 0;
+@replayOrganizers-xo10-border-style:solid;
+@replayOrganizers-xo10-border-color:#999;
+@replayOrganizers-xo10-hover-border-color-opacity:100;
+@replayOrganizers-xo10-medium-height:12px;
+@replayOrganizers-xo10-medium-horizontal-position:flex-start;
+@replayOrganizers-xo10-large-horizontal-position:flex-start;
+@replayOrganizers-xo10-small-horizontal-position:flex-start;
+@replayOrganizers-xo10-mini-horizontal-position:flex-start;
+@replayOrganizers-xo10-medium-padding:0 5px;
+@replayOrganizers-xo11-background-color-opacity:0;
+@replayOrganizers-xo11-medium-height:null;
+@replayOrganizers-xo12-medium-width:36px;
+@replayOrganizers-xo12-medium-padding:0 0 0 5px;
+@replayOrganizers-xo17-medium-width:10%;
+@replayOrganizers-xo17-medium-horizontal-position:flex-start;
+@replayOrganizers-xo17-large-horizontal-position:flex-start;
+@replayOrganizers-xo17-small-horizontal-position:flex-start;
+@replayOrganizers-xo17-mini-horizontal-position:flex-start;
+@replayOrganizers-xo17-medium-padding:0 0 0 5px;
+
+
+//回复 讨论
+@replayDiscuss-xqDiscussWindow-medium-width:100%;
+@replayDiscuss-xqDiscussWindow-medium-margin:10px 0 0 0;
+@replayDiscuss-xqDiscussWindow-background-color:#fff;
+@replayDiscuss-xqDiscussWindow-background-color-opacity:100;
+@replayDiscuss-xd4-medium-width:100%;
+@replayDiscuss-xd4-medium-padding:0 16px;
+@replayDiscuss-xd5-medium-width:100%;
+@replayDiscuss-xd1-medium-width:100%;
+@replayDiscuss-xd1-medium-padding:10px 16px;
+@replayDiscuss-xd2-medium-width:100%;
+@replayDiscuss-xd3-medium-horizontal-position:flex-end;
+@replayDiscuss-xd3-large-horizontal-position:flex-end;
+@replayDiscuss-xd3-small-horizontal-position:flex-end;
+@replayDiscuss-xd3-mini-horizontal-position:flex-end;
+@replayDiscuss-xd6-medium-width:4px;
+@replayDiscuss-xd6-medium-vertical-position:center;
+@replayDiscuss-xd6-large-vertical-position:center;
+@replayDiscuss-xd6-small-vertical-position:center;
+@replayDiscuss-xd6-mini-vertical-position:center;
+@replayDiscuss-xd6-medium-padding:0 5px 0 0;
+@replayDiscuss-xd7-medium-width:90%;
+//讨论子模块
+
+@replayDiscussContent-xqDiscussContentWindow-medium-width:100%;
+@replayDiscussContent-xqDiscussContentWindow-medium-padding:10px 0;
+@replayDiscussContent-xqDiscussContentWindow-border-style:solid;
+@replayDiscussContent-xqDiscussContentWindow-border-width:0 0 1px 0;
+@replayDiscussContent-xqDiscussContentWindow-border-radius:null;
+@replayDiscussContent-xqDiscussContentWindow-border-color:#EEE;
+@replayDiscussContent-xqDiscussContentWindow-hover-border-color-opacity:100;
+@replayDiscussContent-xdc1-medium-width:36px;
+@replayDiscussContent-xdc1-medium-height:36px;
+@replayDiscussContent-xdc1-border-radius:100%;
+@replayDiscussContent-xdc2-medium-width:80%;
+@replayDiscussContent-xdc2-medium-padding:0 0 0 10px;
+@replayDiscussContent-xdc3-medium-width:100%;
+@replayDiscussContent-askTime-medium-width:100%;
+@replayDiscussContent-xdc4-medium-width:100%;
+@replayDiscussContent-xdc4-medium-padding:10px 0;
+@replayDiscussContent-xdc5-medium-width:100%;
+@replayDiscussContent-xdc5-medium-padding:10px;
+@replayDiscussContent-xdc5-background-color:#F4F4F4;
+@replayDiscussContent-xdc5-background-color-opacity:100;
+@replayDiscussContent-xdc6-medium-width:100%;
+@replayDiscussContent-xdc7-medium-width:100%;
+@replayDiscussContent-xdc8-medium-width:100%;
+@replayDiscussContent-xdc9-medium-width:100%;
+@replayDiscussContent-xdc9-medium-padding:null;
+@replayDiscussContent-xdc9-medium-margin:5px 0;
+@replayDiscussContent-xdc10-medium-width:80px;
+@replayDiscussContent-xdc10-medium-height:24px;
+@replayDiscussContent-xdc10-medium-horizontal-position:center;
+@replayDiscussContent-xdc10-large-horizontal-position:flex-end;
+@replayDiscussContent-xdc10-small-horizontal-position:flex-end;
+@replayDiscussContent-xdc10-mini-horizontal-position:flex-end;
+@replayDiscussContent-xdc10-border-style:solid;
+@replayDiscussContent-xdc10-border-width:1px;
+@replayDiscussContent-xdc10-border-radius:2px;
+@replayDiscussContent-xdc10-border-color:#12B0FF;
+@replayDiscussContent-xdc10-hover-border-color-opacity:100;
+
+
+//分享对话框  第三方
+@replayShare-replayShareWindow-medium-width:100%;
+@replayShare-replayShareWindow-medium-padding:10px 0;
+@replayShare-replayShareWindow-medium-margin:null;
+@replayShare-replayShareWindow-background-color:#fff;
+@replayShare-replayShareWindow-background-color-opacity:100;
+@replayShare-rs1-medium-width:100%;
+@replayShare-rs1-medium-padding:5px 16px;
+@replayShare-rs1-medium-horizontal-position:flex-end;
+@replayShare-rs1-large-horizontal-position:flex-end;
+@replayShare-rs1-small-horizontal-position:flex-end;
+@replayShare-rs1-mini-horizontal-position:flex-end;
+@replayShare-rs2-medium-width:100%;
+@replayShare-rs3-medium-width:100%;
+
+//第三方的对应图标模块
+@replayThirdParty-scThirdPartyWindow-medium-width:100%;
+@replayThirdParty-st1-medium-width:100%;
+@replayThirdParty-st1-medium-margin:15px 0;
+@replayThirdParty-st2-medium-width:100%;
+@replayThirdParty-st2-border-style:null;
+@replayThirdParty-st3-medium-width:100%;
+//回复  地图
+@replayMap-xqMapWindow-medium-width:100%;
+@replayMap-m1-medium-width:40px;
+@replayMap-m1-background-color-opacity:0;
+@replayMap-m1-medium-height:40px;
+@replayMap-m1-border-radius:4px;
+@replayMap-m2-medium-width:100%;
+
+//回复对话框
+@replayForm-replayFormWindow-medium-width:100%;
+@replayForm-replayFormWindow-background-color:#fff;
+@replayForm-replayFormWindow-background-color-opacity:100;
+@replayForm-rf1-medium-width:100%;
+@replayForm-rf1-border-style:solid;
+@replayForm-rf1-border-width:0 0 1px 0;
+@replayForm-rf1-border-color:#eee;
+@replayForm-rf1-hover-border-color-opacity:100;
+@replayForm-rf1-medium-height:40px;
+@replayForm-rf2-medium-width:20%;
+@replayForm-rf3-medium-width:60%;
+@replayForm-rf4-medium-width:20%;
+@replayForm-rf4-medium-horizontal-position:flex-end;
+@replayForm-rf4-large-horizontal-position:flex-end;
+@replayForm-rf4-small-horizontal-position:flex-end;
+@replayForm-rf4-mini-horizontal-position:flex-end;
+@replayForm-rf4-medium-padding:0 20px 0 0;
+@replayForm-rf5-medium-width:100%;
+@replayForm-rf5-medium-padding:10px 20px;
+@replayForm-rf6-medium-width:100%;
+@replayForm-rf6-medium-padding:0 20px;
+
+
+//报名人信息模块
+@applicantInfo-applicantInfoWindow-medium-width:100%;
+@applicantInfo-applicantInfoWindow-background-color:#f4f4f4;
+@applicantInfo-applicantInfoWindow-background-color-opacity:100;
+@applicantInfo-applicantInfoWindow-medium-padding:46px 0 0 0;
+@applicantInfo-ai-medium-width:100%;
+@applicantInfo-ai2-medium-width:100%;
+@applicantInfo-ai3-medium-width:100px;
+@applicantInfo-ai3-medium-height:100px;
+//报名人信息单个模块
+@applicantContent-applicantContentWindow-medium-width:100%;
+@applicantContent-applicantContentWindow-background-color:#fff;
+@applicantContent-applicantContentWindow-background-color-opacity:100;
+@applicantContent-applicantContentWindow-medium-margin:0 0 15px 0;
+@applicantContent-at1-medium-width:100%;
+@applicantContent-at1-border-style:solid;
+@applicantContent-at1-border-width:0 0 1px 0;
+@applicantContent-at1-border-color:#eee;
+@applicantContent-at1-hover-border-color-opacity:100;
+@applicantContent-at1-medium-padding:0 15px;
+@applicantContent-at2-medium-width:100%;
+@applicantContent-at2-medium-margin:0 15px;
+@applicantContent-at2-medium-padding:5px 0 0 0;
+@applicantContent-at3-medium-width:100%;
+@applicantContent-at3-medium-margin:0 15px;
+@applicantContent-at3-medium-padding:0 0 5px 0;
+@applicantContent-at3-border-style:solid;
+@applicantContent-at3-border-width:0 0 1px 0;
+@applicantContent-at3-border-color:#eee;
+@applicantContent-at3-hover-border-color-opacity:100;
+@applicantContent-at4-medium-width:100%;
+@applicantContent-at4-medium-margin:0 15px;
+@applicantContent-at4-medium-padding:5px 0 0 0;
+@applicantContent-at5-medium-width:100%;
+@applicantContent-at5-medium-margin:0 15px;
+@applicantContent-at5-medium-padding:0 0 5px 0;
+@applicantContent-at5-border-style:solid;
+@applicantContent-at5-border-width:0 0 1px 0;
+@applicantContent-at5-border-color:#eee;
+@applicantContent-at5-hover-border-color-opacity:100;
+@applicantContent-at6-medium-width:100%;
+@applicantContent-at6-medium-margin:0 15px;
+@applicantContent-at6-medium-padding:5px 0 0 0;
+@applicantContent-at7-medium-width:100%;
+@applicantContent-at7-medium-margin:0 15px;
+@applicantContent-at7-medium-padding:0 0 5px 0;
+@applicantContent-at8-medium-width:100%;
+@applicantContent-at8-medium-margin:0 15px;
+//报名人信息循环子模块
+@applicantContentInfo-applicantContentInfoWindow-medium-width:100%;
+@applicantContentInfo-applicantContentInfoWindow-medium-height:null;
+@applicantContentInfo-applicantContentInfoWindow-border-style:solid;
+@applicantContentInfo-applicantContentInfoWindow-border-width:0 0 1px 0;
+@applicantContentInfo-applicantContentInfoWindow-border-color:#eee;
+@applicantContentInfo-applicantContentInfoWindow-hover-border-color-opacity:100;
+@applicantContentInfo-applicantContentInfoWindow-medium-padding:5px 0;
+@applicantContentInfo-ac1-medium-width:100%;
+@applicantContentInfo-ac2-medium-width:100%;
+
+//菜单对话框
+@applicantMenu-xqMenuWindow-medium-width:100%;
+@applicantMenu-xm-medium-width:100%;
+
+//标题模块
+@applicantTitleBar-xqTitleBarWindow-medium-width:100%;
+@applicantTitleBar-xqTitleBarWindow-medium-height:null;
+@applicantTitleBar-xqTitleBarWindow-background-color:#ffffff;
+@applicantTitleBar-xqTitleBarWindow-background-color-opacity:100;
+@applicantTitleBar-xqTitleBarWindow-border-style:solid;
+@applicantTitleBar-xqTitleBarWindow-border-width:0 0 1px 0;
+@applicantTitleBar-xqTitleBarWindow-border-color:#eee;
+@applicantTitleBar-xqTitleBarWindow-hover-border-color-opacity:100;
+@applicantTitleBar-t1-medium-width:20%;
+@applicantTitleBar-t1-medium-padding:0 0 0 10px;
+@applicantTitleBar-t2-medium-width:60%;
+@applicantTitleBar-t3-medium-width:20%;
+@applicantTitleBar-t3-medium-horizontal-position:flex-end;
+@applicantTitleBar-t3-large-horizontal-position:flex-end;
+@applicantTitleBar-t3-small-horizontal-position:flex-end;
+@applicantTitleBar-t3-mini-horizontal-position:flex-end;
+@applicantTitleBar-t3-medium-padding:0 10px 0 0;
+
+
+
+//活动列表模块
+@orgActivityList-orgActivityListWindow-medium-width:100%;
+@orgActivityList-orgActivityListWindow-medium-padding:46px 0 0 0;
+@orgActivityList-oga-medium-width:100%;
+@orgActivityList-oga2-medium-width:100%;
+@orgActivityList-oga3-medium-width:100%;
+@orgActivityList-oga4-medium-width:100px;
+@orgActivityList-oga4-medium-height:100px;
+
+//活动列表模块标题
+@orgTitleBar-xqTitleBarWindow-medium-width:100%;
+@orgTitleBar-xqTitleBarWindow-medium-height:null;
+@orgTitleBar-xqTitleBarWindow-background-color:#ffffff;
+@orgTitleBar-xqTitleBarWindow-background-color-opacity:100;
+@orgTitleBar-xqTitleBarWindow-border-style:solid;
+@orgTitleBar-xqTitleBarWindow-border-width:0 0 1px 0;
+@orgTitleBar-xqTitleBarWindow-border-color:#eee;
+@orgTitleBar-xqTitleBarWindow-hover-border-color-opacity:100;
+@orgTitleBar-t1-medium-width:20%;
+@orgTitleBar-t1-medium-padding:0 0 0 10px;
+@orgTitleBar-t2-medium-width:60%;
+@orgTitleBar-t3-medium-width:20%;
+@orgTitleBar-t3-medium-horizontal-position:flex-end;
+@orgTitleBar-t3-large-horizontal-position:flex-end;
+@orgTitleBar-t3-small-horizontal-position:flex-end;
+@orgTitleBar-t3-mini-horizontal-position:flex-end;
+@orgTitleBar-t3-medium-padding:0 10px 0 0;
+
+//菜单栏对话框
+@orgMenu-xqMenuWindow-medium-width:100%;
+@orgMenu-xm-medium-width:100%;
+//主办方模块、
+@orgOrganizers-orgOrganizersWindow-medium-width:100%;
+@orgOrganizers-orgOrganizersWindow-medium-padding:10px 10px;
+@orgOrganizers-ogi-medium-width:100%;
+@orgOrganizers-ogi-medium-padding:15px 15px;
+@orgOrganizers-ogi-border-radius:5px;
+@orgOrganizers-ogi2-medium-width:100%;
+@orgOrganizers-ogi3-medium-width:20%;
+@orgOrganizers-ogi3-medium-vertical-position:center;
+@orgOrganizers-ogi3-large-vertical-position:center;
+@orgOrganizers-ogi3-small-vertical-position:center;
+@orgOrganizers-ogi3-mini-vertical-position:center;
+@orgOrganizers-ogi4-medium-width:60%;
+@orgOrganizers-ogi5-medium-width:20%;
+@orgOrganizers-ogi5-medium-vertical-position:center;
+@orgOrganizers-ogi5-large-vertical-position:center;
+@orgOrganizers-ogi5-small-vertical-position:center;
+@orgOrganizers-ogi5-mini-vertical-position:center;
+@orgOrganizers-ogi6-medium-width:44px;
+@orgOrganizers-ogi6-medium-height:44px;
+@orgOrganizers-ogi6-border-radius:5px;
+@orgOrganizers-ogi7-medium-width:100%;
+@orgOrganizers-ogi8-medium-width:100%;
+@orgOrganizers-ogi9-medium-width:100%;
+@orgOrganizers-ogi10-medium-width:20%;
+@orgOrganizers-ogi11-medium-width:20%;
+@orgOrganizers-ogi12-medium-width:15%;
+@orgOrganizers-ogi13-medium-width:20%;
+@orgOrganizers-ogi14-medium-width:20%;
+@orgOrganizers-ogi14-medium-vertical-position:center;
+@orgOrganizers-ogi14-large-vertical-position:center;
+@orgOrganizers-ogi14-small-vertical-position:center;
+@orgOrganizers-ogi14-mini-vertical-position:center;
+@orgOrganizers-ogi15-medium-width:100%;
+@orgOrganizers-ogi15-medium-margin:20px 0 10px 0;
+@orgOrganizers-ogi16-medium-width:100%;
+//活动内容模块
+@orgListContent-orgListContentWindow-medium-width:100%;
+@orgListContent-ogc-medium-width:100%;
+@orgListContent-ogc-medium-padding:15px 15px;
+@orgListContent-ogc-border-style:solid;
+@orgListContent-ogc-border-width:0 0 1px 0;
+@orgListContent-ogc-border-color:#eee;
+@orgListContent-ogc-hover-border-color-opacity:100;
+@orgListContent-ogc2-medium-width:4px;
+@orgListContent-ogc2-medium-vertical-position:center;
+@orgListContent-ogc2-large-vertical-position:center;
+@orgListContent-ogc2-small-vertical-position:center;
+@orgListContent-ogc2-mini-vertical-position:center;
+@orgListContent-ogc3-medium-width:90%;
+@orgListContent-ogc3-medium-padding:0 0 0 5px;
+@orgListContent-ogc4-medium-width:100%;
+
+//活动内容单选子模块
+@orgListContentInfo-orgListContentInfoWindow-medium-width:100%;
+@orgListContentInfo-orgListContentInfoWindow-medium-padding:10px 15px;
+@orgListContentInfo-orgListContentInfoWindow-background-color:#fff;
+@orgListContentInfo-orgListContentInfoWindow-background-color-opacity:100;
+@orgListContentInfo-orgListContentInfoWindow-border-width:0 0 1px 0;
+@orgListContentInfo-orgListContentInfoWindow-border-style:solid;
+@orgListContentInfo-orgListContentInfoWindow-border-color:#eee;
+@orgListContentInfo-orgListContentInfoWindow-hover-border-color-opacity:100;
+@orgListContentInfo-ogc-medium-width:100%;
+@orgListContentInfo-ogc2-medium-width:40%;
+@orgListContentInfo-ogc2-medium-vertical-position:center;
+@orgListContentInfo-ogc2-large-vertical-position:center;
+@orgListContentInfo-ogc2-small-vertical-position:center;
+@orgListContentInfo-ogc2-mini-vertical-position:center;
+@orgListContentInfo-ogc3-medium-width:60%;
+@orgListContentInfo-ogc4-medium-width:128px;
+@orgListContentInfo-ogc4-medium-height:72px;
+@orgListContentInfo-ogc4-border-radius:5px;
+@orgListContentInfo-ogc5-medium-width:42px;
+@orgListContentInfo-ogc5-background-color-opacity:0;
+@orgListContentInfo-ogc5-border-radius:2px;
+@orgListContentInfo-ogc6-medium-width:100%;
+@orgListContentInfo-ogc7-medium-width:100%;
+@orgListContentInfo-ogc8-medium-width:100%;
+@orgListContentInfo-ogc9-medium-width:70%;
+@orgListContentInfo-ogc10-medium-width:30%;
+
+//图片相册模块
+@apmActivityPhotoModule-apmActivityPhotoModuleWindow-medium-width:100%;
+@apmActivityPhotoModule-apmActivityPhotoModuleWindow-medium-padding:42px 0 0 0;
+@apmActivityPhotoModule-apmActivityPhotoModuleWindow-background-color:#fff;
+@apmActivityPhotoModule-apmActivityPhotoModuleWindow-background-color-opacity:100;
+@apmActivityPhotoModule-apm-medium-width:100%;
+@apmActivityPhotoModule-apm-medium-height:42px;
+@apmActivityPhotoModule-apm-border-style:solid;
+@apmActivityPhotoModule-apm-border-width:0 0 1px 0;
+@apmActivityPhotoModule-apm-border-color:#ddd;
+@apmActivityPhotoModule-apm-hover-border-color-opacity:100;
+@apmActivityPhotoModule-apm2-medium-width:20%;
+@apmActivityPhotoModule-apm2-medium-padding:0 0 0 10px;
+@apmActivityPhotoModule-apm3-medium-width:60%;
+@apmActivityPhotoModule-apm4-medium-width:20%;
+@apmActivityPhotoModule-apm5-medium-width:100%;
+@apmActivityPhotoModule-content-medium-width:100%;
+

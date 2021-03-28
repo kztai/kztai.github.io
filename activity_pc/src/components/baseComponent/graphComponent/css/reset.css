@@ -1,0 +1,124 @@
+﻿.body_active .filter{
+    -webkit-filter:blur(3px);
+    -moz-filter:blur(3px);
+    -o-filter:blur(3px);
+    -ms-filter:blur(3px);
+    filter:blur(3px);
+}
+.body_active{
+    -webkit-backface-visibility:hidden;
+}
+
+/*清除浮动*/
+.over_flow{
+    zoom:1
+}
+.over_flow:after{
+    clear:both;
+    content:'.';
+    display: block;
+    width: 0;
+    height:0;
+    visibility:hidden;
+}
+/*清除浮动——end*/
+
+/*特殊样式*/
+.bao,.zeng{
+    cursor: pointer;
+}
+.red{
+    color:#ff4400;
+}
+.blue{
+    color: #00a4fd;
+}
+.orange{
+    color: #ff9e00;
+}
+.littlegrey,.lightgrey{
+    color: #7f7f7f;
+}
+.left,.center{
+    float: left;
+}
+.right{
+    float: right;
+}
+#ShadeDiv{
+    display: none;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+}
+.errortishi,.errorTishi{
+    height: 20px;
+    color: #ff4200;
+    font-size: 14px;
+}
+.bgColor{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    display: none;
+}
+.transform_aimate{
+    transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+    transform: translateY(-20px) perspective(600px) rotateX(10deg);
+    -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+}
+.transform_active{
+    transform: translateY(0) perspective(600px) rotateX(0);
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+}
+.closeBtn{
+    position:absolute;
+    right: 15px;
+    top: 20px;
+    cursor: pointer;
+}
+/*特殊样式__end*/
+
+/*样式清楚*/
+a:hover,a:focus,a:active{
+    text-decoration: none;
+}
+button,input{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+ul,li,ol,dt,dl{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
+    font-weight: bold;
+}
+label{
+    font-weight: normal;
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #999;
+}
+
+/*样式清楚——end*/

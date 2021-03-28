@@ -1,0 +1,740 @@
+@import "zhl-style1";
+
+// 轮播图组件：
+// 轮播图左右按钮，圆角按钮的圆角
+$lm-slide-border-radius: $--border-radius-circle !default;
+// 轮播图大小，背景颜色
+$lm-slide-wrap-width: 100% !default;
+$lm-slide-wrap-height: 100% !default;
+// 当小圆点在外面时，图片区域高度：
+$lm-slide-container-height: 92% !default;
+$lm-slide-background-color: $--color-white !default;
+// 轮播图左右按钮的大小，背景颜色，字体大小，字体颜色
+$lm-slide-arrow-width: 36px !default;
+$lm-slide-arrow-height: 36px !default;
+$lm-slide-arrow-font-size: 12px !default;
+$lm-slide-arrow-transition: .3s !default;
+$lm-slide-arrow-background-color: rgba(31, 45, 61, 0.11) !default;
+$lm-slide-arrow-color: $--color-white !default;
+// 鼠标滑过轮播图左右按钮时的背景颜色
+$lm-slide-arrow-hover-background-color: rgba(31, 45, 61, 0.23) !default;
+//轮播图左右按钮的位置：
+$lm-slide-arrow-left-left: 16px !default;
+$lm-slide-arrow-right-right: 16px !default;
+//轮播图左右按钮的动画：
+$lm-slide-arrow-left-transform: translateY(-50%) translateX(-10px) !default;
+$lm-slide-arrow-right-transform: translateY(-50%) translateX(10px) !default;
+// 下方圆点整体的位置，透明度，背景颜色，内边距：
+$lm-slide-indicator-outside-bottom: 26px !default;
+$lm-slide-indicator-inside-bottom: 0 !default;
+$lm-slide-indicator-outside-opacity: 0.24 !default;
+$lm-slide-indicator-outside-background-color: $--color-text-placeholder !default;
+$lm-slide-indicator-outside-hover-opacity: 0.64 !default;
+$lm-slide-indicator-inside-hover-opacity: .72 !default;
+$lm-slide-indicator-padding: 12px 4px !default;
+// 各个小圆点的动画，透明度，大小，背景颜色：
+$lm-slide-indicator-button-opacity: .48 !default;
+$lm-slide-indicator-button-width: 30px !default;
+$lm-slide-indicator-button-height: 2px !default;
+$lm-slide-indicator-button-background-color: $--color-white !default;
+$lm-slide-indicator-button-transition: .3s !default;
+// 图片滑动时的动画：
+$lm-slide-item-animating-transition1: -webkit-transform .4s ease-in-out !default;
+$lm-slide-item-animating-transition2: transform .4s ease-in-out !default;
+$lm-slide-item-animating-transition3: transform .4s ease-in-out, -webkit-transform .4s ease-in-out !default;
+// 当为卡片模式时，图片宽度：
+$lm-slide-item-card-width: 50% !default;
+// 当为卡片模式时，滑过卡片时，遮罩的透明度：
+$lm-slide-item-card-hover-mask-opacity: .12 !default;
+// 当为卡片模式时，遮罩的背景颜色：
+$lm-slide-mask-background-color: $--color-white !default;
+// 当为卡片模式时，遮罩的透明度：
+$lm-slide-mask-opacity: .24 !default;
+// 当为卡片模式时，遮罩的动画：
+$lm-slide-mask-transition: 0.2s !default;
+
+
+// 日历组件：
+$lm-calendar-el-select-width: auto !default;
+$lm-calendar-el-select-margin-left: 10px !default;
+$lm-calendar-background-color: $--color-white !default;
+$lm-calendar-header-padding: 12px 20px !default;
+$lm-calendar-body-padding: 12px 20px 35px !default;
+$lm-calendar-table-width: 100% !default;
+$lm-calendar-thead-padding: 12px 0 !default;
+$lm-calendar-thead-color: $--color-text-regular !default;
+$lm-calendar-normal-font-weight: normal !default;
+$lm-calendar-disabled-color: $--color-text-placeholder !default;
+$lm-calendar-table-border: $--border-width-base $--border-style-base $--border-color-lighter !default;
+$lm-calendar-td-transition: background-color 0.2s ease !default;
+$lm--calendar-today-color: $--color-primary !default;
+$lm--calendar-everyday-padding: 8px !default;
+$lm--calendar-everyday-height: 60px !default;
+$lm--calendar-selected-background-color: #F2F8FE !default;
+$lm-calendar-range-title-color: #000 !default;
+$lm-calendar-header-justify-content: flex-end !default;
+
+
+// 徽标数组件：
+$lm-badge-content-large-font-size: $--font-size-large !default;
+$lm-badge-content-large-padding: 2px 8px !default;
+$lm-badge-content-large-height: 22px !default;
+$lm-badge-content-large-line-height: 22px !default;
+
+$lm-badge-content-medium-font-size: 16px !default;
+$lm-badge-content-medium-padding: 0 8px !default;
+$lm-badge-content-medium-height: 20px !default;
+$lm-badge-content-medium-line-height: 20px !default;
+
+$lm-badge-content-small-font-size: $--font-size-small !default;
+$lm-badge-content-small-padding: 0 8px !default;
+$lm-badge-content-small-height: 18px !default;
+$lm-badge-content-small-line-height: 18px !default;
+
+$lm-badge-content-min-font-size: 12px !default;
+$lm-badge-content-min-padding: 0 6px !default;
+$lm-badge-content-min-height: 16px !default;
+$lm-badge-content-min-line-height: 16px !default;
+
+$lm-badge-wrap-right: -10px !default;
+$lm-badge-wrap-top: -10px !default;
+$lm-badge-content-color: $--color-white !default;
+$lm-badge-content-background-color: $--color-danger !default;
+$lm-badge-content-font-family: $--font-path !default;
+$lm-badge-content-font-weight: $--font-weight-primary !default;
+$lm-badge-content-border-radius: 10px !default;
+$lm-badge-content-border: $--border-width-base $--border-style-base $--color-white !default;
+// 当为小圆点模式时，小圆点大小：
+$lm-badge-dot-width: 8px !default;
+$lm-badge-dot-height: 8px !default;
+
+
+// 警告提示框：
+// 警告框的颜色，宽度，内边距，外边距，圆角
+$lm-alert-background-color: $--color-white !default;
+$lm-alert-content-border-radius: $--border-radius-base !default;
+// 警告框各个尺寸大小：
+$lm-alert-content-large-width: 600px !default;
+$lm-alert-content-large-padding: 12px 16px !default;
+$lm-alert-content-medium-width: 500px !default;
+$lm-alert-content-medium-padding: 8px 16px !default;
+$lm-alert-content-small-width: 400px !default;
+$lm-alert-content-small-padding: 6px 16px !default;
+$lm-alert-content-min-width: 300px !default;
+$lm-alert-content-min-padding: 4px 16px !default;
+// 警告框主体内容的内边距
+$lm-alert-el-content-padding: 0 8px !default;
+$lm-alert-bold-font-weight: 700 !default;
+$lm-alert-normal-font-weight: $--font-weight-primary !default;
+$lm-alert-title-font-size: $--font-size-base !default;
+$lm-alert-title-line-height: 18px !default;
+// 警告框描述内容的字体大小
+$lm-alert-description-font-size: $--font-size-small !default;
+// 警告框描述内容的字体外边距
+$lm-alert-description-margin: 5px 0 0 !default;
+$lm-alert-close-btn-color: $--color-text-placeholder !default;
+$lm-alert-close-btn-font-size: $--font-size-small !default;
+$lm-alert-close-btn-top: 12px !default;
+$lm-alert-close-btn-right: 15px !default;
+// 普通图标的大小
+$lm-alert-icon-normal-font-size: 16px !default;
+$lm-alert-icon-normal-width: 16px !default;
+// 大图标的大小
+$lm-alert-icon-big-font-size: 28px !default;
+$lm-alert-icon-big-width: 28px !default;
+// 警告框关闭的动画效果：
+$lm-alert-transition: opacity .2s !default;
+$lm-alert-info-background-color: $--color-info-lighter !default;
+$lm-alert-info-color: $--color-info !default;
+
+
+// 气泡提示框：
+// 提示框的样式：
+$lm-popover-wrap-padding: 12px !default;
+$lm-popover-min-width: 150px !default;
+$lm-popover-width: 200px !default;
+$lm-popover-line-height: 1.4 !default;
+$lm-popover-box-shadow: $--box-shadow-light !default;
+$lm-popover-font-family: $--font-path !default;
+$lm-popover-border-radius: $--border-radius-base !default;
+$lm-popover-text-primary-color: $--color-text-primary !default;
+$lm-popover-text-regular-color: $--color-text-regular !default;
+$lm-popover-white-color: $--color-white !default;
+$lm-popover-primary-color: $--color-primary !default;
+$lm-popover-background-color: $--color-white !default;
+//三种字体大小
+$lm-popover-small-font-size: $--font-size-small !default;
+$lm-popover-large-font-size: 16px !default;
+$lm-popover-base-font-size: $--font-size-base !default;
+//边框样式：
+$lm-popover-border-width: $--border-width-base !default;
+$lm-popover-border-style: $--border-style-base !default;
+$lm-popover-border-color: $--border-color-lighter !default;
+// 小三角样式：
+$lm-popover-arrow-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, .03)) !default;
+$lm-popover-arrow-size: 6px !default;
+// 标题样式：
+$lm-popover-plain-padding: 18px 20px !default;
+$lm-popover-title-margin-bottom: 12px !default;
+// 确定与取消按钮：
+$lm-popover-confirm-btn-margin-left: 10px !default;
+$lm-popover-confirm-btn-padding: 0 10px !default;
+$lm-popover-btns-margin-top: 10px !default;
+$lm-popover-btn-line-height: $--font-line-height-primary !default;
+
+
+// 全局提示框：
+// 全局提示框边框：
+$lm-message-wrap-border: $--border-base !default;
+// 全局提示框背景颜色：
+$lm-message-wrap-background-color: $--background-color-base !default;
+// 全局提示框圆角：
+$lm-message-wrap-border-radius: $--border-radius-base !default;
+// 全局提示框阴影：
+$lm-message-wrap-box-shadow: $--box-shadow-base !default;
+// 全局提示框字体类型：
+$lm-message-wrap-font-family: $--font-path !default;
+// 全局提示框字体大小：
+$lm-message-wrap-font-size: $--font-size-base !default;
+// 全局提示框字体颜色：
+$lm-message-wrap-color: $--color-info !default;
+// 全局提示框内边距：
+$lm-message-wrap-large-padding: 12px !default;
+$lm-message-wrap-medium-padding: 10px !default;
+$lm-message-wrap-small-padding: 8px !default;
+$lm-message-wrap-min-padding: 6px !default;
+// 全局提示框宽度：
+$lm-message-wrap-large-width: 500px !default;
+$lm-message-wrap-medium-width: 400px !default;
+$lm-message-wrap-small-width: 300px !default;
+$lm-message-wrap-min-width: 200px !default;
+// 全局提示框主体内容的右内边距：
+$lm-message-content-padding-right: 24px !default;
+// 全局提示框图标的left值：
+$lm-message-icon-left: 10px !default;
+// 全局提示框图标颜色：
+$lm-message-icon-color: $--color-info !default;
+// 关闭按钮颜色
+$lm-message-close-btn-color: $--color-text-placeholder !default;
+// 关闭按钮位置
+$lm-message-close-btn-right: 10px !default;
+$lm-message-close-btn-top: 50% !default;
+$lm-message-transition1: opacity .3s, top .4s, -webkit-transform .4s !default;
+$lm-message-transition2: opacity .3s, transform .4s, top .4s !default;
+$lm-message-transition3: opacity .3s, transform .4s, top .4s, -webkit-transform .4s !default;
+//$lm-message-min-width: 380px !default;
+$lm-message-top: 20px !default;
+$lm-message-left: 50% !default;
+$lm-message-icon-margin-right: 10px !default;
+$lm-message-close-btn-hover-color: $--color-text-secondary !default;
+
+
+// 通知提示框：
+$lm-notification-border: $--border-width-base $--border-style-base $--border-color-lighter !default;
+$lm-notification-box-shadow: $--box-shadow-light !default;
+$lm-notification-large-padding-top: 16px !default;
+$lm-notification-large-padding-bottom: 16px !default;
+$lm-notification-large-padding-left: 15px !default;
+$lm-notification-large-padding-right: 26px !default;
+$lm-notification-large-width: 400px !default;
+$lm-notification-medium-padding-top: 14px !default;
+$lm-notification-medium-padding-bottom: 14px !default;
+$lm-notification-medium-padding-left: 13px !default;
+$lm-notification-medium-padding-right: 26px !default;
+$lm-notification-medium-width: 300px !default;
+$lm-notification-small-padding-top: 12px !default;
+$lm-notification-small-padding-bottom: 12px !default;
+$lm-notification-small-padding-left: 11px !default;
+$lm-notification-small-padding-right: 26px !default;
+$lm-notification-small-width: 200px !default;
+$lm-notification-min-padding-top: 10px !default;
+$lm-notification-min-padding-bottom: 10px !default;
+$lm-notification-min-padding-left: 9px !default;
+$lm-notification-min-padding-right: 26px !default;
+$lm-notification-min-width: 150px !default;
+$lm-notification-font-family: $--font-path !default;
+$lm-notification-background-color: $--background-color-base !default;
+$lm-notification-border: $--border-base !default;
+$lm-notification-box-shadow: $--box-shadow-base !default;
+$lm-notification-large-font-size: $--font-size-large !default;
+$lm-notification-base-font-size: $--font-size-base !default;
+$lm-notification-border-radius: $--border-radius-base !default;
+// 图标的颜色
+$lm-notification-icon-color: $--icon-color-base !default;
+// 标题的颜色
+$lm-notification-title-color: $--color-text-primary !default;
+// 标题的字重
+$lm-notification-title-font-weight: 700 !default;
+// 描述文本的颜色
+$lm-notification-content-color: $--color-text-regular !default;
+// 描述文本的行高
+$lm-notification-content-line-height: $--font-line-height-primary !default;
+// 消息框的相对位置
+$lm-notification-right: 16px !default;
+$lm-notification-left: 16px !default;
+// 消息框文本主体的左外边距
+$lm-notification-group-margin-left: 13px !default;
+// 消息框文本主体的右外边距
+$lm-notification-group-margin-right: 8px !default;
+// 图标大小
+$lm-notification-icon-width: 24px !default;
+$lm-notification-icon-height: 24px !default;
+// 关闭按钮位置：
+$lm-notification-close-btn-top: 18px !default;
+$lm-notification-close-btn-right: 15px !default;
+// 关闭按钮颜色
+$lm-notification-close-btn-color: $--icon-color !default;
+// 鼠标移入时关闭按钮颜色
+$lm-notification-close-btn-hover-color: $--color-text-regular !default;
+// 消息框显示时的动画效果：
+$lm-notification-transition1: opacity .3s, left .3s, right .3s, top .4s, bottom .3s, -webkit-transform .3s !default;
+$lm-notification-transition2: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s !default;
+$lm-notification-transition3: opacity .3s, transform .3s, left .3s, right .3s, top .4s, bottom .3s, -webkit-transform .3s !default;
+$lm-notification-fade-right: 0 !default;
+$lm-notification-fade-left: 0 !default;
+$lm-notification-fade-right-transform: translateX(100%) !default;
+$lm-notification-fade-left-transform: translateX(-100%) !default;
+
+
+// 时间线组件：
+$lm-timeline-white-color: $--color-white !default;
+$lm-timeline-primary-color: $--color-primary !default;
+$lm-timeline-text-regular-color: $--color-text-regular !default;
+$lm-timeline-text-primary-color: $--color-text-primary !default;
+$lm-timeline-text-secondary-color: $--color-text-secondary !default;
+$lm-timeline-small-font-size: $--font-size-small !default;
+$lm-timeline-base-font-size: $--font-size-base !default;
+$lm-timeline-white-background-color: $--color-white !default;
+$lm-timeline-primary-background-color: $--color-primary !default;
+$lm-timeline-success-background-color: $--color-success !default;
+$lm-timeline-warning-background-color: $--color-warning !default;
+$lm-timeline-danger-background-color: $--color-danger !default;
+$lm-timeline-info-background-color: $--color-info !default;
+$lm-timeline-primary-border-color: $--color-primary !default;
+$lm-timeline-box-shadow: $--box-shadow-base !default;
+$lm-timeline-font-family: $--font-path !default;
+// 排序按钮下外边距：
+$lm-timeline-radio-margin-bottom: 10px !default;
+// 排序文本的字重：
+$lm-timeline-radio-font-weight: $--font-weight-primary !default;
+// 排序按钮右外边距：
+$lm-timeline-radio-margin-right: 30px !default;
+// 排序按钮的宽度：
+$lm-timeline-radio-inner-width: 14px !default;
+// 排序按钮的高度：
+$lm-timeline-radio-inner-height: 14px !default;
+// 排序按钮的边框：
+$lm-timeline-radio-inner-border: $--border-width-base $--border-style-base $--border-color-base !default;
+// 排序按钮内部圆圈的宽度：
+$lm-timeline-radio-inner-after-width: 4px !default;
+// 排序按钮内部圆圈的高度：
+$lm-timeline-radio-inner-after-height: 4px !default;
+// 排序按钮与对应文本的左内边距：
+$lm-timeline-radio-label-padding-left: 10px !default;
+// 每个面板的下内边距：
+$lm-timeline-item-padding-bottom: 20px !default;
+// 面板文字与时间轴的左内边距：
+$lm-timeline-item-wrapper-padding-left: 28px !default;
+// 时间轴的相对left值：
+$lm-timeline-item-tail-left: 4px !default;
+// 时间轴的左边框（实际上就是时间轴的宽度）
+$lm-timeline-item-tail-border-left: 2px $--border-style-base $--border-color-light !default;
+// 时间轴节点的背景颜色
+$lm-timeline-item-node-background-color: #E4E7ED !default;
+// 时间轴节点的尺寸（大）
+$lm-timeline-item-node-large-size: 14px !default;
+// 时间轴节点的尺寸（小）
+$lm-timeline-item-node-normal-size: 12px !default;
+// 时间轴节点的相对位置（针对大尺寸的节点）
+$lm-timeline-item-node-large-position: -2px !default;
+// 时间轴节点的相对位置（针对小尺寸的节点）
+$lm-timeline-item-node-normal-position: -1px !default;
+// 时间戳在上时下外边距：
+$lm-timeline-timestamp-top-margin-bottom: 8px !default;
+// 时间戳在上时上内边距：
+$lm-timeline-timestamp-top-padding-top: 4px !default;
+// 时间戳在下时上外边距：
+$lm-timeline-timestamp-bottom-margin-top: 8px !default;
+// 排序按钮动画设置：
+$lm-timeline-radio-inner-transition1: -webkit-transform .15s ease-in !default;
+$lm-timeline-radio-inner-transition2: transform .15s ease-in !default;
+$lm-timeline-radio-inner-transition3: transform .15s ease-in, -webkit-transform .15s ease-in !default;
+$lm-timeline-radio-inner-transform: translate(-50%, -50%) scale(0) !default;
+$lm-timeline-radio-inner-checked-transform: translate(-50%, -50%) scale(1) !default;
+
+
+// 折叠面板：
+$lm-collapse-font-family: $--font-path !default;
+$lm-collapse-base-font-weight: 400 !default;
+$lm-collapse-bold-font-weight: 700 !default;
+$lm-collapse-base-font-size: $--font-size-base !default;
+$lm-collapse-large-font-size: 16px !default;
+$lm-collapse-large-line-height: 24px !default;
+$lm-collapse-border: $--border-width-base $--border-style-base $--border-color-lighter !default;
+$lm-collapse-title-background-color: $--background-color-base !default;
+$lm-collapse-title-padding: 10px !default;
+$lm-collapse-content-background-color: $--color-white !default;
+$lm-collapse-content-padding-right: 0 !default;
+$lm-collapse-content-padding-top: 6px !default;
+$lm-collapse-text-secondary-color: $--color-text-secondary !default;
+$lm-collapse-text-regular-color: $--color-text-regular !default;
+$lm-collapse-primary-color: $--color-primary !default;
+$lm-collapse-empty-min-height: 60px !default;
+$lm-collapse-item-margin-bottom: 6px !default;
+$lm-collapse-icon-color: $--icon-color-base !default;
+$lm-collapse-icon-margin-right: 10px !default;
+$lm-collapse-icon-transition1: -webkit-transform .3s ease-in-out !default;
+$lm-collapse-icon-transition2: transform .3s ease-in-out !default;
+$lm-collapse-icon-transition3: transform .3s ease-in-out, -webkit-transform .3s ease-in-out !default;
+$lm-collapse-wrap-large-width: 500px !default;
+$lm-collapse-wrap-medium-width: 400px !default;
+$lm-collapse-wrap-small-width: 300px !default;
+$lm-collapse-wrap-min-width: 200px !default;
+$lm-collapse-wrap-padding: 10px !default;
+// 动画效果：
+$lm-collapse-fade-linear-transition: $--fade-linear-transition !default;
+$lm-collapse-opacity-transition: opacity .3s cubic-bezier(.55, 0, .1, 1) !default;
+$lm-collapse-horizontal-transition: .3s width ease-in-out, .3s padding-left ease-in-out, .3s padding-right ease-in-out !default;
+$lm-collapse-transition: .3s height ease-in-out, .3s padding-top ease-in-out, .3s padding-bottom ease-in-out !default;
+$lm-collapse-fade-in-transition: all .3s cubic-bezier(.55, 0, .1, 1) !default;
+$lm-collapse-zoom-in-transition: all .3s cubic-bezier(.55, 0, .1, 1) !default;
+$lm-collapse-list-transition: all 1s !default;
+$lm-collapse-md-fade-transition1: $--md-fade-transition !default;
+$lm-collapse-md-fade-transition2: transform .3s cubic-bezier(.23, 1, .32, 1), opacity .3s cubic-bezier(.23, 1, .32, 1) !default;
+$lm-collapse-md-fade-transition3: transform .3s cubic-bezier(.23, 1, .32, 1), opacity .3s cubic-bezier(.23, 1, .32, 1), -webkit-transform .3s cubic-bezier(.23, 1, .32, 1) !default;
+
+
+
+
+// 图片组件：
+// 占位文字以及错误提示文字的位置：
+$lm-image-slot-left: 50% !default;
+$lm-image-slot-top: 50% !default;
+// 占位文字背景颜色
+$lm-image-placeholder-background: $--background-color-base !default;
+// 错误提示文字大小颜色：
+$lm-image-error-font-size: 14px !default;
+$lm-image-error-color: $--color-text-placeholder !default;
+$lm-image-large-width: 400px !default;
+$lm-image-large-height: 400px !default;
+$lm-image-medium-width: 300px !default;
+$lm-image-medium-height: 300px !default;
+$lm-image-small-width: 200px !default;
+$lm-image-small-height: 200px !default;
+$lm-image-min-width: 100px !default;
+$lm-image-min-height: 100px !default;
+
+
+// 走马灯：
+$lm-loop-player-border: $--border-width-base $--border-style-base $--border-color-lighter !default;
+$lm-loop-player-border-radius: $--border-radius-base !default;
+$lm-loop-player-padding: 6px 10px !default;
+$lm-loop-player-font-family: $--font-path !default;
+$lm-loop-player-font-size: $--font-size-base !default;
+$lm-loop-player-color: $--color-text-regular !default;
+$lm-loop-player-background-color: $--color-white !default;
+$lm-loop-player-box-shadow: $--box-shadow-base !default;
+$lm-loop-player-disabled-color: $--disabled-color-base !default;
+// 走马灯4种尺寸：
+$lm-loop-player-large-width: 500px !default;
+$lm-loop-player-large-height: 40px !default;
+$lm-loop-player-medium-width: 400px !default;
+$lm-loop-player-medium-height: 30px !default;
+$lm-loop-player-small-width: 300px !default;
+$lm-loop-player-small-height: 20px !default;
+$lm-loop-player-min-width: 200px !default;
+$lm-loop-player-min-height: 16px !default;
+// 走马灯遮罩边距：
+$lm-loop-player-wrap-margin: 0 16px 0 0 !default;
+// 各个消息之间右外边距：
+$lm-loop-player-item-margin-right: 30px !default;
+// icon样式：
+$lm-loop-player-icon-font-size: 14px !default;
+$lm-loop-player-icon-color: $--icon-color-base !default;
+$lm-loop-player-icon-margin-right: 4px !default;
+
+
+// 面包屑：
+$lm-breadcrumb-font-family: $--font-path !default;
+$lm-breadcrumb-font-size: $--font-size-base !default;
+$lm-breadcrumb-regular-color: $--color-text-regular !default;
+$lm-breadcrumb-text-primary-color: $--color-text-primary !default;
+$lm-breadcrumb-primary-color: $--color-primary !default;
+$lm-breadcrumb-icon-color: $--icon-color-base !default;
+$lm-breadcrumb-icon-font-size: $--font-size-base !default;
+$lm-breadcrumb-icon-padding-right: 2px !default;
+$lm-breadcrumb-icon-transition: color .2s cubic-bezier(.645, .045, .355, 1) !default;
+// 分隔符的颜色，粗细：
+$lm-breadcrumb-separator-color: $--color-text-placeholder !default;
+$lm-breadcrumb-separator-margin: 0 9px !default;
+$lm-breadcrumb-separator-font-weight: 700 !default;
+// 字体粗细：
+$lm-breadcrumb-inner-font-weight: 400 !default;
+
+
+// 分页组件：
+$lm-pagination-border: $--border-width-base $--border-style-base $--border-color-base !default;
+$lm-pagination-border-radius: $--border-radius-base !default;
+$lm-pagination-small-border-radius: $--border-radius-small !default;
+$lm-pagination-padding: 6px 10px !default;
+$lm-pagination-font-family: $--font-path !default;
+$lm-pagination-base-font-size: $--font-size-base !default;
+$lm-pagination-small-font-size: $--font-size-small !default;
+$lm-pagination-mini-font-size: 12px !default;
+$lm-pagination-regular-color: $--color-text-regular !default;
+$lm-pagination-text-primary-color: $--color-text-primary !default;
+$lm-pagination-primary-color: $--color-primary !default;
+$lm-pagination-white-color: $--color-white !default;
+$lm-pagination-background-color: $--background-color-base !default;
+$lm-pagination-disabled-color: $--disabled-color-base !default;
+// 当为简单模式时样式：
+$lm-pagination-input-transition: border-color .2s cubic-bezier(.645, .045, .355, 1) !default;
+$lm-pagination-input-padding: 0 3px !default;
+$lm-pagination-input-width: 40px !default;
+$lm-pagination-separator-padding: 0 10px !default;
+$lm-pagination-editor-padding: 0 2px !default;
+$lm-pagination-editor-margin: 0 2px !default;
+$lm-pagination-editor-line-height: 18px !default;
+// 组件整体样式：
+$lm-pagination-wrap-padding: 2px 5px !default;
+$lm-pagination-wrap-font-weight: 700 !default;
+$lm-pagination-wrap-height: 28px !default;
+// 各个页数的样式：
+$lm-pagination-button-min-width: 35.5px !default;
+$lm-pagination-button-padding: 0 6px !default;
+$lm-pagination-button-margin: 0 5px !default;
+$lm-pagination-button-min-width: 30px !default;
+$lm-pagination-icon-line-height: 30px !default;
+$lm-pagination-pager-padding: 0 4px !default;
+// 左右按钮样式：
+$lm-pagination-arrow-background-size: 16px !default;
+$lm-pagination-prev-padding-right: 12px !default;
+$lm-pagination-next-padding-left: 12px !default;
+// 当为小模式时，分页组件样式：
+$lm-pagination-small-wrap-height: 22px !default;
+$lm-pagination-small-icon-line-height: 24px !default;
+$lm-pagination-small-button-margin: 0 3px !default;
+$lm-pagination-small-button-min-width: 22px !default;
+// 简单模式时字重：
+$lm-pagination-jumper-font-weight: 400 !default;
+
+
+
+/* 自定义变量 */
+$lm-upload-margin-bottom:22px !default;
+$lm-upload-list-padding:0 !default;
+$lm-upload-card-margin:0 !default;
+$lm-upload-card-width:178px !default;
+$lm-upload-card-height:148px !default;
+$lm-upload-card-outline:0 !default;
+$lm-upload-list-item-margin:0 8px 8px 0 !default;
+$lm-upload-card-border-color:#c0ccda !default;
+$lm-upload-card-border-radius:6px !default;
+$lm-upload-img-width:100% !default;
+$lm-upload-img-height:100% !default;
+$lm-upload-icon-width:20px !default;
+$lm-upload-icon-height:20px !default;
+$lm-upload-icon-font-size:12px !default;
+$lm-upload-icon-border-radius:50% !default;
+$lm-upload-icon-top:4px !default;
+$lm-upload-icon-right:4px !default;
+$lm-upload-zIndex:1 !default;
+$lm-upload-hint-width:100px !default;
+$lm-upload-hint-height:100px !default;
+$lm-upload-hint-top:50% !default;
+$lm-upload-hint-left:50% !default;
+$lm-upload-hint-margin-top:-50px !default;
+$lm-upload-hint-margin-left:-50px !default;
+$lm-upload-hint-background-color:rgba(39,40,38,.8) !default;
+$lm-upload-uploadAgain-height:30px !default;
+$lm-upload-uploadAgain-bottom:0 !default;
+$lm-upload-uploadAgain-left:0 !default;
+$lm-upload-uploadAgain-background-color:rgba(30,31,33,.8) !default;
+$lm-upload-uploadAgain-font-color:#ff4200 !default;
+$lm-upload-name-top:100% !default;
+$lm-upload-name-left:0 !default;
+$lm-upload-card-background-color:#fbfdff !default;
+$lm-upload-card-icon-font-size:28px !default;
+$lm-upload-card-color:#8c939d !default;
+$lm-upload-card-title-font-size:16px !default;
+$lm-upload-card-title-margin-top:10px !default;
+$lm-upload-card-title-margin-bottom:5px !default;
+$lm-upload-font-weight:bold !default;
+$lm-upload-info-margin-left:10px !default;
+//图片上传组件
+//图片上传的下边距
+$lm-pictureUpload-margin-bottom:$lm-upload-margin-bottom !default;
+//图片上传的列表
+$lm-pictureUpload-list-padding:$lm-upload-list-padding !default;
+$lm-pictureUpload-list-card-margin:$lm-upload-card-margin !default;
+$lm-pictureUpload-list-item-width:$lm-upload-card-width !default;
+$lm-pictureUpload-list-item-height:$lm-upload-card-height !default;
+$lm-pictureUpload-list-item-margin:$lm-upload-list-item-margin !default;
+$lm-pictureUpload-list-item-card-background-color:$--color-white !default;
+$lm-pictureUpload-card-border-color:$lm-upload-card-border-color !default;
+$lm-pictureUpload-list-item-card-border:$--border-width-base $--border-style-base $lm-pictureUpload-card-border-color !default;
+$lm-pictureUpload-card-border-radius:$lm-upload-card-border-radius !default;
+$lm-pictureUpload-list-item-card-width:$lm-upload-img-width !default;
+$lm-pictureUpload-list-item-card-height:$lm-upload-img-height !default;
+$lm-pictureUpload-list-item-card-thumbnail-width:$lm-upload-img-width !default;
+$lm-pictureUpload-list-item-card-thumbnail-height:$lm-upload-img-height !default;
+//删除按钮
+$lm-pictureUpload-list-deleteIcon-width:$lm-upload-icon-width !default;
+$lm-pictureUpload-list-deleteIcon-height:$lm-upload-icon-height !default;
+$lm-pictureUpload-list-deleteIcon-font-size:$lm-upload-icon-font-size !default;
+$lm-pictureUpload-list-deleteIcon-border-radius:$lm-upload-icon-border-radius !default;
+$lm-pictureUpload-list-deleteIcon-background-color:$--color-text-primary !default;
+$lm-pictureUpload-list-deleteIcon-font-color:$--color-white !default;
+$lm-pictureUpload-list-deleteIcon-top:$lm-upload-icon-top !default;
+$lm-pictureUpload-list-deleteIcon-right:$lm-upload-icon-right !default;
+$lm-pictureUpload-list-deleteIcon-zIndex:$lm-upload-zIndex !default;
+//提示区域
+$lm-pictureUpload-list-hint-width:$lm-upload-hint-width !default;
+$lm-pictureUpload-list-hint-height:$lm-upload-hint-height !default;
+$lm-pictureUpload-list-hint-border-radius:$--border-radius-base !default;
+$lm-pictureUpload-list-hint-top:$lm-upload-hint-top !default;
+$lm-pictureUpload-list-hint-left:$lm-upload-hint-left !default;
+$lm-pictureUpload-list-hint-margin-top:$lm-upload-hint-margin-top !default;
+$lm-pictureUpload-list-hint-margin-left:$lm-upload-hint-margin-left !default;
+$lm-pictureUpload-list-hint-background-color:$lm-upload-hint-background-color !default;
+$lm-pictureUpload-list-hint-color:$--color-white !default;
+$lm-pictureUpload-list-hint-zIndex:$lm-upload-zIndex !default;
+$lm-pictureUpload-list-hint-icon-width:$lm-pictureUpload-list-deleteIcon-width !default;
+$lm-pictureUpload-list-hint-icon-height:$lm-pictureUpload-list-deleteIcon-height !default;
+$lm-pictureUpload-list-hint-icon-border-radius:$lm-pictureUpload-list-deleteIcon-border-radius !default;
+$lm-pictureUpload-list-hint-icon-background-color:$--color-white !default;
+$lm-pictureUpload-list-hint-icon-font-color:$lm-pictureUpload-list-hint-background-color !default;
+$lm-pictureUpload-list-hint-icon-font-size:$lm-pictureUpload-list-deleteIcon-font-size !default;
+//重新上传区域
+$lm-pictureUpload-list-uploadAgain-width:$lm-upload-card-width !default;
+$lm-pictureUpload-list-uploadAgain-height:$lm-upload-uploadAgain-height !default;
+$lm-pictureUpload-list-uploadAgain-bottom:$lm-upload-uploadAgain-bottom !default;
+$lm-pictureUpload-list-uploadAgain-left:$lm-upload-uploadAgain-left !default;
+$lm-pictureUpload-list-uploadAgain-background-color:$lm-upload-uploadAgain-background-color !default;
+$lm-pictureUpload-list-uploadAgain-font-color:$lm-upload-uploadAgain-font-color !default;
+$lm-pictureUpload-list-uploadAgain-zIndex:$lm-upload-zIndex !default;
+$lm-pictureUpload-list-uploadAgain-font-size:$--font-size-base !default;
+//图片名称
+$lm-pictureUpload-list-name-width:$lm-upload-card-width !default;
+$lm-pictureUpload-list-name-height:$lm-pictureUpload-list-uploadAgain-height !default;
+$lm-pictureUpload-list-name-top:$lm-upload-name-top !default;
+$lm-pictureUpload-list-name-left:$lm-upload-name-left !default;
+$lm-pictureUpload-list-name-font-size:$lm-pictureUpload-list-uploadAgain-font-size !default;
+//卡片按钮
+$lm-pictureUpload-card-background-color:$lm-upload-card-background-color !default;
+$lm-pictureUpload-card-border:$--border-width-base dashed $lm-pictureUpload-card-border-color !default;
+$lm-pictureUpload-card-width:$lm-upload-card-width !default;
+$lm-pictureUpload-card-height:$lm-upload-card-height !default;
+$lm-pictureUpload-card-outline:$lm-upload-card-outline !default;
+$lm-pictureUpload-card-hover-font-color:$--color-primary !default;
+$lm-pictureUpload-card-hover-border-color:$--color-primary !default;
+$lm-pictureUpload-card-icon-font-size:$lm-upload-card-icon-font-size !default;
+$lm-pictureUpload-card-color:$lm-upload-card-color !default;
+$lm-pictureUpload-card-title-font-size:$lm-upload-card-title-font-size !default;
+$lm-pictureUpload-card-title-margin-top:$lm-upload-card-title-margin-top !default;
+$lm-pictureUpload-card-title-margin-bottom:$lm-upload-card-title-margin-bottom !default;
+$lm-pictureUpload-card-title-font-weight:$lm-upload-font-weight !default;
+$lm-pictureUpload-card-infoMess-font-size:$--font-size-base !default;
+$lm-pictureUpload-card-infoMess-margin:$lm-upload-info-margin-left !default;
+//禁用上传
+$lm-pictureUpload-disable-hover-font-color:$--color-text-placeholder !default;
+$lm-pictureUpload-disable-hover-background-color:$--color-white !default;
+
+
+
+/*-------------下拉菜单组件风格变量---------------*/
+//下拉菜单为按钮的时候 size[large,medium,small,mini] 其中medium为默认
+//视窗为button的时候
+$lm-dropdown-button-large-padding: 12px 10px !default;  //当size为large的时候，下拉菜单为按钮的时候的上下左右内边距
+$lm-dropdown-button-large-font-size: 15px !default;  //当size为large的时候，下拉菜单名称的大小
+$lm-dropdown-button-large-border-radius: 5px !default;  //当size为large的时候，下拉菜单按钮的边框圆角
+$lm-dropdown-button-large-icon-size: 15px !default;  //当size为large的时候，按钮中icon的大小
+
+$lm-dropdown-button-medium-padding: 10px 10px !default;  //默认情况下为medium
+$lm-dropdown-button-medium-font-size: 14px !default;  //默认情况下为medium
+$lm-dropdown-button-medium-border-radius: 4px !default;  //默认情况下为medium
+$lm-dropdown-button-medium-icon-size: 14px !default;
+
+$lm-dropdown-button-small-padding: 6px 10px !default;
+$lm-dropdown-button-small-font-size: 13px !default;
+$lm-dropdown-button-small-border-radius: 3px !default;
+$lm-dropdown-button-small-icon-size: 13px !default;
+
+$lm-dropdown-button-mini-padding: 4px 10px !default;
+$lm-dropdown-button-mini-font-size: 12px !default;
+$lm-dropdown-button-mini-border-radius: 2px !default;
+$lm-dropdown-button-mini-icon-size: 12px !default;
+
+$lm-dropdown-button-font-size:14px !default;//button按钮的字体的大小
+//默认情况下按钮的字体颜色
+$lm-dropdown-button-font-color: $--color-white !default;//button按钮的字体的颜色或是图标的颜色
+$lm-dropdown-button-background-color: $--color-primary !default;//默认button按钮的背景的颜色
+$lm-dropdown-button-border-color:1px solid #DCDFE6 !default;//
+$lm-dropdown-button-font-weight:500 !default;
+$lm-dropdown-button-transition:.1s !default;
+$lm-dropdown-button-hover-background-color:$--color-primary-light-1 !default;//hover,focus状态下 button按钮的背景颜色
+$lm-dropdown-button-hover-border-color:#c6e2ff !default;//hover,focus状态下 button按钮的背景颜色
+$lm-dropdown-button-hover-color: $--color-white !default;//hover,focus状态下 button按钮的背景颜色
+$lm-dropdown-button-margin: 0 3px !default;
+
+//按钮中的竖线视窗、
+$lm-dropdown-line-width:1px !default;
+$lm-dropdown-line-background-color:rgba(255, 255, 255, .5) !default;
+
+//下拉菜单栏menu
+$lm-dropdown-menu-background-color: #FFF !default; //下拉菜单栏的背景颜色
+$lm-dropdown-menu-border-color: 1px solid #EBEEF5 !default; //下拉菜单栏的边框样式
+$lm-dropdown-menu-border-radius: 4px !default; //下拉菜单栏的背景颜色
+$lm-dropdown-menu-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1) !default; //下拉菜单栏的边框的阴影部分
+$lm-dropdown-menu-margin: 5px 0 !default; //下拉菜单栏的外边距
+
+$lm-dropdown-menu-large-padding: 6px 0 !default; //size为large，下拉菜单栏的内边距
+$lm-dropdown-menu-medium-padding: 6px 0 !default; //默认为medium 下拉菜单栏的内边距
+$lm-dropdown-menu-small-padding: 6px 0 !default; //下拉菜单栏的内边距
+$lm-dropdown-menu-mini-padding: 6px 0 !default; //下拉菜单栏的内边距
+//下拉菜单栏中单个菜单项的li视窗
+$lm-dropdown-menuli-large-line-height: 44px !default; //size为large，下拉菜单栏中菜单项li的行高
+$lm-dropdown-menuli-large-padding: 0 20px !default;
+$lm-dropdown-menuli-large-font-size: 15px !default;
+//$lm-dropdown-menuli-large-margin-top: 8px !default;
+
+$lm-dropdown-menuli-medium-line-height: 40px !default; //默认size为medium
+$lm-dropdown-menuli-medium-padding: 0 17px !default;
+$lm-dropdown-menuli-medium-font-size: 14px !default;
+//$lm-dropdown-menuli-medium-margin-top: 6px !default;
+
+$lm-dropdown-menuli-small-line-height: 36px !default;
+$lm-dropdown-menuli-small-padding: 0 15px !default;
+$lm-dropdown-menuli-small-font-size: 13px !default;
+//$lm-dropdown-menuli-small-margin-top: 4px !default;
+
+$lm-dropdown-menuli-mini-line-height: 32px !default;
+$lm-dropdown-menuli-mini-padding: 0 13px !default;
+$lm-dropdown-menuli-mini-font-size: 12px !default;
+//$lm-dropdown-menuli-mini-margin-top: 0px !default;
+
+$lm-dropdown-menuli-font-color: #606266 !default; //下拉菜单栏中菜单项li的字体大小
+$lm-dropdown-menuli-border-top: 1px solid #ebeef5 !default; //下拉菜单栏中菜单项li的字体大小
+
+$lm-dropdown-menuli-icon-margin-right: 5px !default; //下拉菜单栏中菜单项li的图标
+
+
+$lm-dropdown-menuli-hover-font-color: #66b1ff !default; //下拉菜单栏中菜单项li,hover，focus状态下的字体颜色
+$lm-dropdown-menuli-hover-background-color:#ecf5ff  !default; //下拉菜单栏中菜单项li，hover，focus状态下背景颜色
+$lm-dropdown-menuli-disabled-font-color: #bbb !default; //下拉菜单栏中菜单项li
+
+//每个菜单栏项的li中有一个div 视窗为divided
+//$lm-dropdown-lidivided-large-height: 8px !default;
+//$lm-dropdown-lidivided-medium-height: 6px !default;  //默认状态下为medium
+//$lm-dropdown-lidivided-small-height: 4px !default;
+//$lm-dropdown-lidivided-mini-height: 2px !default;
+/*下拉菜单为文本的时候 text视窗*/
+$lm-dropdown-text-font-color:$--color-primary !default;  //当下拉菜单名称为文本的时候,字体颜色
+$lm-dropdown-text-icon-color:$--color-primary !default;  //当下拉菜单名称为文本的时候,图标颜色
+$lm-dropdown-text-font-size:14px !default;  //当下拉菜单名称为文本的时候，字体或是图标大小
+$lm-dropdown-text-font-weight:$--font-weight-primary !default;  //当下拉菜单名称为文本的时候，字体大小
+
+
+
+
+
