@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
+<!--    <script src="../src/components/baseComponent/cloudToolMac.js"></script>-->
+    <!--<script src="cloudTool/cloudToolMac.js"></script>-->
+    <script src="jsFile/config.js"></script>
+    <script src="jsFile/def.js"></script>
+
+    <link href="reset.css" rel="stylesheet" type="text/css">
+
+    <script>
+      let arrJSFile = [];
+      let mac = new $CZeroDBMac();
+      // 引入jQuery
+      arrJSFile.push($CConfig.path_zeroBase + "/public/jquery.js");
+      // arrJSFile.push($CConfig.path_zeroPaas + "/public/jquery.js");
+      // arrJSFile.push("jquery-ui.min.js");
+
+      // 底层数据库JS、瓴码数据库JS、系统架构JS、 API数据库JS
+      arrJSFile.push($CConfig.path_zeroPaas + "/load.js.file.js");
+      // arrJSFile.push($CConfig.path_zeroPaas + "/public/load.js.file.js");
+
+      for (let i = 0; i < arrJSFile.length; i++) {
+          document.write("<script src=" + arrJSFile[i] + "><\/script>");
+      }
+    </script>
+
+<!--    <script src="jquery-3.3.1.min.js"></script>-->
+<!--    <script src="jquery-ui.min.js"></script>-->
+    <script src="jsplumb.js"></script>
+
+
+    <title>抽奖APP</title>
+</head>
+<style>
+    html, body {
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*height: 100%;*/
+        /*overflow: hidden;*/
+    }
+</style>
+<body>
+<script>
+
+</script>
+<div id="app"></div>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=fc7f4070ea70a8ad9a490ecb8e682c6b"></script>
+<!-- built files will be auto injected -->
+</body>
+
+
+</html>

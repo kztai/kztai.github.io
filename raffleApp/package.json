@@ -1,0 +1,80 @@
+{
+  "name": "apptool",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "jsdoc": "jsdoc -c conf.json"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "alipay-sdk": "^3.0.7",
+    "awesome-phonenumber": "^2.15.0",
+    "element-ui": "^2.9.1",
+    "file-loader": "^4.2.0",
+    "jsbarcode": "^3.11.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "lodash": "^4.17.11",
+    "numerify": "^1.2.9",
+    "qrcodejs2": "0.0.2",
+    "url-loader": "^2.1.0",
+    "utils-lite": "^0.1.15",
+    "vant": "^2.2.13",
+    "vue": "^2.6.6",
+    "vue-cropper": "^0.4.9",
+    "vue-router": "^3.4.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@vue/cli": "^3.4.0",
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "echarts": "^4.2.1",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-vue": "^5.2.1",
+    "ink-docstrap": "^1.3.2",
+    "jsdoc": "^3.5.5",
+    "jsdoc-vue": "^1.0.0",
+    "node-sass": "^4.11.0",
+    "npm": "^6.8.0",
+    "ruby": "^0.6.1",
+    "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.0.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-template-compiler": "^2.6.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
